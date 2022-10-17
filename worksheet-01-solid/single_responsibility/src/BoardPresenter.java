@@ -7,12 +7,11 @@ public class BoardPresenter {
 
     public void displayBoard() {
         String formattedBoard = "";
-        for (int i = 0; i < this.board.size*this.board.size; i++) {
+        for (int i = 0; i < this.board.size * this.board.size; i++) {
             String borderOrNewline = "";
-            if ((i+1) % board.size == 0) {
+            if ((i + 1) % board.size == 0) {
                 borderOrNewline += "\n";
-            }
-            else {
+            } else {
                 borderOrNewline += "|";
             }
             formattedBoard += board.spots.get(i);

@@ -4,9 +4,9 @@ package decorator;
 
 public interface Pizza {
 
-  String getDescription();
+    String getDescription();
 
-  double getCost();
+    double getCost();
 
 }
 

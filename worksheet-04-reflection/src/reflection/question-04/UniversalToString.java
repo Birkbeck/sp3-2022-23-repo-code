@@ -23,7 +23,7 @@ public class UniversalToString {
      * The class name and field name/value pairs are returned as a String
      * using the following pattern:
      * classname{fieldname1=value1, fieldname2=value2...}
-     *
+     * <p>
      * Field values that are reference classes that do not have a toString method
      * will be included in the returned string using the same basic pattern:
      * classnameA{fieldname1=refclassB{fieldnameB1=valueB1, ...}, ...}
@@ -31,30 +31,32 @@ public class UniversalToString {
      * @param obj instance object of any class type
      * @return string describing the class name, field names and values.
      */
-    public static String toString(Object obj)  {
+    public static String toString(Object obj) {
         if (obj == null) return "null";
         Class<?> c = obj.getClass();
         // Array storage of name=value pairs
         List<String> fieldValues = new ArrayList<>();
         // work through declared fields in object
-        for(Field fld: c.getDeclaredFields()){
+        for (Field fld : c.getDeclaredFields()) {
             try {
                 // expose non public field values
-                if (!Modifier.isPublic(fld.getModifiers()) && !fld.trySetAccessible()){ return "Inaccessible"; }
+                if (!Modifier.isPublic(fld.getModifiers()) && !fld.trySetAccessible()) {
+                    return "Inaccessible";
+                }
                 Class<?> fieldTypeClass = fld.getType();
                 Object fieldValue = fld.get(obj);
                 // get and assign field values for primitive types
                 if (fieldTypeClass.isPrimitive()) {
                     fieldValues.add(fld.getName() + "="
-                            + (fieldTypeClass == Character.TYPE ? "'" + fieldValue + "'" : fieldValue));
+                        + (fieldTypeClass == Character.TYPE ? "'" + fieldValue + "'" : fieldValue));
                 } else {
                     try {
                         // check if there's a declared toString method
                         Method m = fieldTypeClass.getDeclaredMethod("toString");
 
                         fieldValues.add(fld.getName() + "="
-                                + (fieldTypeClass == String.class && fieldValue != null
-                                ? "\"" + fieldValue + "\"" : fieldValue));
+                            + (fieldTypeClass == String.class && fieldValue != null
+                            ? "\"" + fieldValue + "\"" : fieldValue));
                     } catch (NoSuchMethodException e) {
                         // if there's no toString - recursively call GeneralToString on the fieldValue Object
                         fieldValues.add(fld.getName() + "=" + toString(fieldValue));

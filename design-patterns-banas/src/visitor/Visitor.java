@@ -5,14 +5,14 @@ package visitor;
 
 interface Visitor {
 
-  // Created to automatically use the right
-  // code based on the Object sent
-  // Method Overloading
+    // Created to automatically use the right
+    // code based on the Object sent
+    // Method Overloading
 
-  double visit(Liquor liquorItem);
+    double visit(Liquor liquorItem);
 
-  double visit(Tobacco tobaccoItem);
+    double visit(Tobacco tobaccoItem);
 
-  double visit(Necessity necessityItem);
+    double visit(Necessity necessityItem);
 
 }

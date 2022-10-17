@@ -16,14 +16,12 @@ public class Introspect {
             System.out.println(c.getSimpleName());
             System.out.println(c.isInterface());
             Method[] meth = c.getMethods();
-            for (var m : meth){
+            for (var m : meth) {
                 System.out.println(m);
             }
-        }
-        catch(ClassNotFoundException ex){
+        } catch (ClassNotFoundException ex) {
             System.err.println("Could not find the class");
-        }
-        finally {
+        } finally {
             sc.close();
         }
     }

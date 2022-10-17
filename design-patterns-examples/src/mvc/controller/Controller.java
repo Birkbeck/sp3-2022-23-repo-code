@@ -4,11 +4,11 @@ import mvc.model.Model;
 import mvc.view.View;
 
 public class Controller {
-  private View view;
-  private Model model;
+    private final View view;
+    private final Model model;
 
-  public Controller(View view, Model model) {
-    this.view = view;
-    this.model = model;
-  }
+    public Controller(View view, Model model) {
+        this.view = view;
+        this.model = model;
+    }
 }

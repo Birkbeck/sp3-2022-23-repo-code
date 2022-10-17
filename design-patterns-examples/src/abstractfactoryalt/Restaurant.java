@@ -1,9 +1,9 @@
 package abstractfactoryalt;
 
 public interface Restaurant {
-  Appetizer getAppetizer();
+    Appetizer getAppetizer();
 
-  Entree getEntree();
+    Entree getEntree();
 
-  Dessert getDessert();
+    Dessert getDessert();
 }

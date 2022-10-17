@@ -5,50 +5,50 @@ import java.util.Iterator;
 
 public class SongsOfThe90s implements SongIterator {
 
-  // Create a Hashtable with an int as a key and SongInfo
-  // Objects
+    // Create a Hashtable with an int as a key and SongInfo
+    // Objects
 
-  Hashtable<Integer, SongInfo> bestSongs = new Hashtable<Integer, SongInfo>();
+    Hashtable<Integer, SongInfo> bestSongs = new Hashtable<Integer, SongInfo>();
 
-  // Will increment the Hashtable key
+    // Will increment the Hashtable key
 
-  int hashKey;
+    int hashKey;
 
-  public SongsOfThe90s() {
+    public SongsOfThe90s() {
 
-    addSong("Losing My Religion", "REM", 1991);
-    addSong("Creep", "Radiohead", 1993);
-    addSong("Walk on the Ocean", "Toad The Wet Sprocket", 1991);
+        addSong("Losing My Religion", "REM", 1991);
+        addSong("Creep", "Radiohead", 1993);
+        addSong("Walk on the Ocean", "Toad The Wet Sprocket", 1991);
 
-  }
+    }
 
-  // Add a new SongInfo Object to the Hashtable and then increment
-  // the Hashtable key
+    // Add a new SongInfo Object to the Hashtable and then increment
+    // the Hashtable key
 
-  public void addSong(String songName, String bandName, int yearReleased) {
+    public void addSong(String songName, String bandName, int yearReleased) {
 
-    final SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
+        final SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
 
-    bestSongs.put(hashKey, songInfo);
+        bestSongs.put(hashKey, songInfo);
 
-    hashKey++;
+        hashKey++;
 
-  }
+    }
 
-  // This is replaced by the Iterator
-  // Return a Hashtable full of SongInfo Objects
+    // This is replaced by the Iterator
+    // Return a Hashtable full of SongInfo Objects
 
-  public Hashtable<Integer, SongInfo> getBestSongs() {
+    public Hashtable<Integer, SongInfo> getBestSongs() {
 
-    return bestSongs;
+        return bestSongs;
 
-  }
+    }
 
-  // NEW By adding this method I'll be able to treat all
-  // collections the same
+    // NEW By adding this method I'll be able to treat all
+    // collections the same
 
-  public Iterator createIterator() {
-    return bestSongs.values().iterator();
-  }
+    public Iterator createIterator() {
+        return bestSongs.values().iterator();
+    }
 
 }

@@ -8,20 +8,20 @@ package command;
 
 public class DeviceButton {
 
-  Command theCommand;
+    Command theCommand;
 
-  public DeviceButton(Command newCommand) {
-    theCommand = newCommand;
-  }
+    public DeviceButton(Command newCommand) {
+        theCommand = newCommand;
+    }
 
-  public void press() {
-    theCommand.execute();
-  }
+    public void press() {
+        theCommand.execute();
+    }
 
-  // Now the remote can undo past commands
+    // Now the remote can undo past commands
 
-  public void pressUndo() {
-    theCommand.undo();
-  }
+    public void pressUndo() {
+        theCommand.undo();
+    }
 
 }

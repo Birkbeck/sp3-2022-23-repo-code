@@ -66,14 +66,14 @@ public class ZipCat {
          * automatically.
          */
         try (FileSystem zipFileSystem
-                = FileSystems.newFileSystem(Paths.get(args[0]), (ClassLoader) null);
+                 = FileSystems.newFileSystem(Paths.get(args[0]), (ClassLoader) null);
              InputStream input
-                = Files.newInputStream(zipFileSystem.getPath(args[1]))) {
-                    byte[] buffer = new byte[1024];
-                    int len;
-                    while ((len = input.read(buffer)) != -1) {
-                        System.out.write(buffer, 0, len);
-                    }
+                 = Files.newInputStream(zipFileSystem.getPath(args[1]))) {
+            byte[] buffer = new byte[1024];
+            int len;
+            while ((len = input.read(buffer)) != -1) {
+                System.out.write(buffer, 0, len);
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

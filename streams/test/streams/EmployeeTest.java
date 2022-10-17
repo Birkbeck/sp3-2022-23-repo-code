@@ -30,10 +30,10 @@ public class EmployeeTest {
     private static List<Employee> empList = Arrays.asList(arrayOfEmps);
     private static EmployeeRepository employeeRepository = new EmployeeRepository(empList);
 
-    @AfterClass
-    public static void cleanup() throws IOException {
-        Files.deleteIfExists(Paths.get(fileName));
-    }
+//    @AfterClass
+//    public static void cleanup() throws IOException {
+//        Files.deleteIfExists(Paths.get(fileName));
+//    }
 
     @Test
     public void whenGetStreamFromList_ObtainStream() {
@@ -65,6 +65,8 @@ public class EmployeeTest {
 
     @Test
     public void whenIncrementSalaryForEachEmployee_thenApplyNewSalary() {
+        final double DELTA = 0.0000001;
+
         Employee[] arrayOfEmps = {
             new Employee(1, "Jeff Bezos", 100000.0),
             new Employee(2, "Bill Gates", 200000.0),
@@ -73,38 +75,35 @@ public class EmployeeTest {
 
         List<Employee> empList = Arrays.asList(arrayOfEmps);
 
+        Double tmp = arrayOfEmps[0].getSalary() * 1.1;
         empList.stream().forEach(e -> e.salaryIncrement(10.0));
-
-//        assertThat(empList, contains(
-//            hasProperty("salary", equalTo(110000.0)),
-//            hasProperty("salary", equalTo(220000.0)),
-//            hasProperty("salary", equalTo(330000.0))
-//        ));
+        assertEquals(tmp, arrayOfEmps[0].getSalary(), DELTA);
     }
 
-    @Test
-    public void whenIncrementSalaryUsingPeek_thenApplyNewSalary() {
-        Employee[] arrayOfEmps = {
-            new Employee(1, "Jeff Bezos", 100000.0),
-            new Employee(2, "Bill Gates", 200000.0),
-            new Employee(3, "Mark Zuckerberg", 300000.0)
-        };
-
-        List<Employee> empList = Arrays.asList(arrayOfEmps);
-
-        empList.stream()
-            .peek(e -> e.salaryIncrement(10.0))
-            .peek(System.out::println)
-            .collect(Collectors.toList());
-
-//        asseetEquals(110000.0,
-//        assertThat(empList, contains(
-//            hasProperty("salary", equalTo(110000.0)),
-//            hasProperty("salary", equalTo(220000.0)),
-//            hasProperty("salary", equalTo(330000.0))
-//        ));
-    }
-
+    //
+//    @Test
+//    public void whenIncrementSalaryUsingPeek_thenApplyNewSalary() {
+//        Employee[] arrayOfEmps = {
+//            new Employee(1, "Jeff Bezos", 100000.0),
+//            new Employee(2, "Bill Gates", 200000.0),
+//            new Employee(3, "Mark Zuckerberg", 300000.0)
+//        };
+//
+//        List<Employee> empList = Arrays.asList(arrayOfEmps);
+//
+//        empList.stream()
+//            .peek(e -> e.salaryIncrement(10.0))
+//            .peek(System.out::println)
+//            .collect(Collectors.toList());
+//
+////        assertEquals(110000.0,
+////        assertThat(empList, contains(
+////            hasProperty("salary", equalTo(110000.0)),
+////            hasProperty("salary", equalTo(220000.0)),
+////            hasProperty("salary", equalTo(330000.0))
+////        ));
+//    }
+//
     @Test
     public void whenMapIdToEmployees_thenGetEmployeeStream() {
         Integer[] empIds = {1, 2, 3};
@@ -113,7 +112,7 @@ public class EmployeeTest {
             .map(employeeRepository::findById)
             .collect(Collectors.toList());
 
-        assertEquals(employees.size(), empIds.length);
+        assertEquals(empIds.length, employees.size());
     }
 
     @Test
@@ -123,11 +122,15 @@ public class EmployeeTest {
             Arrays.asList("Bill", "Gates"),
             Arrays.asList("Mark", "Zuckerberg"));
 
+//        for(var x: namesNested){
+//            System.out.println(x);
+//        }
+
         List<String> namesFlatStream = namesNested.stream()
             .flatMap(Collection::stream)
             .collect(Collectors.toList());
 
-        assertEquals(namesFlatStream.size(), namesNested.size() * 2);
+        assertEquals(namesNested.size() * 2, namesFlatStream.size());
     }
 
     @Test
@@ -137,8 +140,10 @@ public class EmployeeTest {
         List<Employee> employees = Stream.of(empIds)
             .map(employeeRepository::findById)
             .filter(e -> e != null)
-            .filter(e -> e.getSalary() > 200000)
+            .filter(e -> e.getSalary() > 200_000)
             .collect(Collectors.toList());
+
+        //employees.stream().forEach(System.out::println);
 
         assertEquals(Arrays.asList(arrayOfEmps[2]), employees);
     }
@@ -146,18 +151,19 @@ public class EmployeeTest {
     @Test
     public void whenFindFirst_thenGetFirstEmployeeInStream() {
         Integer[] empIds = {1, 2, 3, 4};
+        final Double LIMIT = Double.valueOf(100_000);
 
         Employee employee = Stream.of(empIds)
             .map(employeeRepository::findById)
             .filter(e -> e != null)
-            .filter(e -> e.getSalary() > 100000)
+            .filter(e -> e.getSalary() > LIMIT)
             .findFirst()
-            .orElse(null);
-
-        assertEquals(employee.getSalary(), new Double(200000));
+            .orElse(new Employee(10, "Donald", Double.valueOf(LIMIT)));
+        //System.out.println(employee);
+        assertEquals(employee.getSalary(), Double.valueOf(200000));
     }
 
-    @Test
+        @Test
     public void whenCollectStreamToList_thenGetList() {
         List<Employee> employees = empList.stream().collect(Collectors.toList());
 
@@ -174,10 +180,10 @@ public class EmployeeTest {
     @Test
     public void whenStreamCount_thenGetElementCount() {
         Long empCount = empList.stream()
-            .filter(e -> e.getSalary() > 200000)
+            .filter(e -> e.getSalary() > 200_000)
             .count();
 
-        assertEquals(empCount, new Long(1));
+        assertEquals(empCount, Long.valueOf(1));
     }
 
     @Test
@@ -389,12 +395,6 @@ public class EmployeeTest {
         List<Employee> empList = Arrays.asList(arrayOfEmps);
 
         empList.stream().parallel().forEach(e -> e.salaryIncrement(10.0));
-
-//        assertThat(empList, contains(
-//            hasProperty("salary", equalTo(110000.0)),
-//            hasProperty("salary", equalTo(220000.0)),
-//            hasProperty("salary", equalTo(330000.0))
-//        ));
     }
 
     @Test

@@ -2,45 +2,45 @@ package prototype;
 
 public class Sheep implements Animal {
 
-  public Sheep() {
+    public Sheep() {
 
-    System.out.println("Sheep is Made");
-
-  }
-
-  public Animal makeCopy() {
-
-    System.out.println("Sheep is Being Made");
-
-    Sheep sheepObject = null;
-
-    try {
-
-      // Calls the Animal super classes clone()
-      // Then casts the results to Sheep
-
-      sheepObject = (Sheep) super.clone();
+        System.out.println("Sheep is Made");
 
     }
 
-    // If Animal didn't extend Cloneable this error
-    // is thrown
+    public Animal makeCopy() {
 
-    catch (CloneNotSupportedException e) {
+        System.out.println("Sheep is Being Made");
 
-      System.out.println("The Sheep was Turned to Mush");
+        Sheep sheepObject = null;
 
-      e.printStackTrace();
+        try {
 
+            // Calls the Animal super classes clone()
+            // Then casts the results to Sheep
+
+            sheepObject = (Sheep) super.clone();
+
+        }
+
+        // If Animal didn't extend Cloneable this error
+        // is thrown
+
+        catch (CloneNotSupportedException e) {
+
+            System.out.println("The Sheep was Turned to Mush");
+
+            e.printStackTrace();
+
+        }
+
+        return sheepObject;
     }
 
-    return sheepObject;
-  }
+    public String toString() {
 
-  public String toString() {
+        return "Dolly is my Hero, Baaaaa";
 
-    return "Dolly is my Hero, Baaaaa";
-
-  }
+    }
 
 }

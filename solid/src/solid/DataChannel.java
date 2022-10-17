@@ -1,7 +1,7 @@
 package solid;
 
 public interface DataChannel {
-  void send(char c);
+    void send(char c);
 
-  char receive();
+    char receive();
 }

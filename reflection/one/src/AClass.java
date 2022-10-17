@@ -1,10 +1,10 @@
 public class AClass {
-    private int x;
-    protected String y;
     public boolean b;
+    protected String y;
     float f;
+    private int x;
 
-    public String getThing(String s){
+    public String getThing(String s) {
         return s;
     }
 }

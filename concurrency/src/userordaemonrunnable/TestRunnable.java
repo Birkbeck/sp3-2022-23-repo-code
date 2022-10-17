@@ -11,46 +11,46 @@ package userordaemonrunnable;
  * daemon thread, which exits when the main thread exits.
  */
 public class TestRunnable {
-  /**
-   * Entry point method into the program's main thread, which
-   * creates/starts the desired type of thread (i.e., either "user"
-   * or "daemon") and sleeps for 1 second while that thread runs in
-   * the background.  If a "daemon" thread is created it will only
-   * run as long as the main thread runs.  Conversely, if a "user"
-   * thread is created it will continue to run even after the main
-   * thread exits.
-   */
-  public static void main(String[] args) {
-    System.out.println("Entering main()");
+    /**
+     * Entry point method into the program's main thread, which
+     * creates/starts the desired type of thread (i.e., either "user"
+     * or "daemon") and sleeps for 1 second while that thread runs in
+     * the background.  If a "daemon" thread is created it will only
+     * run as long as the main thread runs.  Conversely, if a "user"
+     * thread is created it will continue to run even after the main
+     * thread exits.
+     */
+    public static void main(String[] args) {
+        System.out.println("Entering main()");
 
-    // Create a "daemon" thread if any command-line parameter is
-    // passed to the program.
-    final Boolean daemonThread = args.length > 0;
+        // Create a "daemon" thread if any command-line parameter is
+        // passed to the program.
+        final Boolean daemonThread = args.length > 0;
 
-    // Create the GCD Runnable, passing in the type of thread it
-    // runs in (i.e., "user" or "daemon").
-    GCDRunnable runnableCommand = new GCDRunnable(daemonThread ? "daemon" : "user");
+        // Create the GCD Runnable, passing in the type of thread it
+        // runs in (i.e., "user" or "daemon").
+        GCDRunnable runnableCommand = new GCDRunnable(daemonThread ? "daemon" : "user");
 
-    // Create a new Thread that will execute the runnableCommand
-    // concurrently.
-    Thread thr = new Thread(runnableCommand);
+        // Create a new Thread that will execute the runnableCommand
+        // concurrently.
+        Thread thr = new Thread(runnableCommand);
 
-    if (daemonThread) {
-      // Make the new Thread a "daemon".
-      thr.setDaemon(true);
+        if (daemonThread) {
+            // Make the new Thread a "daemon".
+            thr.setDaemon(true);
+        }
+
+        // Start the thread.
+        thr.start();
+
+        // Sleep for 1 second and then exit.
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException x) {
+            // really should do something here!
+        }
+
+        System.out.println("Leaving main()");
     }
-
-    // Start the thread.
-    thr.start();
-
-    // Sleep for 1 second and then exit.
-    try {
-      Thread.sleep(1000);
-    } catch (InterruptedException x) {
-      // really should do something here!
-    }
-
-    System.out.println("Leaving main()");
-  }
 }
 

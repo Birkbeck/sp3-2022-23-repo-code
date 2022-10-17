@@ -1,10 +1,10 @@
 package lombokexamples.delegate;
 
 public interface HasContactInformation {
-  String getEmail();
+    String getEmail();
 
-  String getFirstName();
+    String getFirstName();
 
-  String getLastName();
+    String getLastName();
 
 }

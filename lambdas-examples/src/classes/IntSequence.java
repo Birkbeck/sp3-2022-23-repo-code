@@ -1,7 +1,7 @@
 package classes;
 
 public interface IntSequence {
-  boolean hasNext();
+    boolean hasNext();
 
-  int next();
+    int next();
 }

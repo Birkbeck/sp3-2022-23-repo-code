@@ -2,48 +2,48 @@ package composite;
 
 public class SongListGenerator {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    final SongComponent industrialMusic =
+        final SongComponent industrialMusic =
             new SongGroup("Industrial",
-                    "is a style of experimental music that draws on transgressive and provocative themes");
+                "is a style of experimental music that draws on transgressive and provocative themes");
 
-    final SongComponent heavyMetalMusic =
+        final SongComponent heavyMetalMusic =
             new SongGroup("\nHeavy Metal",
-                    "is a genre of rock that developed in the late 1960s, largely in the UK and in the US");
+                "is a genre of rock that developed in the late 1960s, largely in the UK and in the US");
 
-    final SongComponent dubstepMusic =
+        final SongComponent dubstepMusic =
             new SongGroup("\nDubstep",
-                    "is a genre of electronic dance music that originated in South London, England");
+                "is a genre of electronic dance music that originated in South London, England");
 
-    // Top level component that holds everything
+        // Top level component that holds everything
 
-    final SongComponent everySong = new SongGroup("Song List", "Every Song Available");
+        final SongComponent everySong = new SongGroup("Song List", "Every Song Available");
 
-    // Composite that holds individual groups of songs
-    // This holds Songs plus a SongGroup with Songs
+        // Composite that holds individual groups of songs
+        // This holds Songs plus a SongGroup with Songs
 
-    everySong.add(industrialMusic);
+        everySong.add(industrialMusic);
 
-    industrialMusic.add(new Song("Head Like a Hole", "NIN", 1990));
-    industrialMusic.add(new Song("Headhunter", "Front 242", 1988));
+        industrialMusic.add(new Song("Head Like a Hole", "NIN", 1990));
+        industrialMusic.add(new Song("Headhunter", "Front 242", 1988));
 
-    industrialMusic.add(dubstepMusic);
+        industrialMusic.add(dubstepMusic);
 
-    dubstepMusic.add(new Song("Centipede", "Knife Party", 2012));
-    dubstepMusic.add(new Song("Tetris", "Doctor P", 2011));
+        dubstepMusic.add(new Song("Centipede", "Knife Party", 2012));
+        dubstepMusic.add(new Song("Tetris", "Doctor P", 2011));
 
-    // This is a SongGroup that just holds Songs
+        // This is a SongGroup that just holds Songs
 
-    everySong.add(heavyMetalMusic);
+        everySong.add(heavyMetalMusic);
 
-    heavyMetalMusic.add(new Song("War Pigs", "Black Sabath", 1970));
-    heavyMetalMusic.add(new Song("Ace of Spades", "Motorhead", 1980));
+        heavyMetalMusic.add(new Song("War Pigs", "Black Sabath", 1970));
+        heavyMetalMusic.add(new Song("Ace of Spades", "Motorhead", 1980));
 
-    final DiscJockey crazyLarry = new DiscJockey(everySong);
+        final DiscJockey crazyLarry = new DiscJockey(everySong);
 
-    crazyLarry.getSongList();
+        crazyLarry.getSongList();
 
-  }
+    }
 
 }

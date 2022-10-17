@@ -2,32 +2,32 @@ package mediator;
 
 public abstract class Colleague {
 
-  private Mediator mediator;
-  private int colleagueCode;
+    private final Mediator mediator;
+    private int colleagueCode;
 
 
-  public Colleague(Mediator newMediator) {
-    mediator = newMediator;
+    public Colleague(Mediator newMediator) {
+        mediator = newMediator;
 
-    mediator.addColleague(this);
+        mediator.addColleague(this);
 
-  }
+    }
 
-  public void saleOffer(String stock, int shares) {
+    public void saleOffer(String stock, int shares) {
 
-    mediator.saleOffer(stock, shares, this.colleagueCode);
+        mediator.saleOffer(stock, shares, this.colleagueCode);
 
-  }
+    }
 
-  public void buyOffer(String stock, int shares) {
+    public void buyOffer(String stock, int shares) {
 
-    mediator.buyOffer(stock, shares, this.colleagueCode);
+        mediator.buyOffer(stock, shares, this.colleagueCode);
 
-  }
+    }
 
-  public void setCollCode(int collCode) {
-    colleagueCode = collCode;
-  }
+    public void setCollCode(int collCode) {
+        colleagueCode = collCode;
+    }
 
 
 }

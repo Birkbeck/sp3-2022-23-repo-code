@@ -6,113 +6,113 @@ package template;
 
 public abstract class Sub {
 
-  boolean afterFirstCondiment;
+    boolean afterFirstCondiment;
 
-  // This is the Template Method
-  // Declare this method final to keep subclasses from
-  // changing the algorithm
+    // This is the Template Method
+    // Declare this method final to keep subclasses from
+    // changing the algorithm
 
-  final void makeSandwich() {
+    final void makeSandwich() {
 
-    cutBun();
+        cutBun();
 
-    if (customerWantsMeat()) {
+        if (customerWantsMeat()) {
 
-      addMeat();
+            addMeat();
 
-      // Here to handle new lines for spacing
-      afterFirstCondiment = true;
+            // Here to handle new lines for spacing
+            afterFirstCondiment = true;
+
+        }
+
+        if (customerWantsCheese()) {
+
+            if (afterFirstCondiment) {
+                System.out.print("\n");
+            }
+
+            addCheese();
+
+            afterFirstCondiment = true;
+
+        }
+
+        if (customerWantsVegetables()) {
+
+            if (afterFirstCondiment) {
+                System.out.print("\n");
+            }
+
+            addVegetables();
+
+            afterFirstCondiment = true;
+
+        }
+
+        if (customerWantsCondiments()) {
+
+            if (afterFirstCondiment) {
+                System.out.print("\n");
+            }
+
+            addCondiments();
+
+            afterFirstCondiment = true;
+
+        }
+
+        wrapTheHoagie();
 
     }
 
-    if (customerWantsCheese()) {
+    // These methods must be overridden by the extending subclasses
 
-      if (afterFirstCondiment) {
-        System.out.print("\n");
-      }
+    abstract void addMeat();
 
-      addCheese();
+    abstract void addCheese();
 
-      afterFirstCondiment = true;
+    abstract void addVegetables();
 
-    }
+    abstract void addCondiments();
 
-    if (customerWantsVegetables()) {
+    public void cutBun() {
 
-      if (afterFirstCondiment) {
-        System.out.print("\n");
-      }
-
-      addVegetables();
-
-      afterFirstCondiment = true;
+        System.out.println("The Hoagie is Cut");
 
     }
 
-    if (customerWantsCondiments()) {
+    // These are called hooks
+    // If the user wants to override these they can
 
-      if (afterFirstCondiment) {
-        System.out.print("\n");
-      }
+    // Use abstract methods when you want to force the user
+    // to override and use a hook when you want it to be optional
 
-      addCondiments();
+    boolean customerWantsMeat() {
+        return true;
+    }
 
-      afterFirstCondiment = true;
+    boolean customerWantsCheese() {
+        return true;
+    }
+
+    boolean customerWantsVegetables() {
+        return true;
+    }
+
+    boolean customerWantsCondiments() {
+        return true;
+    }
+
+    public void wrapTheHoagie() {
+
+        System.out.println("\nWrap the Hoagie");
 
     }
 
-    wrapTheHoagie();
+    public void afterFirstCondiment() {
 
-  }
+        System.out.println("\n");
 
-  // These methods must be overridden by the extending subclasses
-
-  abstract void addMeat();
-
-  abstract void addCheese();
-
-  abstract void addVegetables();
-
-  abstract void addCondiments();
-
-  public void cutBun() {
-
-    System.out.println("The Hoagie is Cut");
-
-  }
-
-  // These are called hooks
-  // If the user wants to override these they can
-
-  // Use abstract methods when you want to force the user
-  // to override and use a hook when you want it to be optional
-
-  boolean customerWantsMeat() {
-    return true;
-  }
-
-  boolean customerWantsCheese() {
-    return true;
-  }
-
-  boolean customerWantsVegetables() {
-    return true;
-  }
-
-  boolean customerWantsCondiments() {
-    return true;
-  }
-
-  public void wrapTheHoagie() {
-
-    System.out.println("\nWrap the Hoagie");
-
-  }
-
-  public void afterFirstCondiment() {
-
-    System.out.println("\n");
-
-  }
+    }
 
 }

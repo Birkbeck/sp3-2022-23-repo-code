@@ -5,19 +5,32 @@ package reflection.question3.testclasses;
  */
 public class GoodStudentAssignment {
 
-    public static void main(String[] args) { }
-
-    private int a;
-    private final int b = 3;
     private static final int d = -1;
+    private final int b = 3;
+    private int a;
+    GoodStudentAssignment() {
+    }
 
-    GoodStudentAssignment(){}
+    GoodStudentAssignment(int a) {
+        this.a = a;
+    }
 
-    GoodStudentAssignment(int a){  this.a = a; }
+    public static void main(String[] args) {
+    }
 
-    public Integer GoodIntReturnType() { return 1; }
-    public String GoodReturnType() { return "1"; }
+    private static Integer helper1() {
+        return 10;
+    }
 
-    private static Integer helper1(){ return 10;}
-    private static String helper2(){ return "helpful"; }
+    private static String helper2() {
+        return "helpful";
+    }
+
+    public Integer GoodIntReturnType() {
+        return 1;
+    }
+
+    public String GoodReturnType() {
+        return "1";
+    }
 }

@@ -1,11 +1,11 @@
 package bridge.shapes;
 
 public class BridgePatternTest {
-  public static void main(String[] args) {
-    Shape tri = new Triangle(new RedColour());
-    tri.applyColour();
+    public static void main(String[] args) {
+        Shape tri = new Triangle(new RedColour());
+        tri.applyColour();
 
-    Shape pent = new Pentagon(new GreenColour());
-    pent.applyColour();
-  }
+        Shape pent = new Pentagon(new GreenColour());
+        pent.applyColour();
+    }
 }

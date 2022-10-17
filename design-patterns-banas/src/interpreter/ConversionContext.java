@@ -2,80 +2,80 @@ package interpreter;
 
 public class ConversionContext {
 
-  String[] partsOfQues;
-  private String conversionQues = "";
-  private String conversionResponse = "";
-  private String fromConversion = "";
-  private String toConversion = "";
-  private double quantity;
+    String[] partsOfQues;
+    private String conversionQues = "";
+    private String conversionResponse = "";
+    private String fromConversion = "";
+    private String toConversion = "";
+    private final double quantity;
 
-  public ConversionContext(String input) {
-    this.conversionQues = input;
+    public ConversionContext(String input) {
+        this.conversionQues = input;
 
-    partsOfQues = getInput().split(" ");
+        partsOfQues = getInput().split(" ");
 
-    fromConversion = getCapitalized(partsOfQues[1]);
+        fromConversion = getCapitalized(partsOfQues[1]);
 
-    toConversion = getLowercase(partsOfQues[3]);
+        toConversion = getLowercase(partsOfQues[3]);
 
-    quantity = Double.valueOf(partsOfQues[0]);
+        quantity = Double.valueOf(partsOfQues[0]);
 
-    conversionResponse = partsOfQues[0] + " " + partsOfQues[1] + " equals ";
-  }
+        conversionResponse = partsOfQues[0] + " " + partsOfQues[1] + " equals ";
+    }
 
-  public String getInput() {
-    return conversionQues;
-  }
+    public String getInput() {
+        return conversionQues;
+    }
 
-  public String getFromConversion() {
-    return fromConversion;
-  }
+    public String getFromConversion() {
+        return fromConversion;
+    }
 
-  public String getToConversion() {
-    return toConversion;
-  }
+    public String getToConversion() {
+        return toConversion;
+    }
 
-  public String getResponse() {
-    return conversionResponse;
-  }
+    public String getResponse() {
+        return conversionResponse;
+    }
 
-  public double getQuantity() {
-    return quantity;
-  }
+    public double getQuantity() {
+        return quantity;
+    }
 
-  // Make String lowercase
+    // Make String lowercase
 
-  public String getLowercase(String wordToLowercase) {
+    public String getLowercase(String wordToLowercase) {
 
-    return wordToLowercase.toLowerCase();
-
-  }
-
-  // Capitalizes the first letter of a word
-
-  public String getCapitalized(String wordToCapitalize) {
-
-    // Make characters lower case
-
-    wordToCapitalize = wordToCapitalize.toLowerCase();
-
-    // Make the first character uppercase
-
-    wordToCapitalize = Character.toUpperCase(wordToCapitalize.charAt(0))
-            + wordToCapitalize.substring(1);
-
-    // Put s on the end if not there
-
-    final int lengthOfWord = wordToCapitalize.length();
-
-    if ((wordToCapitalize.charAt(lengthOfWord - 1)) != 's') {
-
-      wordToCapitalize = new StringBuffer(wordToCapitalize).insert(lengthOfWord, "s").toString();
+        return wordToLowercase.toLowerCase();
 
     }
 
-    return wordToCapitalize;
+    // Capitalizes the first letter of a word
 
-  }
+    public String getCapitalized(String wordToCapitalize) {
+
+        // Make characters lower case
+
+        wordToCapitalize = wordToCapitalize.toLowerCase();
+
+        // Make the first character uppercase
+
+        wordToCapitalize = Character.toUpperCase(wordToCapitalize.charAt(0))
+            + wordToCapitalize.substring(1);
+
+        // Put s on the end if not there
+
+        final int lengthOfWord = wordToCapitalize.length();
+
+        if ((wordToCapitalize.charAt(lengthOfWord - 1)) != 's') {
+
+            wordToCapitalize = new StringBuffer(wordToCapitalize).insert(lengthOfWord, "s").toString();
+
+        }
+
+        return wordToCapitalize;
+
+    }
 
 }

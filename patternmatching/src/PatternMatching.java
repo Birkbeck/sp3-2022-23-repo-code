@@ -39,16 +39,14 @@ public class PatternMatching {
     // Guarded Patterns
 
     static void test(Object obj) {
-        switch (obj) {
-            case String s:
-                if (s.length() == 1) {
-                    System.out.println("Short: " + s);
-                } else {
-                    System.out.println(s);
-                }
-                break;
-            default:
-                System.out.println("Not a string");
+        if (obj instanceof String s) {
+            if (s.length() == 1) {
+                System.out.println("Short: " + s);
+            } else {
+                System.out.println(s);
+            }
+        } else {
+            System.out.println("Not a string");
         }
     }
 

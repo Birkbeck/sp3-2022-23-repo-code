@@ -4,9 +4,9 @@ import java.lang.reflect.Constructor;
 import java.util.Arrays;
 
 /**
- An object created from a fully qualified Java class name and list of arguments,
- or just a fully qualified Java class name, any arguments being
- supplied via the command line.
+ * An object created from a fully qualified Java class name and list of arguments,
+ * or just a fully qualified Java class name, any arguments being
+ * supplied via the command line.
  */
 public class ObjectCreator {
 
@@ -32,7 +32,7 @@ public class ObjectCreator {
      * elements in the array argumentsList and all elements are passed to the
      * constructor as an appropriate type.
      *
-     * @param className fully qualified Java class name as a string
+     * @param className     fully qualified Java class name as a string
      * @param argumentsList String array of arguments or an empty String array to
      *                      pass to the class constructor
      * @return instantiated Object of class type className or null if construction is
@@ -67,6 +67,7 @@ public class ObjectCreator {
 
     /**
      * Return the correct Wrapper class if testClass is primitive
+     *
      * @param testClass class being tested
      * @return Object class or testClass
      */

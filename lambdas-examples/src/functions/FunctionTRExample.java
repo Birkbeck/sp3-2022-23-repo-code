@@ -18,7 +18,7 @@ import java.util.function.Function;
  * On printing the employee name list we get the names of all the employees as required.
  */
 public class FunctionTRExample {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Function<Employee, String> funcEmpToString = (Employee e) -> {
             return e.getName();
         };

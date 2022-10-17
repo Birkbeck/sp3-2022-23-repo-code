@@ -5,46 +5,46 @@ import java.util.Properties;
 
 public class MessageSupportFactory {
 
-  private static MessageSupportFactory instance = null;
+    private static MessageSupportFactory instance = null;
 
-  static {
-    instance = new MessageSupportFactory();
-  }
-
-  private MessageRenderer renderer = null;
-  private MessageProvider provider = null;
-
-  private MessageSupportFactory() {
-    Properties props = new Properties();
-
-    try {
-      try (var fis = new FileInputStream("bean.properties")) {
-        props.load(fis);
-      }
-
-      // get the implementation classes
-      String rendererClass = props.getProperty("renderer.class");
-      String providerClass = props.getProperty("provider.class");
-
-      renderer = (MessageRenderer) Class.forName(rendererClass)
-        .getDeclaredConstructor().newInstance();
-      provider = (MessageProvider) Class.forName(providerClass)
-        .getDeclaredConstructor().newInstance();
-    } catch (Exception ex) {
-      ex.printStackTrace();
+    static {
+        instance = new MessageSupportFactory();
     }
-  }
 
-  public static MessageSupportFactory getInstance() {
-    return instance;
-  }
+    private MessageRenderer renderer = null;
+    private MessageProvider provider = null;
 
-  public MessageRenderer getMessageRenderer() {
-    return renderer;
-  }
+    private MessageSupportFactory() {
+        Properties props = new Properties();
 
-  public MessageProvider getMessageProvider() {
-    return provider;
-  }
+        try {
+            try (var fis = new FileInputStream("bean.properties")) {
+                props.load(fis);
+            }
+
+            // get the implementation classes
+            String rendererClass = props.getProperty("renderer.class");
+            String providerClass = props.getProperty("provider.class");
+
+            renderer = (MessageRenderer) Class.forName(rendererClass)
+                .getDeclaredConstructor().newInstance();
+            provider = (MessageProvider) Class.forName(providerClass)
+                .getDeclaredConstructor().newInstance();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static MessageSupportFactory getInstance() {
+        return instance;
+    }
+
+    public MessageRenderer getMessageRenderer() {
+        return renderer;
+    }
+
+    public MessageProvider getMessageProvider() {
+        return provider;
+    }
 
 }

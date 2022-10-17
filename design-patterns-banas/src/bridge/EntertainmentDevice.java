@@ -9,38 +9,38 @@ package bridge;
 // This allows me to use an infinite variety of devices and remotes
 
 abstract class EntertainmentDevice {
-  public int deviceState;
-  public int maxSetting;
-  public int volumeLevel;
+    public int deviceState;
+    public int maxSetting;
+    public int volumeLevel;
 
-  public abstract void buttonFivePressed();
+    public abstract void buttonFivePressed();
 
-  public abstract void buttonSixPressed();
+    public abstract void buttonSixPressed();
 
-  public void deviceFeedback() {
+    public void deviceFeedback() {
 
-    if (deviceState > maxSetting || deviceState < 0) {
-      deviceState = 0;
+        if (deviceState > maxSetting || deviceState < 0) {
+            deviceState = 0;
+        }
+
+        System.out.println("On Channel " + deviceState);
+
     }
 
-    System.out.println("On Channel " + deviceState);
+    public void buttonSevenPressed() {
 
-  }
+        volumeLevel++;
 
-  public void buttonSevenPressed() {
+        System.out.println("Volume at: " + volumeLevel);
 
-    volumeLevel++;
+    }
 
-    System.out.println("Volume at: " + volumeLevel);
+    public void buttonEightPressed() {
 
-  }
+        volumeLevel--;
 
-  public void buttonEightPressed() {
+        System.out.println("Volume at: " + volumeLevel);
 
-    volumeLevel--;
-
-    System.out.println("Volume at: " + volumeLevel);
-
-  }
+    }
 
 }

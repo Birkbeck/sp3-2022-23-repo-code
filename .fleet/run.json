@@ -1,10 +1,9 @@
 {
-    "configurations": [
-        {
-          "type": "gradle",
-          "name": "",
-          "tasks": [],
-        },
-      
-    ]
+  "configurations": [
+    {
+      "type": "gradle",
+      "name": "",
+      "tasks": []
+    }
+  ]
 }

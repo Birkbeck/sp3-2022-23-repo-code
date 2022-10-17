@@ -14,7 +14,7 @@ public class BoardShaper {
         for (int i = 0; i < this.size; i++) {
             ArrayList<Integer> row = new ArrayList<Integer>();
             for (int j = 0; j < this.size; j++) {
-                row.add((i*size)+(j));
+                row.add((i * size) + (j));
             }
             rowIndexes.add(row);
         }

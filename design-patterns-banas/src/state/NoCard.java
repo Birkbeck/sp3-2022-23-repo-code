@@ -2,36 +2,36 @@ package state;
 
 public class NoCard implements ATMState {
 
-  ATMMachine atmMachine;
+    ATMMachine atmMachine;
 
-  public NoCard(ATMMachine newATMMachine) {
+    public NoCard(ATMMachine newATMMachine) {
 
-    atmMachine = newATMMachine;
+        atmMachine = newATMMachine;
 
-  }
+    }
 
-  public void insertCard() {
+    public void insertCard() {
 
-    System.out.println("Please enter your pin");
-    atmMachine.setATMState(atmMachine.getYesCardState());
+        System.out.println("Please enter your pin");
+        atmMachine.setATMState(atmMachine.getYesCardState());
 
-  }
+    }
 
-  public void ejectCard() {
+    public void ejectCard() {
 
-    System.out.println("You didn't enter a card");
+        System.out.println("You didn't enter a card");
 
-  }
+    }
 
-  public void requestCash(int cashToWithdraw) {
+    public void requestCash(int cashToWithdraw) {
 
-    System.out.println("You have not entered your card");
+        System.out.println("You have not entered your card");
 
-  }
+    }
 
-  public void insertPin(int pinEntered) {
+    public void insertPin(int pinEntered) {
 
-    System.out.println("You have not entered your card");
+        System.out.println("You have not entered your card");
 
-  }
+    }
 }

@@ -8,29 +8,29 @@ package bridge;
 
 public class DVDDevice extends EntertainmentDevice {
 
-  public DVDDevice(int newDeviceState, int newMaxSetting) {
+    public DVDDevice(int newDeviceState, int newMaxSetting) {
 
-    super.deviceState = newDeviceState;
+        super.deviceState = newDeviceState;
 
-    super.maxSetting = newMaxSetting;
+        super.maxSetting = newMaxSetting;
 
-  }
+    }
 
-  public void buttonFivePressed() {
+    public void buttonFivePressed() {
 
-    System.out.println("DVD Skips to Chapter");
+        System.out.println("DVD Skips to Chapter");
 
-    deviceState--;
+        deviceState--;
 
-  }
+    }
 
-  public void buttonSixPressed() {
+    public void buttonSixPressed() {
 
-    System.out.println("DVD Skips to Next Chapter");
+        System.out.println("DVD Skips to Next Chapter");
 
-    deviceState++;
+        deviceState++;
 
-  }
+    }
 
 
 }

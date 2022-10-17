@@ -5,19 +5,19 @@
  */
 public class EngineImplTwo implements Engine {
 
-  /**
-   * Starts the engine.
-   */
-  @Override
-  public void start() {
-    System.out.println("Engine started");
-  }
+    /**
+     * Starts the engine.
+     */
+    @Override
+    public void start() {
+        System.out.println("Engine started");
+    }
 
-  /**
-   * Stops the engine.
-   */
-  @Override
-  public void stop() {
-    System.out.println("Engine stopped");
-  }
+    /**
+     * Stops the engine.
+     */
+    @Override
+    public void stop() {
+        System.out.println("Engine stopped");
+    }
 }

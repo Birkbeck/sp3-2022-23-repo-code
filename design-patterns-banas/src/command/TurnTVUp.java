@@ -2,26 +2,26 @@ package command;
 
 public class TurnTVUp implements Command {
 
-  ElectronicDevice theDevice;
+    ElectronicDevice theDevice;
 
-  public TurnTVUp(ElectronicDevice newDevice) {
+    public TurnTVUp(ElectronicDevice newDevice) {
 
-    theDevice = newDevice;
+        theDevice = newDevice;
 
-  }
+    }
 
-  @Override
-  public void execute() {
+    @Override
+    public void execute() {
 
-    theDevice.volumeUp();
+        theDevice.volumeUp();
 
-  }
+    }
 
-  @Override
-  public void undo() {
+    @Override
+    public void undo() {
 
-    theDevice.volumenDown();
+        theDevice.volumenDown();
 
-  }
+    }
 
 }

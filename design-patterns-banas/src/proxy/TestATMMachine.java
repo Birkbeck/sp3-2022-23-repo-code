@@ -2,40 +2,40 @@ package proxy;
 
 public class TestATMMachine {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    final ATMMachine atmMachine = new ATMMachine();
+        final ATMMachine atmMachine = new ATMMachine();
 
-    atmMachine.insertCard();
+        atmMachine.insertCard();
 
-    atmMachine.ejectCard();
+        atmMachine.ejectCard();
 
-    atmMachine.insertCard();
+        atmMachine.insertCard();
 
-    atmMachine.insertPin(1234);
+        atmMachine.insertPin(1234);
 
-    atmMachine.requestCash(2000);
+        atmMachine.requestCash(2000);
 
-    atmMachine.insertCard();
+        atmMachine.insertCard();
 
-    atmMachine.insertPin(1234);
+        atmMachine.insertPin(1234);
 
-    // NEW STUFF : Proxy Design Pattern Code
-    // The interface limits access to just the methods you want
-    // made accessible
+        // NEW STUFF : Proxy Design Pattern Code
+        // The interface limits access to just the methods you want
+        // made accessible
 
-    final GetATMData realATMMachine = new ATMMachine();
+        final GetATMData realATMMachine = new ATMMachine();
 
-    final GetATMData atmProxy = new ATMProxy();
+        final GetATMData atmProxy = new ATMProxy();
 
-    System.out.println("\nCurrent ATM State " + atmProxy.getATMState());
+        System.out.println("\nCurrent ATM State " + atmProxy.getATMState());
 
-    System.out.println("\nCash in ATM Machine $" + atmProxy.getCashInMachine());
+        System.out.println("\nCash in ATM Machine $" + atmProxy.getCashInMachine());
 
-    // The user can't perform this action because ATMProxy doesn't
-    // have access to that potentially harmful method
-    // atmProxy.setCashInMachine(10000);
+        // The user can't perform this action because ATMProxy doesn't
+        // have access to that potentially harmful method
+        // atmProxy.setCashInMachine(10000);
 
-  }
+    }
 
 }

@@ -5,29 +5,29 @@ import java.util.List;
 
 public class Drawing implements Shape {
 
-  //collection of Shapes
-  private List<Shape> shapes = new ArrayList<>();
+    //collection of Shapes
+    private final List<Shape> shapes = new ArrayList<>();
 
-  @Override
-  public void draw(String fillColor) {
-    for (Shape sh : shapes) {
-      sh.draw(fillColor);
+    @Override
+    public void draw(String fillColor) {
+        for (Shape sh : shapes) {
+            sh.draw(fillColor);
+        }
     }
-  }
 
-  //adding shape to drawing
-  public void add(Shape s) {
-    this.shapes.add(s);
-  }
+    //adding shape to drawing
+    public void add(Shape s) {
+        this.shapes.add(s);
+    }
 
-  //removing shape from drawing
-  public void remove(Shape s) {
-    shapes.remove(s);
-  }
+    //removing shape from drawing
+    public void remove(Shape s) {
+        shapes.remove(s);
+    }
 
-  //removing all the shapes
-  public void clear() {
-    System.out.println("Clearing all the shapes from drawing");
-    this.shapes.clear();
-  }
+    //removing all the shapes
+    public void clear() {
+        System.out.println("Clearing all the shapes from drawing");
+        this.shapes.clear();
+    }
 }

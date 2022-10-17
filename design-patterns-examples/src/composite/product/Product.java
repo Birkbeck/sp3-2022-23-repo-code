@@ -2,13 +2,13 @@ package composite.product;
 
 public abstract class Product {
 
-  protected float mPrice;
+    protected float mPrice;
 
-  public Product(float price) {
-    mPrice = price;
-  }
+    public Product(float price) {
+        mPrice = price;
+    }
 
-  public float getPrice() {
-    return mPrice;
-  }
+    public float getPrice() {
+        return mPrice;
+    }
 }

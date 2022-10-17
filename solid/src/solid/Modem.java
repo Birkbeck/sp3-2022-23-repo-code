@@ -1,11 +1,11 @@
 package solid;
 
 public interface Modem {
-  void dial(String pno);
+    void dial(String pno);
 
-  void hangup();
+    void hangup();
 
-  void send(char c);
+    void send(char c);
 
-  char receive();
+    char receive();
 }

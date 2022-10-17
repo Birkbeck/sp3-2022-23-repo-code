@@ -6,9 +6,9 @@ package generics.boxes;
 
 
 public class BoxUpper<E> {
-  private E data;
+    private E data;
 
-  public void copyFrom(Box<? extends E> b) {
-    this.data = b.getData();
-  }
+    public void copyFrom(Box<? extends E> b) {
+        this.data = b.getData();
+    }
 }

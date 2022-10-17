@@ -1,17 +1,17 @@
 package generics;
 
 public class BankAccount {
-  private float balance;
+    private float balance;
 
-  public void deposit(float amount) {
-    this.balance += amount;
-  }
+    public BankAccount() {
+        balance = 100;
+    }
 
-  public float showBalance() {
-    return this.balance;
-  }
+    public void deposit(float amount) {
+        this.balance += amount;
+    }
 
-  public BankAccount() {
-    balance = 100;
-  }
+    public float showBalance() {
+        return this.balance;
+    }
 }

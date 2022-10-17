@@ -4,7 +4,7 @@ package proxy;
 // that you want the proxy to provide access to
 
 public interface GetATMData {
-  ATMState getATMState();
+    ATMState getATMState();
 
-  int getCashInMachine();
+    int getCashInMachine();
 }

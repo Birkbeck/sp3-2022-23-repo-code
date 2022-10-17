@@ -3,58 +3,58 @@ package template;
 
 public class ItalianSub extends Sub {
 
-  String[] meatUsed = {"Salami", "Pepperoni", "Capicola Ham"};
-  String[] cheeseUsed = {"Provolone"};
-  String[] veggiesUsed = {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
-  String[] condimentsUsed = {"Oil", "Vinegar"};
+    String[] meatUsed = {"Salami", "Pepperoni", "Capicola Ham"};
+    String[] cheeseUsed = {"Provolone"};
+    String[] veggiesUsed = {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
+    String[] condimentsUsed = {"Oil", "Vinegar"};
 
-  public void addMeat() {
+    public void addMeat() {
 
-    System.out.print("Adding the Meat: ");
+        System.out.print("Adding the Meat: ");
 
-    for (String meat : meatUsed) {
+        for (String meat : meatUsed) {
 
-      System.out.print(meat + " ");
+            System.out.print(meat + " ");
 
-    }
-
-  }
-
-  public void addCheese() {
-
-    System.out.print("Adding the Cheese: ");
-
-    for (String cheese : cheeseUsed) {
-
-      System.out.print(cheese + " ");
+        }
 
     }
 
-  }
+    public void addCheese() {
 
-  public void addVegetables() {
+        System.out.print("Adding the Cheese: ");
 
-    System.out.print("Adding the Vegetables: ");
+        for (String cheese : cheeseUsed) {
 
-    for (String vegetable : veggiesUsed) {
+            System.out.print(cheese + " ");
 
-      System.out.print(vegetable + " ");
-
-    }
-
-  }
-
-  public void addCondiments() {
-
-    System.out.print("Adding the Condiments: ");
-
-    for (String condiment : condimentsUsed) {
-
-      System.out.print(condiment + " ");
+        }
 
     }
 
-  }
+    public void addVegetables() {
+
+        System.out.print("Adding the Vegetables: ");
+
+        for (String vegetable : veggiesUsed) {
+
+            System.out.print(vegetable + " ");
+
+        }
+
+    }
+
+    public void addCondiments() {
+
+        System.out.print("Adding the Condiments: ");
+
+        for (String condiment : condimentsUsed) {
+
+            System.out.print(condiment + " ");
+
+        }
+
+    }
 
 }
 

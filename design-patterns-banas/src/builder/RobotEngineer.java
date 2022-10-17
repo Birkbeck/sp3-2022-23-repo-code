@@ -5,34 +5,34 @@ package builder;
 
 public class RobotEngineer {
 
-  private RobotBuilder robotBuilder;
+    private final RobotBuilder robotBuilder;
 
-  // OldRobotBuilder specification is sent to the engineer
+    // OldRobotBuilder specification is sent to the engineer
 
-  public RobotEngineer(RobotBuilder robotBuilder) {
+    public RobotEngineer(RobotBuilder robotBuilder) {
 
-    this.robotBuilder = robotBuilder;
+        this.robotBuilder = robotBuilder;
 
-  }
+    }
 
-  // Return the Robot made from the OldRobotBuilder spec
+    // Return the Robot made from the OldRobotBuilder spec
 
-  public Robot getRobot() {
+    public Robot getRobot() {
 
-    return this.robotBuilder.getRobot();
+        return this.robotBuilder.getRobot();
 
-  }
+    }
 
-  // Execute the methods specific to the RobotBuilder
-  // that implements RobotBuilder (OldRobotBuilder)
+    // Execute the methods specific to the RobotBuilder
+    // that implements RobotBuilder (OldRobotBuilder)
 
-  public void makeRobot() {
+    public void makeRobot() {
 
-    this.robotBuilder.buildRobotHead();
-    this.robotBuilder.buildRobotTorso();
-    this.robotBuilder.buildRobotArms();
-    this.robotBuilder.buildRobotLegs();
+        this.robotBuilder.buildRobotHead();
+        this.robotBuilder.buildRobotTorso();
+        this.robotBuilder.buildRobotArms();
+        this.robotBuilder.buildRobotLegs();
 
-  }
+    }
 
 }

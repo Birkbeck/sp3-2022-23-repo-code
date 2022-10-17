@@ -1,3 +1,5 @@
+package bank;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -278,7 +280,7 @@ public class JavaBankList extends JFrame {
             //add a new account to the list using the Account constructor
             Accounts.add(new Account(Name, Accountnum, Balance));
             //Set a temp Account for display purposes
-            Account tempAccount = (Account) Accounts.get(Accounts.size() - 1);
+            Account tempAccount = Accounts.get(Accounts.size() - 1);
             //Display tempAccount
             displayJTextArea.setText(Accounts.size() + " " + tempAccount.getaccountname() + " " + tempAccount.getaccountnum() + " " + tempAccount.getbalance());
 
@@ -330,7 +332,7 @@ public class JavaBankList extends JFrame {
 
             for (int i = 0; i < Accounts.size(); i++) {
                 // get the element and set to TempAccount
-                Account tempAccount = (Account) Accounts.get(i);
+                Account tempAccount = Accounts.get(i);
                 // if account number matches and deposit field has entry then deposit in account
                 if ((tempAccount.accountnum == Accountnum) && (Deposit > 0)) {
                     tempAccount.setbalance(tempAccount.getbalance() + Deposit);
@@ -367,7 +369,7 @@ public class JavaBankList extends JFrame {
             displayJTextArea.setText("No Accounts currently created");
         } else {
             for (int i = 0; i < Accounts.size(); i++) {
-                Account tempAccount = (Account) Accounts.get(i);
+                Account tempAccount = Accounts.get(i);
                 displayJTextArea.append(tempAccount.getaccountname() + " " + tempAccount.getaccountnum() + " " + tempAccount.getbalance() + "\n");
 
 

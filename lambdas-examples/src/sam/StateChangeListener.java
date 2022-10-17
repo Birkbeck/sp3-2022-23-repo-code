@@ -2,6 +2,6 @@ package sam;
 
 public interface StateChangeListener {
 
-  void onStateChange(State oldState, State newState);
+    void onStateChange(State oldState, State newState);
 
 }

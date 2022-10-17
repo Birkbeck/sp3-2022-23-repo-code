@@ -17,7 +17,7 @@ public class CustomerAccount {
             "name='" + name + '\'' +
             '}';
     }
-    
+
     public String getName() {
         return name;
     }

@@ -1,3 +1,5 @@
+package bank;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -14,8 +16,8 @@ public class JavaBank extends JFrame {
      */
     private static final long serialVersionUID = 1L;
     // one-dimensional array to store Account names as Empty or Used
-    static String AccountNames[] = new String[MaxAccounts];
-    static Account myAccounts[] = new Account[MaxAccounts];
+    static String[] AccountNames = new String[MaxAccounts];
+    static Account[] myAccounts = new Account[MaxAccounts];
     static int noAccounts = 0;
     private static JTextArea displayJTextArea;
     // Make these variables publicly available

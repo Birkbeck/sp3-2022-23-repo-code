@@ -7,20 +7,20 @@ package memento;
 
 public class Memento {
 
-  // The article stored in memento Object
+    // The article stored in memento Object
 
-  private String article;
+    private final String article;
 
-  // Save a new article String to the memento Object
+    // Save a new article String to the memento Object
 
-  public Memento(String articleSave) {
-    article = articleSave;
-  }
+    public Memento(String articleSave) {
+        article = articleSave;
+    }
 
-  // Return the value stored in article
+    // Return the value stored in article
 
-  public String getSavedArticle() {
-    return article;
-  }
+    public String getSavedArticle() {
+        return article;
+    }
 
 }

@@ -2,37 +2,37 @@ package state;
 
 public class NoCash implements ATMState {
 
-  ATMMachine atmMachine;
+    ATMMachine atmMachine;
 
-  public NoCash(ATMMachine newATMMachine) {
+    public NoCash(ATMMachine newATMMachine) {
 
-    atmMachine = newATMMachine;
+        atmMachine = newATMMachine;
 
-  }
+    }
 
-  public void insertCard() {
+    public void insertCard() {
 
-    System.out.println("We don't have any money");
-    System.out.println("Your card is ejected");
+        System.out.println("We don't have any money");
+        System.out.println("Your card is ejected");
 
-  }
+    }
 
-  public void ejectCard() {
+    public void ejectCard() {
 
-    System.out.println("We don't have any money");
-    System.out.println("There is no card to eject");
+        System.out.println("We don't have any money");
+        System.out.println("There is no card to eject");
 
-  }
+    }
 
-  public void requestCash(int cashToWithdraw) {
+    public void requestCash(int cashToWithdraw) {
 
-    System.out.println("We don't have any money");
+        System.out.println("We don't have any money");
 
-  }
+    }
 
-  public void insertPin(int pinEntered) {
+    public void insertPin(int pinEntered) {
 
-    System.out.println("We don't have any money");
+        System.out.println("We don't have any money");
 
-  }
+    }
 }

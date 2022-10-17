@@ -2,39 +2,39 @@ package abstractfactory;
 
 public class UFOEnemyShip extends EnemyShip {
 
-  // We define the type of ship we want to create
-  // by stating we want to use the factory that
-  // makes enemy ships
+    // We define the type of ship we want to create
+    // by stating we want to use the factory that
+    // makes enemy ships
 
-  EnemyShipFactory shipFactory;
+    EnemyShipFactory shipFactory;
 
-  // The enemy ship required parts list is sent to
-  // this method. They state that the enemy ship
-  // must have a weapon and engine assigned. That
-  // object also states the specific parts needed
-  // to make a regular UFO versus a Boss UFO
+    // The enemy ship required parts list is sent to
+    // this method. They state that the enemy ship
+    // must have a weapon and engine assigned. That
+    // object also states the specific parts needed
+    // to make a regular UFO versus a Boss UFO
 
-  public UFOEnemyShip(EnemyShipFactory shipFactory) {
+    public UFOEnemyShip(EnemyShipFactory shipFactory) {
 
-    this.shipFactory = shipFactory;
+        this.shipFactory = shipFactory;
 
-  }
+    }
 
-  // EnemyShipBuilding calls this method to build a
-  // specific UFOEnemyShip
+    // EnemyShipBuilding calls this method to build a
+    // specific UFOEnemyShip
 
-  @Override
-  public void makeShip() {
+    @Override
+    public void makeShip() {
 
-    System.out.println("Making enemy ship " + getName());
+        System.out.println("Making enemy ship " + getName());
 
-    // The specific weapon & engine needed were passed in
-    // shipFactory. We are assigning those specific part
-    // objects to the UFOEnemyShip here
+        // The specific weapon & engine needed were passed in
+        // shipFactory. We are assigning those specific part
+        // objects to the UFOEnemyShip here
 
-    weapon = shipFactory.addESGun();
-    engine = shipFactory.addESEngine();
+        weapon = shipFactory.addESGun();
+        engine = shipFactory.addESEngine();
 
-  }
+    }
 
 }

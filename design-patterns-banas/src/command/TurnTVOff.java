@@ -2,28 +2,28 @@ package command;
 
 public class TurnTVOff implements Command {
 
-  ElectronicDevice theDevice;
+    ElectronicDevice theDevice;
 
-  public TurnTVOff(ElectronicDevice newDevice) {
+    public TurnTVOff(ElectronicDevice newDevice) {
 
-    theDevice = newDevice;
+        theDevice = newDevice;
 
-  }
+    }
 
-  @Override
-  public void execute() {
+    @Override
+    public void execute() {
 
-    theDevice.off();
+        theDevice.off();
 
-  }
+    }
 
-  // Used if you want to allow for undo
-  // Do the opposite of execute()
-  @Override
-  public void undo() {
+    // Used if you want to allow for undo
+    // Do the opposite of execute()
+    @Override
+    public void undo() {
 
-    theDevice.on();
+        theDevice.on();
 
-  }
+    }
 
 }

@@ -8,28 +8,28 @@ package bridge;
 
 public class TVDevice extends EntertainmentDevice {
 
-  public TVDevice(int newDeviceState, int newMaxSetting) {
+    public TVDevice(int newDeviceState, int newMaxSetting) {
 
-    deviceState = newDeviceState;
+        deviceState = newDeviceState;
 
-    maxSetting = newMaxSetting;
+        maxSetting = newMaxSetting;
 
-  }
+    }
 
-  public void buttonFivePressed() {
+    public void buttonFivePressed() {
 
-    System.out.println("Channel Down");
+        System.out.println("Channel Down");
 
-    deviceState--;
+        deviceState--;
 
-  }
+    }
 
-  public void buttonSixPressed() {
+    public void buttonSixPressed() {
 
-    System.out.println("Channel Up");
+        System.out.println("Channel Up");
 
-    deviceState++;
+        deviceState++;
 
-  }
+    }
 
 }

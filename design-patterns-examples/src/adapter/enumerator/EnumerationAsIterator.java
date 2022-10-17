@@ -9,23 +9,23 @@ import java.util.Iterator;
  */
 public record EnumerationAsIterator(Enumeration enumeration) implements Iterator {
 
-  @Override
-  public boolean hasNext() {
-    return enumeration.hasMoreElements();
-  }
+    @Override
+    public boolean hasNext() {
+        return enumeration.hasMoreElements();
+    }
 
-  @Override
-  public Object next() {
-    return enumeration.nextElement();
-  }
+    @Override
+    public Object next() {
+        return enumeration.nextElement();
+    }
 
-  /**
-   * Not supported.
-   *
-   * @throws UnsupportedOperationException if invoked
-   */
-  @Override
-  public void remove() {
-    throw new UnsupportedOperationException("Cannot remove");
-  }
+    /**
+     * Not supported.
+     *
+     * @throws UnsupportedOperationException if invoked
+     */
+    @Override
+    public void remove() {
+        throw new UnsupportedOperationException("Cannot remove");
+    }
 }

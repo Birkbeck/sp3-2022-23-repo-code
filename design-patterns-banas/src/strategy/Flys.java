@@ -12,7 +12,7 @@ package strategy;
 
 public interface Flys {
 
-  String fly();
+    String fly();
 
 }
 
@@ -20,12 +20,12 @@ public interface Flys {
 
 class ItFlys implements Flys {
 
-  @Override
-  public String fly() {
+    @Override
+    public String fly() {
 
-    return "Flying High";
+        return "Flying High";
 
-  }
+    }
 
 }
 
@@ -33,11 +33,11 @@ class ItFlys implements Flys {
 
 class CantFly implements Flys {
 
-  @Override
-  public String fly() {
+    @Override
+    public String fly() {
 
-    return "I can't fly";
+        return "I can't fly";
 
-  }
+    }
 
 }

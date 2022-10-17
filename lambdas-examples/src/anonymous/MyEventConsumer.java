@@ -1,5 +1,5 @@
 package anonymous;
 
 public interface MyEventConsumer {
-  void consume(Object event);
+    void consume(Object event);
 }

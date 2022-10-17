@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Parameterised set up that runs all tests on multiple
  * student classes. Each class to be tested should be added to the
  * ValueSource annotation array before <b>all</b> tests.
- *
+ * <p>
  * The tests fail if the class under test has any of the following:
  * <ul><li>more than four fields</li>
  * <li>any non-private fields</li>
@@ -34,19 +34,19 @@ public class ParamTest {
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     public void classHasFewerThanFiveFields(Class testClass) {
         assertTrue(testClass.getDeclaredFields().length < 5,
-                "More than four fields declared.");
+            "More than four fields declared.");
     }
 
     @ParameterizedTest
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     void classOnlyHasPrivateFields(Class testClass) {
         Field[] flds = testClass.getDeclaredFields();
-        for (Field fld: flds) {
+        for (Field fld : flds) {
             // Bitwise OR the field modifier int with the PRIVATE value.
             // If the method is static the operation result will
             // still equal the original modifier value.
             assertEquals(fld.getModifiers(), fld.getModifiers() | Modifier.PRIVATE,
-                    "Non-private field found.");
+                "Non-private field found.");
         }
     }
 
@@ -54,9 +54,9 @@ public class ParamTest {
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     void classHasNoFieldsOfArrayListType(Class testClass) {
         Field[] flds = testClass.getDeclaredFields();
-        for (Field fld: flds) {
+        for (Field fld : flds) {
             assertNotEquals(java.util.ArrayList.class, fld.getType(),
-                    "Field with an ArrayList type found.");
+                "Field with an ArrayList type found.");
         }
     }
 
@@ -68,25 +68,26 @@ public class ParamTest {
         // other than the main method
         int helper = 0;
         Method[] methods = testClass.getDeclaredMethods();
-        for(Method method: methods) {
+        for (Method method : methods) {
             // Bitwise OR the method modifier int with the STATIC value.
             // If the method is static the operation result will
             // still equal the original modifier value.
             if ((method.getModifiers() | Modifier.STATIC) == method.getModifiers() &&
-                    ! method.getName().equals("main"))
-            { helper += 1;}
+                !method.getName().equals("main")) {
+                helper += 1;
+            }
         }
         assertTrue(helper >= 2,
-                "The class has fewer than 2 helper methods.");
+            "The class has fewer than 2 helper methods.");
     }
 
     @ParameterizedTest
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     void noMethodsHaveThrowClauses(Class testClass) {
         Method[] methods = testClass.getDeclaredMethods();
-        for(Method method: methods) {
+        for (Method method : methods) {
             assertEquals(0, method.getExceptionTypes().length,
-                    "Method with a throw clause found in the class.");
+                "Method with a throw clause found in the class.");
         }
     }
 
@@ -94,9 +95,9 @@ public class ParamTest {
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     void noMethodsReturnAnInt(Class testClass) {
         Method[] methods = testClass.getDeclaredMethods();
-        for(Method method: methods) {
+        for (Method method : methods) {
             assertNotEquals(int.class, method.getReturnType(),
-                    "Method returning an int found in the class.");
+                "Method returning an int found in the class.");
         }
     }
 
@@ -104,7 +105,7 @@ public class ParamTest {
     @ValueSource(classes = {BadStudentAssignment.class, GoodStudentAssignment.class})
     void classHasAZeroArgumentConstructor(Class testClass) {
         Constructor[] constrs = testClass.getDeclaredConstructors();
-        for(Constructor constr: constrs) {
+        for (Constructor constr : constrs) {
             if (constr.getParameterCount() == 0) {
                 return;
             }

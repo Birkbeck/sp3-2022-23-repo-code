@@ -18,29 +18,29 @@ import java.util.function.Function;
  * then the result is the list of first names of each employee.
  */
 public class FunctionTRComposeExample {
-  public static void main(String args[]) {
-    Function<Employee, String> funcEmpToString = (Employee e) -> {
-      return e.getName();
-    };
-    Function<Employee, Employee> funcEmpFirstName =
+    public static void main(String[] args) {
+        Function<Employee, String> funcEmpToString = (Employee e) -> {
+            return e.getName();
+        };
+        Function<Employee, Employee> funcEmpFirstName =
             (Employee e) -> {
-              int index = e.getName().indexOf(" ");
-              String firstName = e.getName().substring(0, index);
-              e.setName(firstName);
-              return e;
+                int index = e.getName().indexOf(" ");
+                String firstName = e.getName().substring(0, index);
+                e.setName(firstName);
+                return e;
             };
-    List<Employee> employeeList = Util.load();
-    List<String> empFirstNameList = convertEmpListToNamesList(employeeList, funcEmpToString.compose(funcEmpFirstName));
-    empFirstNameList.forEach(str -> {
-      System.out.print(" " + str);
-    });
-  }
-
-  public static List<String> convertEmpListToNamesList(List<Employee> employeeList, Function<Employee, String> funcEmpToString) {
-    List<String> empNameList = new ArrayList<>();
-    for (Employee emp : employeeList) {
-      empNameList.add(funcEmpToString.apply(emp));
+        List<Employee> employeeList = Util.load();
+        List<String> empFirstNameList = convertEmpListToNamesList(employeeList, funcEmpToString.compose(funcEmpFirstName));
+        empFirstNameList.forEach(str -> {
+            System.out.print(" " + str);
+        });
     }
-    return empNameList;
-  }
+
+    public static List<String> convertEmpListToNamesList(List<Employee> employeeList, Function<Employee, String> funcEmpToString) {
+        List<String> empNameList = new ArrayList<>();
+        for (Employee emp : employeeList) {
+            empNameList.add(funcEmpToString.apply(emp));
+        }
+        return empNameList;
+    }
 }

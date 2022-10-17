@@ -8,29 +8,29 @@ import java.util.Random;
 
 public class EnemyRobot {
 
-  Random generator = new Random();
+    Random generator = new Random();
 
-  public void smashWithHands() {
+    public void smashWithHands() {
 
-    final int attackDamage = generator.nextInt(10) + 1;
+        final int attackDamage = generator.nextInt(10) + 1;
 
-    System.out.println("Enemy Robot Causes " + attackDamage + " Damage With Its Hands");
+        System.out.println("Enemy Robot Causes " + attackDamage + " Damage With Its Hands");
 
-  }
+    }
 
-  public void walkForward() {
+    public void walkForward() {
 
-    final int movement = generator.nextInt(5) + 1;
+        final int movement = generator.nextInt(5) + 1;
 
-    System.out.println("Enemy Robot Walks Forward " + movement + " spaces");
+        System.out.println("Enemy Robot Walks Forward " + movement + " spaces");
 
-  }
+    }
 
-  public void reactToHuman(String driverName) {
+    public void reactToHuman(String driverName) {
 
-    System.out.println("Enemy Robot Tramps on " + driverName);
+        System.out.println("Enemy Robot Tramps on " + driverName);
 
-  }
+    }
 
 
 }

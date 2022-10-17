@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class SingletonScopeTest {
 
-    private static Logger log = LoggerFactory.getLogger(SingletonScopeTest.class);
+    private static final Logger log = LoggerFactory.getLogger(SingletonScopeTest.class);
 
     @Resource(name = "bean1")
     CustomerAccount account1;

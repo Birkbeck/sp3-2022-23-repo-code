@@ -3,13 +3,13 @@ package generics.boxes;
 import generics.Foo;
 
 public class FooBox {
-  private Foo data;
+    private final Foo data;
 
-  public FooBox(Foo data) {
-    this.data = data;
-  }
+    public FooBox(Foo data) {
+        this.data = data;
+    }
 
-  public Foo getData() {
-    return data;
-  }
+    public Foo getData() {
+        return data;
+    }
 }

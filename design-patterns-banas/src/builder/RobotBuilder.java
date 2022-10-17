@@ -5,14 +5,14 @@ package builder;
 
 public interface RobotBuilder {
 
-  void buildRobotHead();
+    void buildRobotHead();
 
-  void buildRobotTorso();
+    void buildRobotTorso();
 
-  void buildRobotArms();
+    void buildRobotArms();
 
-  void buildRobotLegs();
+    void buildRobotLegs();
 
-  Robot getRobot();
+    Robot getRobot();
 
 }

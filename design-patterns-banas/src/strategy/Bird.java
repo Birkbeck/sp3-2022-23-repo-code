@@ -2,19 +2,19 @@ package strategy;
 
 public class Bird extends Animal {
 
-  // The constructor initializes all objects
+    // The constructor initializes all objects
 
-  public Bird() {
+    public Bird() {
 
-    super();
+        super();
 
-    setSound("Tweet");
+        setSound("Tweet");
 
-    // We set the Flys interface polymorphically
-    // This sets the behavior as a non-flying Animal
+        // We set the Flys interface polymorphically
+        // This sets the behavior as a non-flying Animal
 
-    flyingType = new ItFlys();
+        flyingType = new ItFlys();
 
-  }
+    }
 
 }

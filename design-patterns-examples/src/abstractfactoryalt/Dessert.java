@@ -1,5 +1,5 @@
 package abstractfactoryalt;
 
 public interface Dessert {
-  void enjoy();
+    void enjoy();
 }

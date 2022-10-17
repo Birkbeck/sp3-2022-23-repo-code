@@ -5,25 +5,25 @@ package proxy;
 
 public class ATMProxy implements GetATMData {
 
-  // Allows the user to access getATMState in the
-  // Object ATMMachine
+    // Allows the user to access getATMState in the
+    // Object ATMMachine
 
-  public ATMState getATMState() {
+    public ATMState getATMState() {
 
-    final ATMMachine realATMMachine = new ATMMachine();
+        final ATMMachine realATMMachine = new ATMMachine();
 
-    return realATMMachine.getATMState();
-  }
+        return realATMMachine.getATMState();
+    }
 
-  // Allows the user to access getCashInMachine
-  // in the Object ATMMachine
+    // Allows the user to access getCashInMachine
+    // in the Object ATMMachine
 
-  public int getCashInMachine() {
+    public int getCashInMachine() {
 
-    final ATMMachine realATMMachine = new ATMMachine();
+        final ATMMachine realATMMachine = new ATMMachine();
 
-    return realATMMachine.getCashInMachine();
+        return realATMMachine.getCashInMachine();
 
-  }
+    }
 
 }

@@ -6,29 +6,29 @@ package factory;
 
 public class EnemyShipFactory {
 
-  // This could be used as a static method if we
-  // are willing to give up subclassing it
+    // This could be used as a static method if we
+    // are willing to give up subclassing it
 
-  public EnemyShip makeEnemyShip(String newShipType) {
+    public EnemyShip makeEnemyShip(String newShipType) {
 
-    final EnemyShip newShip = null;
+        final EnemyShip newShip = null;
 
-    if (newShipType.equals("U")) {
+        if (newShipType.equals("U")) {
 
-      return new UFOEnemyShip();
+            return new UFOEnemyShip();
 
-    } else if (newShipType.equals("R")) {
+        } else if (newShipType.equals("R")) {
 
-      return new RocketEnemyShip();
+            return new RocketEnemyShip();
 
-    } else if (newShipType.equals("B")) {
+        } else if (newShipType.equals("B")) {
 
-      return new BigUFOEnemyShip();
+            return new BigUFOEnemyShip();
 
-    } else {
-      return null;
+        } else {
+            return null;
+        }
+
     }
-
-  }
 
 }

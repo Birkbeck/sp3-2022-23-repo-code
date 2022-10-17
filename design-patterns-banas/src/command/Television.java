@@ -1,38 +1,38 @@
 package command;
 
 public class Television implements ElectronicDevice {
-  private int volume;
+    private int volume;
 
-  @Override
-  public void on() {
+    @Override
+    public void on() {
 
-    System.out.println("TV is on");
+        System.out.println("TV is on");
 
-  }
+    }
 
-  @Override
-  public void off() {
+    @Override
+    public void off() {
 
-    System.out.println("TV is off");
+        System.out.println("TV is off");
 
-  }
+    }
 
-  @Override
-  public void volumeUp() {
+    @Override
+    public void volumeUp() {
 
-    volume++;
+        volume++;
 
-    System.out.println("TV Volume is at: " + volume);
+        System.out.println("TV Volume is at: " + volume);
 
-  }
+    }
 
-  @Override
-  public void volumenDown() {
+    @Override
+    public void volumenDown() {
 
-    volume--;
+        volume--;
 
-    System.out.println("TV Volume is at: " + volume);
+        System.out.println("TV Volume is at: " + volume);
 
-  }
+    }
 
 }

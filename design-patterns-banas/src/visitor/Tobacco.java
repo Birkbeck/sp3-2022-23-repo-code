@@ -2,18 +2,18 @@ package visitor;
 
 class Tobacco implements Visitable {
 
-  private double price;
+    private final double price;
 
-  Tobacco(double item) {
-    price = item;
-  }
+    Tobacco(double item) {
+        price = item;
+    }
 
-  public double accept(Visitor visitor) {
-    return visitor.visit(this);
-  }
+    public double accept(Visitor visitor) {
+        return visitor.visit(this);
+    }
 
-  public double getPrice() {
-    return price;
-  }
+    public double getPrice() {
+        return price;
+    }
 
 }

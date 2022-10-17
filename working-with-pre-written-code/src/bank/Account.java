@@ -1,3 +1,5 @@
+package bank;
+
 public class Account {
 
     // class variables

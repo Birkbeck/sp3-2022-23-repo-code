@@ -8,9 +8,9 @@ public class Board {
         this.size = size;
         this.spots = new ArrayList<String>();
         for (int i = 0; i < size; i++) {
-            this.spots.add(String.valueOf(3*i));
-            this.spots.add(String.valueOf(3*i + 1));
-            this.spots.add(String.valueOf(3*i + 2));
+            this.spots.add(String.valueOf(3 * i));
+            this.spots.add(String.valueOf(3 * i + 1));
+            this.spots.add(String.valueOf(3 * i + 2));
         }
     }
 

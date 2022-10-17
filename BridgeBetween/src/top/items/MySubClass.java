@@ -5,8 +5,8 @@ import top.ThingBridge;
 
 public class MySubClass extends Container {
 
-  public void doSomething(){
-    var t = new ThingBridge(this.getThings());
-    t.getBridgeitem();
-  }
+    public void doSomething() {
+        var t = new ThingBridge(this.getThings());
+        t.getBridgeitem();
+    }
 }

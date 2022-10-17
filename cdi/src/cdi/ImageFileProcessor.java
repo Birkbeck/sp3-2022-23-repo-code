@@ -3,7 +3,7 @@ package cdi;
 import javax.inject.Inject;
 
 public class ImageFileProcessor implements ImageFileEditor {
-    private ImageFileEditor imageFileEditor;
+    private final ImageFileEditor imageFileEditor;
 
     @Inject
     public ImageFileProcessor(ImageFileEditor imageFileEditor) {

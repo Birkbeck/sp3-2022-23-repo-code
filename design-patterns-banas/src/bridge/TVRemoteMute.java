@@ -6,14 +6,14 @@ package bridge;
 
 public class TVRemoteMute extends RemoteButton {
 
-  public TVRemoteMute(EntertainmentDevice newDevice) {
-    super(newDevice);
-  }
+    public TVRemoteMute(EntertainmentDevice newDevice) {
+        super(newDevice);
+    }
 
-  public void buttonNinePressed() {
+    public void buttonNinePressed() {
 
-    System.out.println("TV was Muted");
+        System.out.println("TV was Muted");
 
-  }
+    }
 
 }

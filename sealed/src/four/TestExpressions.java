@@ -2,7 +2,7 @@ package four;
 
 sealed interface Expr
     permits ConstantExpr, PlusExpr, TimesExpr, NegExpr {
-    public int eval();
+    int eval();
 }
 
 public class TestExpressions {

@@ -1,7 +1,7 @@
 package abstractfactoryalt;
 
 public class Gelato implements Dessert {
-  public void enjoy() {
-    System.out.println("Enjoying ice cream");
-  }
+    public void enjoy() {
+        System.out.println("Enjoying ice cream");
+    }
 }

@@ -2,32 +2,32 @@ package decorator;
 
 public class Mozzarella extends ToppingDecorator {
 
-  public Mozzarella(Pizza newPizza) {
+    public Mozzarella(Pizza newPizza) {
 
-    super(newPizza);
+        super(newPizza);
 
-    System.out.println("Adding Dough");
+        System.out.println("Adding Dough");
 
-    System.out.println("Adding Moz");
-  }
+        System.out.println("Adding Moz");
+    }
 
-  // Returns the result of calling getDescription() for
-  // PlainPizza and adds " mozzarella" to it
+    // Returns the result of calling getDescription() for
+    // PlainPizza and adds " mozzarella" to it
 
-  @Override
-  public String getDescription() {
+    @Override
+    public String getDescription() {
 
-    return tempPizza.getDescription() + ", mozzarella";
+        return tempPizza.getDescription() + ", mozzarella";
 
-  }
+    }
 
-  @Override
-  public double getCost() {
+    @Override
+    public double getCost() {
 
-    System.out.println("Cost of Moz: " + .50);
+        System.out.println("Cost of Moz: " + .50);
 
-    return tempPizza.getCost() + .50;
+        return tempPizza.getCost() + .50;
 
-  }
+    }
 
 }

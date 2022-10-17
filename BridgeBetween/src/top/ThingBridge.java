@@ -6,5 +6,6 @@ import lombok.NonNull;
 
 @Data
 public class ThingBridge {
-  @NonNull Thing bridgeitem;
+    @NonNull
+    Thing bridgeitem;
 }

@@ -3,12 +3,12 @@ package defaults;
 import java.math.BigDecimal;
 
 public interface BonusCalculator {
-  BigDecimal getSalary();
+    BigDecimal getSalary();
 
-  BigDecimal getBonusPercent();
+    BigDecimal getBonusPercent();
 
-  default BigDecimal getBonus() {
-    return getSalary().multiply(getBonusPercent())
+    default BigDecimal getBonus() {
+        return getSalary().multiply(getBonusPercent())
             .divide(new BigDecimal(100));
-  }
+    }
 }

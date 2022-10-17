@@ -17,12 +17,11 @@ public class Construct {
             // For a constructor that required two Strings one could
             // specify it in the following manner: (one of many approaches)
             var css = c.getConstructor(
-                new Class[]{String.class, String.class}
-            );
+                String.class, String.class);
             // So, the "trick" is to form a "Class" array and populate it
             // with the types you require.
 
-            var obj = css.newInstance(new Object[]{"x", "y"});
+            var obj = css.newInstance("x", "y");
             // This will call the constructor with two String args and
             // provide values "x" and "y" for those strings.
             System.out.println(obj);

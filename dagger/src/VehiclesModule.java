@@ -9,20 +9,20 @@ import dagger.Module;
 @Module
 interface VehiclesModule {
 
-  /**
-   * Creates an {@link EngineImpl}.
-   *
-   * @return an {@link EngineImpl}
-   */
+    /**
+     * Creates an {@link EngineImpl}.
+     *
+     * @return an {@link EngineImpl}
+     */
 //
-  @Binds
-  Engine bindEngine(EngineImpl e);
+    @Binds
+    Engine bindEngine(EngineImpl e);
 
-  /**
-   * Creates a {@link BrandImpl}.
-   *
-   * @return a {@link BrandImpl}
-   */
-  @Binds
-  Brand bindBrand(BrandImpl b);
+    /**
+     * Creates a {@link BrandImpl}.
+     *
+     * @return a {@link BrandImpl}
+     */
+    @Binds
+    Brand bindBrand(BrandImpl b);
 }

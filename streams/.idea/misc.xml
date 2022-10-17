@@ -21,7 +21,7 @@
   <component name="CopyThePathConfig">
     <option name="pathPrefix" value="/" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="14" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SuppressionsComponent">

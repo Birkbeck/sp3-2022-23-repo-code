@@ -1,15 +1,15 @@
 package abstractfactoryalt;
 
 public class ItalianRestaurant implements Restaurant {
-  public Appetizer getAppetizer() {
-    return new Pizzette();
-  }
+    public Appetizer getAppetizer() {
+        return new Pizzette();
+    }
 
-  public Entree getEntree() {
-    return new Pasta();
-  }
+    public Entree getEntree() {
+        return new Pasta();
+    }
 
-  public Dessert getDessert() {
-    return new Gelato();
-  }
+    public Dessert getDessert() {
+        return new Gelato();
+    }
 }

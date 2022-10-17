@@ -19,20 +19,20 @@ import java.util.function.Function;
  * This is how the static method Function.identity() works.
  */
 public class FunctionTRIdentityExample {
-  public static void main(String args[]) {
-    Function<Employee, String> funcEmpToString = (Employee e) -> {
-      return e.getName();
-    };
-    List<Employee> employeeList = Util.load();
-    List<Employee> empNameListInitials = applyIdentityToEmpList(employeeList, Function.identity());
-    empNameListInitials.forEach(System.out::println);
-  }
-
-  public static List<Employee> applyIdentityToEmpList(List<Employee> employeeList, Function<Employee, Employee> funcEmpToEmp) {
-    List<Employee> empNameList = new ArrayList<Employee>();
-    for (Employee emp : employeeList) {
-      empNameList.add(funcEmpToEmp.apply(emp));
+    public static void main(String[] args) {
+        Function<Employee, String> funcEmpToString = (Employee e) -> {
+            return e.getName();
+        };
+        List<Employee> employeeList = Util.load();
+        List<Employee> empNameListInitials = applyIdentityToEmpList(employeeList, Function.identity());
+        empNameListInitials.forEach(System.out::println);
     }
-    return empNameList;
-  }
+
+    public static List<Employee> applyIdentityToEmpList(List<Employee> employeeList, Function<Employee, Employee> funcEmpToEmp) {
+        List<Employee> empNameList = new ArrayList<Employee>();
+        for (Employee emp : employeeList) {
+            empNameList.add(funcEmpToEmp.apply(emp));
+        }
+        return empNameList;
+    }
 }

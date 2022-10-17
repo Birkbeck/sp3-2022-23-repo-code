@@ -2,26 +2,26 @@ package command;
 
 public class TurnTVOn implements Command {
 
-  ElectronicDevice theDevice;
+    ElectronicDevice theDevice;
 
-  public TurnTVOn(ElectronicDevice newDevice) {
+    public TurnTVOn(ElectronicDevice newDevice) {
 
-    theDevice = newDevice;
+        theDevice = newDevice;
 
-  }
+    }
 
-  @Override
-  public void execute() {
+    @Override
+    public void execute() {
 
-    theDevice.on();
+        theDevice.on();
 
-  }
+    }
 
-  @Override
-  public void undo() {
+    @Override
+    public void undo() {
 
-    theDevice.off();
+        theDevice.off();
 
-  }
+    }
 
 }

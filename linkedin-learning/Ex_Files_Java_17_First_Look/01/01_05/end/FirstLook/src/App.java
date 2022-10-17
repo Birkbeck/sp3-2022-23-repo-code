@@ -1,7 +1,7 @@
 public class App {
 
     public static void enjoyConsumable(Consumable consumable) {
-        switch(consumable) {
+        switch (consumable) {
             case Coffee c -> c.addCream();
             case Tea t -> t.stir();
             default -> System.out.println("It's ready to go");

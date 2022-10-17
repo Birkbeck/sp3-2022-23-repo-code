@@ -1,17 +1,17 @@
 package adapter.current;
 
 public class Volt {
-  private int volts;
+    private int volts;
 
-  public Volt(int v) {
-    setVolts(v);
-  }
+    public Volt(int v) {
+        setVolts(v);
+    }
 
-  public int getVolts() {
-    return volts;
-  }
+    public int getVolts() {
+        return volts;
+    }
 
-  public void setVolts(int volts) {
-    this.volts = volts;
-  }
+    public void setVolts(int volts) {
+        this.volts = volts;
+    }
 }

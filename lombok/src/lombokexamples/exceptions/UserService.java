@@ -5,12 +5,12 @@ import java.net.URL;
 
 public class UserService {
 
-  public URL buildUsersApiUrl() {
-    try {
-      return new URL("https://apiserver.com/users");
-    } catch (MalformedURLException ex) {
-      // Malformed? Really?
-      throw new RuntimeException(ex);
+    public URL buildUsersApiUrl() {
+        try {
+            return new URL("https://apiserver.com/users");
+        } catch (MalformedURLException ex) {
+            // Malformed? Really?
+            throw new RuntimeException(ex);
+        }
     }
-  }
 }

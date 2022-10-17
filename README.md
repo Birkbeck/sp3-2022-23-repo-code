@@ -1,10 +1,11 @@
 # Example code — 2022-23
 
-The examples, exercises, and coursework files for the Software and Programming III module at Birkbeck, University of London.
+The examples, exercises, and coursework files for the Software and Programming III module at Birkbeck, University of
+London.
 
 ------
 
-+ session-??  — materials from the relevant session.
++ session-?? — materials from the relevant session.
 + anonymous
 + arrays
 + bridgebetween — some sample code that illustrates how to access data from a (essentially) package private class.

@@ -1,16 +1,18 @@
 package anonymous;
 
+@FunctionalInterface
+interface SomeInterface {
+    String myMethod();
+//  void myOtherMethod();
+}
+
 public class Listener {
 
-  public String addListener(SomeInterface s) {
-    return "";
-  }
-
-  public static void main(String[] args) {
-    Listener ls = new Listener();
+    public static void main(String[] args) {
+        Listener ls = new Listener();
 //    ls.addListener(new MySomeInterface());
 //    ls.addListener(new MySomeInterfaceAgain());
-    // ...
+        // ...
 //    ls.addListener(new SomeInterface() {  // Anonymous Inner Class - AIC
 //      @Override
 //      public void myMethod() {
@@ -21,14 +23,12 @@ public class Listener {
 ////        // TODO
 ////      }
 //    });
-    String str = ls.addListener(() -> "asdad");
-  }
-}
+        String str = ls.addListener(() -> "asdad");
+    }
 
-@FunctionalInterface
-interface SomeInterface {
-  String myMethod();
-//  void myOtherMethod();
+    public String addListener(SomeInterface s) {
+        return "";
+    }
 }
 
 //class MySomeInterface implements SomeInterface {

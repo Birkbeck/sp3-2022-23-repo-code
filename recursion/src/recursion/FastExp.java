@@ -6,18 +6,18 @@ package recursion;
 //
 
 public class FastExp {
-  public static int fastExp(int base, int exp) {
-    if (exp == 0) {
-      return 1;
-    } else if ((exp % 2) != 0) {
-      return base * fastExp(base, exp - 1);
-    } else {
-      return fastExp(base * base, exp / 2);
+    public static int fastExp(int base, int exp) {
+        if (exp == 0) {
+            return 1;
+        } else if ((exp % 2) != 0) {
+            return base * fastExp(base, exp - 1);
+        } else {
+            return fastExp(base * base, exp / 2);
+        }
     }
-  }
 
-  public static void main(String[] args) {
-    System.out.println(fastExp(2, 3));
-    System.out.println(fastExp(5, 5));
-  }
+    public static void main(String[] args) {
+        System.out.println(fastExp(2, 3));
+        System.out.println(fastExp(5, 5));
+    }
 }

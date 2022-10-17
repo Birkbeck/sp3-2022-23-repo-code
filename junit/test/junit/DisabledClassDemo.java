@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 @Disabled
 class DisabledClassDemo {
-  @Test
-  void testWillBeSkipped() {
-  }
+    @Test
+    void testWillBeSkipped() {
+    }
 }

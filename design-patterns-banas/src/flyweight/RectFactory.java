@@ -11,26 +11,26 @@ import java.util.HashMap;
 
 public class RectFactory {
 
-  // The HashMap uses the color as the key for every
-  // rectangle it will make up to 8 total
+    // The HashMap uses the color as the key for every
+    // rectangle it will make up to 8 total
 
-  private static final HashMap<Color, MyRect> rectsByColor = new HashMap<Color, MyRect>();
+    private static final HashMap<Color, MyRect> rectsByColor = new HashMap<Color, MyRect>();
 
-  public static MyRect getRect(Color color) {
-    MyRect rect = rectsByColor.get(color);
+    public static MyRect getRect(Color color) {
+        MyRect rect = rectsByColor.get(color);
 
-    // Checks if a rectangle with a specific
-    // color has been made. If not it makes a
-    // new one, otherwise it returns one made already
+        // Checks if a rectangle with a specific
+        // color has been made. If not it makes a
+        // new one, otherwise it returns one made already
 
-    if (rect == null) {
-      rect = new MyRect(color);
+        if (rect == null) {
+            rect = new MyRect(color);
 
-      // Add new rectangle to HashMap
+            // Add new rectangle to HashMap
 
-      rectsByColor.put(color, rect);
+            rectsByColor.put(color, rect);
 
+        }
+        return rect;
     }
-    return rect;
-  }
 }

@@ -6,7 +6,6 @@
 package lambdas_02_01;
 
 /**
- *
  * @author MFisher
  */
 public class Book {
@@ -14,14 +13,14 @@ public class Book {
     private String authorFName;
     private String authorLName;
     private int pages;
-  
-    public Book(String title, String authorFName, String authorLName, 
-            int pages) {
+
+    public Book(String title, String authorFName, String authorLName,
+                int pages) {
         this.title = title;
         this.authorFName = authorFName;
         this.authorLName = authorLName;
         this.pages = pages;
-     
+
     }
 
     public String getTitle() {
@@ -55,8 +54,8 @@ public class Book {
     public void setPages(int pages) {
         this.pages = pages;
     }
-    public String toString()
-    {
-        return getTitle()+" Written By: "+getAuthorFName()+" " +getAuthorLName()+"\n";
+
+    public String toString() {
+        return getTitle() + " Written By: " + getAuthorFName() + " " + getAuthorLName() + "\n";
     }
 }

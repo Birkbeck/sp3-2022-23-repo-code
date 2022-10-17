@@ -4,119 +4,119 @@ import java.util.ArrayList;
 
 public class StockMediator implements Mediator {
 
-  private ArrayList<Colleague> colleagues;
-  private ArrayList<StockOffer> stockBuyOffers;
-  private ArrayList<StockOffer> stockSaleOffers;
+    private final ArrayList<Colleague> colleagues;
+    private final ArrayList<StockOffer> stockBuyOffers;
+    private final ArrayList<StockOffer> stockSaleOffers;
 
-  private int colleagueCodes;
+    private int colleagueCodes;
 
-  public StockMediator() {
+    public StockMediator() {
 
-    colleagues = new ArrayList<Colleague>();
-    stockBuyOffers = new ArrayList<StockOffer>();
-    stockSaleOffers = new ArrayList<StockOffer>();
-  }
+        colleagues = new ArrayList<Colleague>();
+        stockBuyOffers = new ArrayList<StockOffer>();
+        stockSaleOffers = new ArrayList<StockOffer>();
+    }
 
-  public void addColleague(Colleague newColleague) {
+    public void addColleague(Colleague newColleague) {
 
-    colleagues.add(newColleague);
+        colleagues.add(newColleague);
 
-    colleagueCodes++;
+        colleagueCodes++;
 
-    newColleague.setCollCode(colleagueCodes);
-
-  }
-
-  public void saleOffer(String stock, int shares, int collCode) {
-
-    boolean stockSold = false;
-
-    for (StockOffer offer : stockBuyOffers) {
-
-      if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
-
-        System.out.println(shares + " shares of " + stock +
-                " sold to colleague code " + offer.getCollCode());
-
-        stockBuyOffers.remove(offer);
-
-        stockSold = true;
-
-      }
-
-      if (stockSold) {
-        break;
-      }
+        newColleague.setCollCode(colleagueCodes);
 
     }
 
-    if (!stockSold) {
+    public void saleOffer(String stock, int shares, int collCode) {
 
-      System.out.println(shares + " shares of " + stock +
-              " added to inventory");
+        boolean stockSold = false;
 
-      final StockOffer newOffering = new StockOffer(shares, stock, collCode);
+        for (StockOffer offer : stockBuyOffers) {
 
-      stockSaleOffers.add(newOffering);
+            if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
 
-    }
+                System.out.println(shares + " shares of " + stock +
+                    " sold to colleague code " + offer.getCollCode());
 
-  }
+                stockBuyOffers.remove(offer);
 
-  public void buyOffer(String stock, int shares, int collCode) {
+                stockSold = true;
 
-    boolean stockBought = false;
+            }
 
-    for (StockOffer offer : stockSaleOffers) {
+            if (stockSold) {
+                break;
+            }
 
-      if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
+        }
 
-        System.out.println(shares + " shares of " + stock +
-                " bought by colleague code " + offer.getCollCode());
+        if (!stockSold) {
 
-        stockSaleOffers.remove(offer);
+            System.out.println(shares + " shares of " + stock +
+                " added to inventory");
 
-        stockBought = true;
+            final StockOffer newOffering = new StockOffer(shares, stock, collCode);
 
-      }
+            stockSaleOffers.add(newOffering);
 
-      if (stockBought) {
-        break;
-      }
-
-    }
-
-    if (!stockBought) {
-
-      System.out.println(shares + " shares of " + stock +
-              " added to inventory");
-
-      final StockOffer newOffering = new StockOffer(shares, stock, collCode);
-
-      stockBuyOffers.add(newOffering);
+        }
 
     }
 
-  }
+    public void buyOffer(String stock, int shares, int collCode) {
 
-  public void getstockOfferings() {
+        boolean stockBought = false;
 
-    System.out.println("\nStocks for Sale");
+        for (StockOffer offer : stockSaleOffers) {
 
-    for (StockOffer offer : stockSaleOffers) {
+            if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
 
-      System.out.println(offer.getstockShares() + " of " + offer.getStockSymbol());
+                System.out.println(shares + " shares of " + stock +
+                    " bought by colleague code " + offer.getCollCode());
+
+                stockSaleOffers.remove(offer);
+
+                stockBought = true;
+
+            }
+
+            if (stockBought) {
+                break;
+            }
+
+        }
+
+        if (!stockBought) {
+
+            System.out.println(shares + " shares of " + stock +
+                " added to inventory");
+
+            final StockOffer newOffering = new StockOffer(shares, stock, collCode);
+
+            stockBuyOffers.add(newOffering);
+
+        }
 
     }
 
-    System.out.println("\nStock Buy Offers");
+    public void getstockOfferings() {
 
-    for (StockOffer offer : stockBuyOffers) {
+        System.out.println("\nStocks for Sale");
 
-      System.out.println(offer.getstockShares() + " of " + offer.getStockSymbol());
+        for (StockOffer offer : stockSaleOffers) {
+
+            System.out.println(offer.getstockShares() + " of " + offer.getStockSymbol());
+
+        }
+
+        System.out.println("\nStock Buy Offers");
+
+        for (StockOffer offer : stockBuyOffers) {
+
+            System.out.println(offer.getstockShares() + " of " + offer.getStockSymbol());
+
+        }
 
     }
-
-  }
 
 }

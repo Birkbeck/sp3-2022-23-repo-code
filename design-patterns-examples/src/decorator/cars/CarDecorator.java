@@ -1,14 +1,14 @@
 package decorator.cars;
 
 public class CarDecorator implements Car {
-  protected Car car;
+    protected Car car;
 
-  public CarDecorator(Car c) {
-    car = c;
-  }
+    public CarDecorator(Car c) {
+        car = c;
+    }
 
-  @Override
-  public void assemble() {
-    car.assemble();
-  }
+    @Override
+    public void assemble() {
+        car.assemble();
+    }
 }

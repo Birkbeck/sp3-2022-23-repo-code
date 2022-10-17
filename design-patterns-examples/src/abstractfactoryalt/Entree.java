@@ -1,5 +1,5 @@
 package abstractfactoryalt;
 
 public interface Entree {
-  void eat();
+    void eat();
 }

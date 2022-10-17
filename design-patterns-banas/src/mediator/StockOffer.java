@@ -2,28 +2,28 @@ package mediator;
 
 public class StockOffer {
 
-  private int stockShares;
-  private String stockSymbol = "";
-  private int colleagueCode;
+    private final int stockShares;
+    private String stockSymbol = "";
+    private final int colleagueCode;
 
-  public StockOffer(int numOfShares, String stock, int collCode) {
+    public StockOffer(int numOfShares, String stock, int collCode) {
 
-    stockShares = numOfShares;
-    stockSymbol = stock;
-    colleagueCode = collCode;
+        stockShares = numOfShares;
+        stockSymbol = stock;
+        colleagueCode = collCode;
 
-  }
+    }
 
-  public int getstockShares() {
-    return stockShares;
-  }
+    public int getstockShares() {
+        return stockShares;
+    }
 
-  public String getStockSymbol() {
-    return stockSymbol;
-  }
+    public String getStockSymbol() {
+        return stockSymbol;
+    }
 
-  public int getCollCode() {
-    return colleagueCode;
-  }
+    public int getCollCode() {
+        return colleagueCode;
+    }
 
 }

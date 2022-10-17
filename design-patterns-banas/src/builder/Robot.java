@@ -4,50 +4,50 @@ package builder;
 
 public class Robot implements RobotPlan {
 
-  private String robotHead;
-  private String robotTorso;
-  private String robotArms;
-  private String robotLegs;
+    private String robotHead;
+    private String robotTorso;
+    private String robotArms;
+    private String robotLegs;
 
-  public String getRobotHead() {
-    return robotHead;
-  }
+    public String getRobotHead() {
+        return robotHead;
+    }
 
-  public void setRobotHead(String head) {
+    public void setRobotHead(String head) {
 
-    robotHead = head;
+        robotHead = head;
 
-  }
+    }
 
-  public String getRobotTorso() {
-    return robotTorso;
-  }
+    public String getRobotTorso() {
+        return robotTorso;
+    }
 
-  public void setRobotTorso(String torso) {
+    public void setRobotTorso(String torso) {
 
-    robotTorso = torso;
+        robotTorso = torso;
 
-  }
+    }
 
-  public String getRobotArms() {
-    return robotArms;
-  }
+    public String getRobotArms() {
+        return robotArms;
+    }
 
-  public void setRobotArms(String arms) {
+    public void setRobotArms(String arms) {
 
-    robotArms = arms;
+        robotArms = arms;
 
-  }
+    }
 
-  public String getRobotLegs() {
-    return robotLegs;
-  }
+    public String getRobotLegs() {
+        return robotLegs;
+    }
 
-  public void setRobotLegs(String legs) {
+    public void setRobotLegs(String legs) {
 
-    robotLegs = legs;
+        robotLegs = legs;
 
-  }
+    }
 
 
 }

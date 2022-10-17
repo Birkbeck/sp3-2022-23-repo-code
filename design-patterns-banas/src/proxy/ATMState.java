@@ -2,12 +2,12 @@ package proxy;
 
 public interface ATMState {
 
-  void insertCard();
+    void insertCard();
 
-  void ejectCard();
+    void ejectCard();
 
-  void insertPin(int pinEntered);
+    void insertPin(int pinEntered);
 
-  void requestCash(int cashToWithdraw);
+    void requestCash(int cashToWithdraw);
 
 }

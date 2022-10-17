@@ -7,15 +7,15 @@ import java.util.Iterator;
 
 public class DiscJockey {
 
-  SongsOfThe70s songs70s;
-  SongsOfThe80s songs80s;
-  SongsOfThe90s songs90s;
+    SongsOfThe70s songs70s;
+    SongsOfThe80s songs80s;
+    SongsOfThe90s songs90s;
 
-  // NEW Passing in song iterators
+    // NEW Passing in song iterators
 
-  SongIterator iter70sSongs;
-  SongIterator iter80sSongs;
-  SongIterator iter90sSongs;
+    SongIterator iter70sSongs;
+    SongIterator iter80sSongs;
+    SongIterator iter90sSongs;
 
 	/* OLD WAY
     public DiscJockey(SongsOfThe70s newSongs70s, SongsOfThe80s newSongs80s, SongsOfThe90s newSongs90s) {
@@ -27,99 +27,99 @@ public class DiscJockey {
 	}
 	*/
 
-  // NEW WAY Initialize the iterators
+    // NEW WAY Initialize the iterators
 
-  public DiscJockey(SongIterator newSongs70s, SongIterator newSongs80s, SongIterator newSongs90s) {
+    public DiscJockey(SongIterator newSongs70s, SongIterator newSongs80s, SongIterator newSongs90s) {
 
-    iter70sSongs = newSongs70s;
-    iter80sSongs = newSongs80s;
-    iter90sSongs = newSongs90s;
-
-  }
-
-  public void showTheSongs() {
-
-    // Because the SongInfo Objects are stored in different
-    // collections everything must be handled on an individual
-    // basis. This is BAD!
-
-    final ArrayList aL70sSongs = songs70s.getBestSongs();
-
-    System.out.println("Songs of the 70s\n");
-
-    for (int i = 0; i < aL70sSongs.size(); i++) {
-
-      final SongInfo bestSongs = (SongInfo) aL70sSongs.get(i);
-
-      System.out.println(bestSongs.getSongName());
-      System.out.println(bestSongs.getBandName());
-      System.out.println(bestSongs.getYearReleased() + "\n");
+        iter70sSongs = newSongs70s;
+        iter80sSongs = newSongs80s;
+        iter90sSongs = newSongs90s;
 
     }
 
-    final SongInfo[] array80sSongs = songs80s.getBestSongs();
+    public void showTheSongs() {
 
-    System.out.println("Songs of the 80s\n");
+        // Because the SongInfo Objects are stored in different
+        // collections everything must be handled on an individual
+        // basis. This is BAD!
 
-    for (int j = 0; j < array80sSongs.length; j++) {
+        final ArrayList aL70sSongs = songs70s.getBestSongs();
 
-      final SongInfo bestSongs = array80sSongs[j];
+        System.out.println("Songs of the 70s\n");
 
-      System.out.println(bestSongs.getSongName());
-      System.out.println(bestSongs.getBandName());
-      System.out.println(bestSongs.getYearReleased() + "\n");
+        for (int i = 0; i < aL70sSongs.size(); i++) {
 
-    }
+            final SongInfo bestSongs = (SongInfo) aL70sSongs.get(i);
 
-    final Hashtable<Integer, SongInfo> ht90sSongs = songs90s.getBestSongs();
+            System.out.println(bestSongs.getSongName());
+            System.out.println(bestSongs.getBandName());
+            System.out.println(bestSongs.getYearReleased() + "\n");
 
-    System.out.println("Songs of the 90s\n");
+        }
 
-    for (Enumeration<Integer> e = ht90sSongs.keys(); e.hasMoreElements(); ) {
-      final SongInfo bestSongs = ht90sSongs.get(e.nextElement());
+        final SongInfo[] array80sSongs = songs80s.getBestSongs();
 
-      System.out.println(bestSongs.getSongName());
-      System.out.println(bestSongs.getBandName());
-      System.out.println(bestSongs.getYearReleased() + "\n");
+        System.out.println("Songs of the 80s\n");
 
-    }
+        for (int j = 0; j < array80sSongs.length; j++) {
 
-  }
+            final SongInfo bestSongs = array80sSongs[j];
 
-  // Now that I can treat everything as an Iterator it cleans up
-  // the code while allowing me to treat all collections as 1
+            System.out.println(bestSongs.getSongName());
+            System.out.println(bestSongs.getBandName());
+            System.out.println(bestSongs.getYearReleased() + "\n");
 
-  public void showTheSongs2() {
+        }
 
-    System.out.println("NEW WAY WITH ITERATOR\n");
+        final Hashtable<Integer, SongInfo> ht90sSongs = songs90s.getBestSongs();
 
-    final Iterator Songs70s = iter70sSongs.createIterator();
-    final Iterator Songs80s = iter80sSongs.createIterator();
-    final Iterator Songs90s = iter90sSongs.createIterator();
+        System.out.println("Songs of the 90s\n");
 
-    System.out.println("Songs of the 70s\n");
-    printTheSongs(Songs70s);
+        for (Enumeration<Integer> e = ht90sSongs.keys(); e.hasMoreElements(); ) {
+            final SongInfo bestSongs = ht90sSongs.get(e.nextElement());
 
-    System.out.println("Songs of the 80s\n");
-    printTheSongs(Songs80s);
+            System.out.println(bestSongs.getSongName());
+            System.out.println(bestSongs.getBandName());
+            System.out.println(bestSongs.getYearReleased() + "\n");
 
-    System.out.println("Songs of the 90s\n");
-    printTheSongs(Songs90s);
-
-  }
-
-  public void printTheSongs(Iterator iterator) {
-
-    while (iterator.hasNext()) {
-
-      final SongInfo songInfo = (SongInfo) iterator.next();
-
-      System.out.println(songInfo.getSongName());
-      System.out.println(songInfo.getBandName());
-      System.out.println(songInfo.getYearReleased() + "\n");
+        }
 
     }
 
-  }
+    // Now that I can treat everything as an Iterator it cleans up
+    // the code while allowing me to treat all collections as 1
+
+    public void showTheSongs2() {
+
+        System.out.println("NEW WAY WITH ITERATOR\n");
+
+        final Iterator Songs70s = iter70sSongs.createIterator();
+        final Iterator Songs80s = iter80sSongs.createIterator();
+        final Iterator Songs90s = iter90sSongs.createIterator();
+
+        System.out.println("Songs of the 70s\n");
+        printTheSongs(Songs70s);
+
+        System.out.println("Songs of the 80s\n");
+        printTheSongs(Songs80s);
+
+        System.out.println("Songs of the 90s\n");
+        printTheSongs(Songs90s);
+
+    }
+
+    public void printTheSongs(Iterator iterator) {
+
+        while (iterator.hasNext()) {
+
+            final SongInfo songInfo = (SongInfo) iterator.next();
+
+            System.out.println(songInfo.getSongName());
+            System.out.println(songInfo.getBandName());
+            System.out.println(songInfo.getYearReleased() + "\n");
+
+        }
+
+    }
 
 }

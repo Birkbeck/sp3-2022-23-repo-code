@@ -2,5 +2,5 @@ package capture;
 
 @FunctionalInterface
 public interface MyFactory {
-  String create(char[] chars);
+    String create(char[] chars);
 }

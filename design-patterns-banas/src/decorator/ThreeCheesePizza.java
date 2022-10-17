@@ -11,30 +11,30 @@ package decorator;
 
 public class ThreeCheesePizza implements Pizza {
 
-  private String description = "Mozzarella, Fontina, Parmesan Cheese Pizza";
-  private double cost = 10.50;
+    private String description = "Mozzarella, Fontina, Parmesan Cheese Pizza";
+    private double cost = 10.50;
 
-  public String getDescription() {
+    public String getDescription() {
 
-    return description;
+        return description;
 
-  }
+    }
 
-  public void setDescription(String newDescription) {
+    public void setDescription(String newDescription) {
 
-    description = newDescription;
+        description = newDescription;
 
-  }
+    }
 
-  public double getCost() {
+    public double getCost() {
 
-    return cost;
+        return cost;
 
-  }
+    }
 
-  public void setCost(double newCost) {
+    public void setCost(double newCost) {
 
-    cost = newCost;
+        cost = newCost;
 
-  }
+    }
 }

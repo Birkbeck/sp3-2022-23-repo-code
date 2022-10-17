@@ -6,14 +6,14 @@ package bridge;
 
 public class TVRemotePause extends RemoteButton {
 
-  public TVRemotePause(EntertainmentDevice newDevice) {
-    super(newDevice);
-  }
+    public TVRemotePause(EntertainmentDevice newDevice) {
+        super(newDevice);
+    }
 
-  public void buttonNinePressed() {
+    public void buttonNinePressed() {
 
-    System.out.println("TV was Paused");
+        System.out.println("TV was Paused");
 
-  }
+    }
 
 }

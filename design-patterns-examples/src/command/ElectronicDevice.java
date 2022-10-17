@@ -2,12 +2,12 @@ package command;
 
 public interface ElectronicDevice {
 
-  void on();
+    void on();
 
-  void off();
+    void off();
 
-  void volumeUp();
+    void volumeUp();
 
-  void volumeDown();
+    void volumeDown();
 
 }

@@ -2,14 +2,14 @@ package bridge.shapes;
 
 public class Pentagon extends Shape {
 
-  public Pentagon(Colour c) {
-    super(c);
-  }
+    public Pentagon(Colour c) {
+        super(c);
+    }
 
-  @Override
-  public void applyColour() {
-    System.out.print("Pentagon filled with color ");
-    colour.applyColour();
-  }
+    @Override
+    public void applyColour() {
+        System.out.print("Pentagon filled with color ");
+        colour.applyColour();
+    }
 
 }

@@ -2,12 +2,12 @@ package factory;
 
 public class UFOEnemyShip extends EnemyShip {
 
-  public UFOEnemyShip() {
+    public UFOEnemyShip() {
 
-    setName("UFO Enemy Ship");
+        setName("UFO Enemy Ship");
 
-    setDamage(20.0);
+        setDamage(20.0);
 
-  }
+    }
 
 }

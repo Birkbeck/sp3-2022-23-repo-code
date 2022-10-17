@@ -1,13 +1,13 @@
 package generics.boxes;
 
 public class StrBox {
-  private String data;
+    private final String data;
 
-  public StrBox(String data) {
-    this.data = data;
-  }
+    public StrBox(String data) {
+        this.data = data;
+    }
 
-  public String getData() {
-    return data;
-  }
+    public String getData() {
+        return data;
+    }
 }

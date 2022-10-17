@@ -1,7 +1,7 @@
 public class App {
 
     public static void displayObjectType(Object object) {
-        switch(object) {
+        switch (object) {
             case Integer i -> System.out.println("It's an integer");
             case String s -> System.out.println("It's a string");
             case null -> System.out.println("The object is null");
@@ -10,10 +10,9 @@ public class App {
     }
 
     public static void displayObjectInformation(Object object) {
-        switch(object) {
+        switch (object) {
             case Integer i -> System.out.println("It's an integer");
-            case String s && s.contains("l") ->
-                    System.out.println("It's a string containing l " + s);
+            case String s && s.contains("l") -> System.out.println("It's a string containing l " + s);
             case null -> System.out.println("The object is null");
             default -> System.out.println("It's none of these types");
         }

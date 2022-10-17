@@ -6,53 +6,53 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StandardTestCycle {
-  @BeforeAll
-  static void setup() {
-    System.out.println("@BeforeAll - executes once before all test methods in this class");
-  }
+    @BeforeAll
+    static void setup() {
+        System.out.println("@BeforeAll - executes once before all test methods in this class");
+    }
 
-  @BeforeEach
-  void init() {
-    System.out.println("@BeforeEach - executes before each test method in this class");
-  }
+    @AfterAll
+    static void done() {
+        System.out.println("@AfterAll - executed after all test methods.\n");
+    }
 
-  @DisplayName("Single test successful")
-  @Test
-  void testSingleSuccessTest() {
-    System.out.println("Success");
-  }
+    @BeforeEach
+    void init() {
+        System.out.println("@BeforeEach - executes before each test method in this class");
+    }
 
-  @Test
-  @Disabled("Not implemented yet")
-  void testShowSomething() {
-    System.out.println("testShowSomething");
-  }
+    @DisplayName("Single test successful")
+    @Test
+    void testSingleSuccessTest() {
+        System.out.println("Success");
+    }
 
-  @AfterEach
-  void tearDown() {
-    System.out.println("@AfterEach - executed after each test method.\n");
-  }
+    @Test
+    @Disabled("Not implemented yet")
+    void testShowSomething() {
+        System.out.println("testShowSomething");
+    }
 
-  @AfterAll
-  static void done() {
-    System.out.println("@AfterAll - executed after all test methods.\n");
-  }
+    @AfterEach
+    void tearDown() {
+        System.out.println("@AfterEach - executed after each test method.\n");
+    }
 
-  @Test
-  void shouldThrowException() {
-    System.out.println("shouldThrowException");
-    Throwable exception = assertThrows(UnsupportedOperationException.class, () -> {
-        throw new UnsupportedOperationException("Not supported");
-    });
-    assertEquals(exception.getMessage(), "Not supported");
-  }
+    @Test
+    void shouldThrowException() {
+        System.out.println("shouldThrowException");
+        Throwable exception = assertThrows(UnsupportedOperationException.class, () -> {
+            throw new UnsupportedOperationException("Not supported");
+        });
+        assertEquals(exception.getMessage(), "Not supported");
+    }
 
-  @Test
-  void assertThrowsException() {
-    System.out.println("assertThrowsException");
-    String str = null;
-    assertThrows(IllegalArgumentException.class, () -> {
-      Integer.valueOf(str);
-    });
-  }
+    @Test
+    void assertThrowsException() {
+        System.out.println("assertThrowsException");
+        String str = null;
+        assertThrows(IllegalArgumentException.class, () -> {
+            Integer.valueOf(str);
+        });
+    }
 }

@@ -2,9 +2,12 @@
 
 # SOLID Notes
 
-- See <a href="https://moodle.bbk.ac.uk/mod/resource/view.php?id=1547243&redirect=1">lecture slides</a> and <a href="https://moodle.bbk.ac.uk/mod/url/view.php?id=1547244&redirect=1">Notes on SOLID by "Uncle Bob" Martin</a>.
+- See <a href="https://moodle.bbk.ac.uk/mod/resource/view.php?id=1547243&redirect=1">lecture slides</a>
+  and <a href="https://moodle.bbk.ac.uk/mod/url/view.php?id=1547244&redirect=1">Notes on SOLID by "Uncle Bob" Martin</a>
+  .
 - General principles of good software design -- flexible, robust to change, not fragile.
-- But just for this talk, I will call it "SIOLD"! Rearranging the order of the principles, in the hope that this version of the story is easier to digest.
+- But just for this talk, I will call it "SIOLD"! Rearranging the order of the principles, in the hope that this version
+  of the story is easier to digest.
 
 # Preliminary
 
@@ -39,7 +42,8 @@
 
 <img src="SOLID - I1.png"/>
 
-- When a piece of functionality is important in many places, its interface "can offer too many services to too many clients".
+- When a piece of functionality is important in many places, its interface "can offer too many services to too many
+  clients".
 - Like "S" (Single-responsibility) for classes, it's best to keep interfaces small so change is manageable.
 - Solution: Note that a class can implement multiple interfaces (whereas it can extend only one parent class).
 - Rather than implementing one big interface, split the interface into multiple smaller ones, and implement all of them.
@@ -56,10 +60,11 @@
 - Each extra feature needs changes in the classes that use it.
 - Design the code to minimise those changes.
 
-- The main technique: polymorphism -- "make related features into subclasses of a parent class". 
+- The main technique: polymorphism -- "make related features into subclasses of a parent class".
 - New features can be substituted for old ones without* changing the old code.
 
-- (*Some code must still choose which classes to use! But ideally it will be one place. Or even no places -- see "dependency injection" next week.)
+- (*Some code must still choose which classes to use! But ideally it will be one place. Or even no places -- see "
+  dependency injection" next week.)
 
 - Less files to change: Simplifies coding, building and testing the code.
 
@@ -75,7 +80,8 @@
 - Each class (or "type") in your program has an implicit contract, and its methods have pre- and post-conditions.
 - E.g. A phone makes and receives calls. A smartphone can also install and run apps.
 - "You can use a smartphone if you just need a phone, but a phone might not be enough if you need a smartphone".
-- Make sure your subclasses / implementations (SmartPhone) satisfy the contracts of the parent class / interface (Phone).
+- Make sure your subclasses / implementations (SmartPhone) satisfy the contracts of the parent class / interface (Phone)
+  .
 
 # D = Dependency Inversion
 
@@ -89,7 +95,8 @@
 - But they shouldn't depend on the concrete components directly.
 - Concrete classes are likely to change a lot.
 - By contrast, abstract classes and interfaces are more lightweight, and easier to change.
-- So the hierarchy of low-level components should have abstract classes and interfaces at the top; and the high-level components of the system should depend on these instead.
+- So the hierarchy of low-level components should have abstract classes and interfaces at the top; and the high-level
+  components of the system should depend on these instead.
 
 </span>
 

@@ -9,54 +9,54 @@ import java.util.Scanner;
 
 public class MarkovChain {
 
-  private HashMap<String, int[][]> sourceModels;
+    private final HashMap<String, int[][]> sourceModels;
 
-  public MarkovChain(HashMap<String, FileInputStream> corpora)
-          throws FileNotFoundException {
-    sourceModels = new HashMap<String, int[][]>();
-    for (String source : corpora.keySet()) {
-      sourceModels.put(source, new int[27][27]);
+    public MarkovChain(HashMap<String, FileInputStream> corpora)
+        throws FileNotFoundException {
+        sourceModels = new HashMap<String, int[][]>();
+        for (String source : corpora.keySet()) {
+            sourceModels.put(source, new int[27][27]);
+        }
+        train(corpora.keySet());
     }
-    train(corpora.keySet());
-  }
 
 
-  private void train(Collection<String> trainingFiles)
-          throws FileNotFoundException {
-    for (String source : trainingFiles) {
-      FileInputStream fis =
-              new FileInputStream(new File(source + ".corpus"));
-      System.out.println("Training " + source + " model.");
-      Scanner reader = new Scanner(fis);
-      reader.useDelimiter("[.?!]");
-      String sentence = reader.next();
-      while (sentence != null) {
-        learn(source, sentence);
-        sentence = reader.next();
-      }
+    private void train(Collection<String> trainingFiles)
+        throws FileNotFoundException {
+        for (String source : trainingFiles) {
+            FileInputStream fis =
+                new FileInputStream(new File(source + ".corpus"));
+            System.out.println("Training " + source + " model.");
+            Scanner reader = new Scanner(fis);
+            reader.useDelimiter("[.?!]");
+            String sentence = reader.next();
+            while (sentence != null) {
+                learn(source, sentence);
+                sentence = reader.next();
+            }
+        }
     }
-  }
 
-  private void learn(String source, String sentence) {
-    int[][] freqs = sourceModels.get(source);
-    int[] charIndexes = string2CharIndexes(sentence);
-    for (int i = 0; i < charIndexes.length - 1; ++i) {
-      int row = charIndexes[i];
-      int col = charIndexes[i + 1];
-      // Increment the count of char[i+1] following char[i]
-      freqs[row][col] = freqs[row][col] + 1;
+    private void learn(String source, String sentence) {
+        int[][] freqs = sourceModels.get(source);
+        int[] charIndexes = string2CharIndexes(sentence);
+        for (int i = 0; i < charIndexes.length - 1; ++i) {
+            int row = charIndexes[i];
+            int col = charIndexes[i + 1];
+            // Increment the count of char[i+1] following char[i]
+            freqs[row][col] = freqs[row][col] + 1;
+        }
     }
-  }
 
-  private int[] string2CharIndexes(String s) {
-    char[] chars = s.toUpperCase().toCharArray();
-    int[] indexes = new int[chars.length];
-    for (int i = 0; i < chars.length; ++i) {
-      indexes[i] = Character.getNumericValue(chars[i])
-              - Character.getNumericValue('A');
+    private int[] string2CharIndexes(String s) {
+        char[] chars = s.toUpperCase().toCharArray();
+        int[] indexes = new int[chars.length];
+        for (int i = 0; i < chars.length; ++i) {
+            indexes[i] = Character.getNumericValue(chars[i])
+                - Character.getNumericValue('A');
+        }
+        return indexes;
     }
-    return indexes;
-  }
 
 /*  Scala original. As I port these to Java, I delete them from here so
     this is sort of a t-do list

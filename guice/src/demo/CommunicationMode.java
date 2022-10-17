@@ -3,8 +3,8 @@ package demo;
 
 public interface CommunicationMode {
 
-    public CommunicationModel getMode();
+    CommunicationModel getMode();
 
-    public boolean sendMessage(String message);
+    boolean sendMessage(String message);
 
 }

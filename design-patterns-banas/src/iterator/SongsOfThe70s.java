@@ -5,45 +5,45 @@ import java.util.Iterator;
 
 public class SongsOfThe70s implements SongIterator {
 
-  // ArrayList holds SongInfo objects
+    // ArrayList holds SongInfo objects
 
-  ArrayList<SongInfo> bestSongs;
+    ArrayList<SongInfo> bestSongs;
 
-  public SongsOfThe70s() {
+    public SongsOfThe70s() {
 
-    bestSongs = new ArrayList<SongInfo>();
+        bestSongs = new ArrayList<SongInfo>();
 
-    addSong("Imagine", "John Lennon", 1971);
-    addSong("American Pie", "Don McLean", 1971);
-    addSong("I Will Survive", "Gloria Gaynor", 1979);
+        addSong("Imagine", "John Lennon", 1971);
+        addSong("American Pie", "Don McLean", 1971);
+        addSong("I Will Survive", "Gloria Gaynor", 1979);
 
-  }
+    }
 
-  // Add a SongInfo object to the end of the ArrayList
+    // Add a SongInfo object to the end of the ArrayList
 
-  public void addSong(String songName, String bandName, int yearReleased) {
+    public void addSong(String songName, String bandName, int yearReleased) {
 
-    final SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
+        final SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
 
-    bestSongs.add(songInfo);
+        bestSongs.add(songInfo);
 
-  }
+    }
 
 
-  // Get rid of this
-  // Return the ArrayList filled with SongInfo Objects
+    // Get rid of this
+    // Return the ArrayList filled with SongInfo Objects
 
-  public ArrayList<SongInfo> getBestSongs() {
+    public ArrayList<SongInfo> getBestSongs() {
 
-    return bestSongs;
+        return bestSongs;
 
-  }
+    }
 
-  // NEW By adding this method I'll be able to treat all
-  // collections the same
+    // NEW By adding this method I'll be able to treat all
+    // collections the same
 
-  public Iterator createIterator() {
-    return bestSongs.iterator();
-  }
+    public Iterator createIterator() {
+        return bestSongs.iterator();
+    }
 
 }

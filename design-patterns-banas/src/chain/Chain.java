@@ -8,14 +8,14 @@ package chain;
 
 public interface Chain {
 
-  // Defines the next Object to receive the data
-  // if this Object can't process it
+    // Defines the next Object to receive the data
+    // if this Object can't process it
 
-  void setNextChain(Chain nextChain);
+    void setNextChain(Chain nextChain);
 
-  // Either solves the problem or passes the data
-  // to the next Object in the chain
+    // Either solves the problem or passes the data
+    // to the next Object in the chain
 
-  void calculate(Numbers request);
+    void calculate(Numbers request);
 
 }

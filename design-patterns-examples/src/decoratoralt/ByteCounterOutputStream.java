@@ -5,19 +5,19 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class ByteCounterOutputStream extends FilterOutputStream {
-  private int counter;
+    private int counter;
 
-  public ByteCounterOutputStream(OutputStream out) {
-    super(out);
-  }
+    public ByteCounterOutputStream(OutputStream out) {
+        super(out);
+    }
 
-  @Override
-  public void write(int b) throws IOException {
-    super.write(b);
-    this.counter++;
-  }
+    @Override
+    public void write(int b) throws IOException {
+        super.write(b);
+        this.counter++;
+    }
 
-  public int getCounter() {
-    return this.counter;
-  }
+    public int getCounter() {
+        return this.counter;
+    }
 }

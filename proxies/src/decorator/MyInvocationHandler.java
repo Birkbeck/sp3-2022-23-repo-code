@@ -6,28 +6,28 @@ import java.lang.reflect.Proxy;
 
 public class MyInvocationHandler implements InvocationHandler {
 
-  private String theString;
+    private final String theString;
 
-  public MyInvocationHandler(String theString) {
-    this.theString = theString;
-  }
+    public MyInvocationHandler(String theString) {
+        this.theString = theString;
+    }
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    MyInvocationHandler handler = new MyInvocationHandler("the example string");
+        MyInvocationHandler handler = new MyInvocationHandler("the example string");
 
-    CharSequence o = (CharSequence) Proxy.newProxyInstance(
+        CharSequence o = (CharSequence) Proxy.newProxyInstance(
             MyInvocationHandler.class.getClassLoader(),
             new Class[]{CharSequence.class}, handler);
-    System.out.println(o.length());
-    System.out.println(o.subSequence(4, 8));
-  }
+        System.out.println(o.length());
+        System.out.println(o.subSequence(4, 8));
+    }
 
-  @Override
-  public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-    System.out.println("before method call : " + method.getName());
-    Object result = method.invoke(theString, args);
-    System.out.println("after method call : " + method.getName());
-    return result;
-  }
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("before method call : " + method.getName());
+        Object result = method.invoke(theString, args);
+        System.out.println("after method call : " + method.getName());
+        return result;
+    }
 }

@@ -5,10 +5,10 @@ package command;
 
 public interface Command {
 
-  void execute();
+    void execute();
 
-  // You may want to offer the option to undo a command
+    // You may want to offer the option to undo a command
 
-  void undo();
+    void undo();
 
 }

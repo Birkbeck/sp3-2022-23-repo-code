@@ -2,18 +2,18 @@ package memento;
 
 //Originator
 public class Editor {
-  //state
-  public String editorContents;
+    //state
+    public String editorContents;
 
-  public void setState(String contents) {
-    this.editorContents = contents;
-  }
+    public void setState(String contents) {
+        this.editorContents = contents;
+    }
 
-  public EditorMemento save() {
-    return new EditorMemento(editorContents);
-  }
+    public EditorMemento save() {
+        return new EditorMemento(editorContents);
+    }
 
-  public void restoreToState(EditorMemento memento) {
-    editorContents = memento.getSavedState();
-  }
+    public void restoreToState(EditorMemento memento) {
+        editorContents = memento.getSavedState();
+    }
 }

@@ -7,34 +7,34 @@ package bridge;
 
 public abstract class RemoteButton {
 
-  // A reference to a generic device using aggregation
+    // A reference to a generic device using aggregation
 
-  private EntertainmentDevice theDevice;
+    private final EntertainmentDevice theDevice;
 
-  public RemoteButton(EntertainmentDevice newDevice) {
+    public RemoteButton(EntertainmentDevice newDevice) {
 
-    theDevice = newDevice;
+        theDevice = newDevice;
 
-  }
+    }
 
-  public void buttonFivePressed() {
+    public void buttonFivePressed() {
 
-    theDevice.buttonFivePressed();
+        theDevice.buttonFivePressed();
 
-  }
+    }
 
-  public void buttonSixPressed() {
+    public void buttonSixPressed() {
 
-    theDevice.buttonSixPressed();
+        theDevice.buttonSixPressed();
 
-  }
+    }
 
-  public void deviceFeedback() {
+    public void deviceFeedback() {
 
-    theDevice.deviceFeedback();
+        theDevice.deviceFeedback();
 
-  }
+    }
 
-  public abstract void buttonNinePressed();
+    public abstract void buttonNinePressed();
 
 }

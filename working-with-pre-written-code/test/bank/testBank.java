@@ -1,3 +1,5 @@
+package bank;
+
 public class testBank {
 
     public static void main(String[] args) {

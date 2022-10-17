@@ -5,10 +5,10 @@ import javax.swing.JFrame;
 import mvc.model.Model;
 
 public class View extends JFrame {
-  private Model model;
+    private final Model model;
 
-  public View(Model model) {
-    super("MVC Demo");
-    this.model = model;
-  }
+    public View(Model model) {
+        super("MVC Demo");
+        this.model = model;
+    }
 }

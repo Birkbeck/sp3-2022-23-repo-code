@@ -11,10 +11,10 @@ import lombok.extern.java.Log;
 @Data
 @AllArgsConstructor
 public class PersonRedux {
-  private String name;
-  private String userid;
+    private String name;
+    private String userid;
 
-  public PersonRedux() {
-    this("Fred", "xyz123");
-  }
+    public PersonRedux() {
+        this("Fred", "xyz123");
+    }
 }

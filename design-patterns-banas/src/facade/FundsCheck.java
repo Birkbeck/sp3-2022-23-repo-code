@@ -2,47 +2,47 @@ package facade;
 
 public class FundsCheck {
 
-  private double cashInAccount = 1000.00;
+    private double cashInAccount = 1000.00;
 
-  public double getCashInAccount() {
-    return cashInAccount;
-  }
+    public double getCashInAccount() {
+        return cashInAccount;
+    }
 
-  public void decreaseCashInAccount(double cashWithdrawn) {
-    cashInAccount -= cashWithdrawn;
-  }
+    public void decreaseCashInAccount(double cashWithdrawn) {
+        cashInAccount -= cashWithdrawn;
+    }
 
-  public void increaseCashInAccount(double cashDeposited) {
-    cashInAccount += cashDeposited;
-  }
+    public void increaseCashInAccount(double cashDeposited) {
+        cashInAccount += cashDeposited;
+    }
 
-  public boolean haveEnoughMoney(double cashToWithdrawal) {
+    public boolean haveEnoughMoney(double cashToWithdrawal) {
 
-    if (cashToWithdrawal > getCashInAccount()) {
+        if (cashToWithdrawal > getCashInAccount()) {
 
-      System.out.println("Error: You don't have enough money");
-      System.out.println("Current Balance: " + getCashInAccount());
+            System.out.println("Error: You don't have enough money");
+            System.out.println("Current Balance: " + getCashInAccount());
 
-      return false;
+            return false;
 
-    } else {
+        } else {
 
-      decreaseCashInAccount(cashToWithdrawal);
+            decreaseCashInAccount(cashToWithdrawal);
 
-      System.out.println("Withdrawal Complete: Current Balance is " + getCashInAccount());
+            System.out.println("Withdrawal Complete: Current Balance is " + getCashInAccount());
 
-      return true;
+            return true;
+
+        }
 
     }
 
-  }
+    public void makeDeposit(double cashToDeposit) {
 
-  public void makeDeposit(double cashToDeposit) {
+        increaseCashInAccount(cashToDeposit);
 
-    increaseCashInAccount(cashToDeposit);
+        System.out.println("Deposit Complete: Current Balance is " + getCashInAccount());
 
-    System.out.println("Deposit Complete: Current Balance is " + getCashInAccount());
-
-  }
+    }
 
 }

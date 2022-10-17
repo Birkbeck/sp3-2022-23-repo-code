@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 class FirstJUnit5Tests {
 
-  @Test
-  void myFirstTest() {
-    assertEquals(2, 1 + 1);
-  }
+    @Test
+    void myFirstTest() {
+        assertEquals(2, 1 + 1);
+    }
 
 }

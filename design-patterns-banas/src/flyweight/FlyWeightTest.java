@@ -14,113 +14,113 @@ import java.util.Random;
 
 public class FlyWeightTest extends JFrame {
 
-  private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-  JButton startDrawing;
+    JButton startDrawing;
 
-  int windowWidth = 1750;
-  int windowHeight = 1000;
+    int windowWidth = 1750;
+    int windowHeight = 1000;
 
-  // A new rectangle is created only if a new color is needed
+    // A new rectangle is created only if a new color is needed
 
-  Color[] shapeColor = {Color.orange, Color.red, Color.yellow,
-          Color.blue, Color.pink, Color.cyan, Color.magenta,
-          Color.black, Color.gray};
+    Color[] shapeColor = {Color.orange, Color.red, Color.yellow,
+        Color.blue, Color.pink, Color.cyan, Color.magenta,
+        Color.black, Color.gray};
 
-  public FlyWeightTest() {
+    public FlyWeightTest() {
 
-    // Create the frame, position it and handle closing it
+        // Create the frame, position it and handle closing it
 
-    this.setSize(windowWidth, windowHeight);
-    this.setLocationRelativeTo(null);
-    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setTitle("Flyweight Test");
+        this.setSize(windowWidth, windowHeight);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle("Flyweight Test");
 
-    final JPanel contentPane = new JPanel();
+        final JPanel contentPane = new JPanel();
 
-    contentPane.setLayout(new BorderLayout());
+        contentPane.setLayout(new BorderLayout());
 
-    final JPanel drawingPanel = new JPanel();
+        final JPanel drawingPanel = new JPanel();
 
-    startDrawing = new JButton("Button 1");
+        startDrawing = new JButton("Button 1");
 
-    contentPane.add(drawingPanel, BorderLayout.CENTER);
+        contentPane.add(drawingPanel, BorderLayout.CENTER);
 
-    contentPane.add(startDrawing, BorderLayout.SOUTH);
+        contentPane.add(startDrawing, BorderLayout.SOUTH);
 
-    startDrawing.addActionListener(new ActionListener() {
+        startDrawing.addActionListener(new ActionListener() {
 
-      public void actionPerformed(ActionEvent event) {
-        final Graphics g = drawingPanel.getGraphics();
-
-
-        final long startTime = System.currentTimeMillis();
+            public void actionPerformed(ActionEvent event) {
+                final Graphics g = drawingPanel.getGraphics();
 
 
-        for (int i = 0; i < 100000; ++i) {
+                final long startTime = System.currentTimeMillis();
 
-          //
-          // Uses rectangles stored in the HashMap to
-          // speed up the program
 
-          final MyRect rect = RectFactory.getRect(getRandColor());
-          rect.draw(g, getRandX(), getRandY(),
-                  getRandX(), getRandY());
+                for (int i = 0; i < 100000; ++i) {
 
-          //
+                    //
+                    // Uses rectangles stored in the HashMap to
+                    // speed up the program
+
+                    final MyRect rect = RectFactory.getRect(getRandColor());
+                    rect.draw(g, getRandX(), getRandY(),
+                        getRandX(), getRandY());
+
+                    //
                     /*
                     MyRect rect = new MyRect(getRandColor(), getRandX(), getRandY(), getRandX(), getRandY());
 	            	rect.draw(g);
 	            	*/
 
 
-          //
+                    //
 	            	/*
 	            	g.setColor(getRandColor());
 	            	g.fillRect(getRandX(), getRandY(), getRandX(), getRandY());
 	            	*/
 
 
-        }
+                }
 
-        final long endTime = System.currentTimeMillis();
+                final long endTime = System.currentTimeMillis();
 
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+                System.out.println("That took " + (endTime - startTime) + " milliseconds");
 
-      }
-    });
+            }
+        });
 
-    this.add(contentPane);
+        this.add(contentPane);
 
-    this.setVisible(true);
+        this.setVisible(true);
 
-  }
+    }
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    new FlyWeightTest();
+        new FlyWeightTest();
 
-  }
+    }
 
-  // Picks random x & y coordinates
+    // Picks random x & y coordinates
 
-  private int getRandX() {
-    return (int) (Math.random() * windowWidth);
-  }
+    private int getRandX() {
+        return (int) (Math.random() * windowWidth);
+    }
 
-  private int getRandY() {
-    return (int) (Math.random() * windowHeight);
-  }
+    private int getRandY() {
+        return (int) (Math.random() * windowHeight);
+    }
 
-  // Picks a random Color from the 9 available
+    // Picks a random Color from the 9 available
 
-  private Color getRandColor() {
-    final Random randomGenerator = new Random();
+    private Color getRandColor() {
+        final Random randomGenerator = new Random();
 
-    final int randInt = randomGenerator.nextInt(9);
+        final int randInt = randomGenerator.nextInt(9);
 
-    return shapeColor[randInt];
+        return shapeColor[randInt];
 
-  }
+    }
 
 }

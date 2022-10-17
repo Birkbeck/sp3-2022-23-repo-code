@@ -2,24 +2,24 @@ package composite;
 
 public class DiscJockey {
 
-  SongComponent songList;
+    SongComponent songList;
 
-  // newSongList contains every Song, SongGroup,
-  // and any Songs saved in SongGroups
+    // newSongList contains every Song, SongGroup,
+    // and any Songs saved in SongGroups
 
-  public DiscJockey(SongComponent newSongList) {
+    public DiscJockey(SongComponent newSongList) {
 
-    songList = newSongList;
+        songList = newSongList;
 
-  }
+    }
 
-  // Calls the displaySongInfo() on every Song
-  // or SongGroup stored in songList
+    // Calls the displaySongInfo() on every Song
+    // or SongGroup stored in songList
 
-  public void getSongList() {
+    public void getSongList() {
 
-    songList.displaySongInfo();
+        songList.displaySongInfo();
 
-  }
+    }
 
 }

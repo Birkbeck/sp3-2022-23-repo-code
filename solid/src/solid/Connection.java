@@ -1,7 +1,7 @@
 package solid;
 
 public interface Connection {
-  void dial(String pno);
+    void dial(String pno);
 
-  void hangup();
+    void hangup();
 }

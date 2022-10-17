@@ -2,7 +2,6 @@ package demo;
 
 public class DefaultCommunicator implements Communicator {
 
-    private CommunicationMode defaultCommsMode;
     @Inject
     @Named("SMSComms")
     CommunicationMode smsCommsMode;
@@ -12,6 +11,7 @@ public class DefaultCommunicator implements Communicator {
     @Inject
     @Named("IMComms")
     CommunicationMode imCommsMode;
+    private CommunicationMode defaultCommsMode;
 
     protected DefaultCommunicator(CommunicationMode defaultComms) {
         this.defaultCommsMode = defaultComms;

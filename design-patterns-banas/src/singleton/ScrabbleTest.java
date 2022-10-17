@@ -4,49 +4,49 @@ import java.util.LinkedList;
 
 public class ScrabbleTest {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    // How you create a new instance of Singleton
+        // How you create a new instance of Singleton
 
-    final Singleton newInstance = Singleton.getInstance();
+        final Singleton newInstance = Singleton.getInstance();
 
-    // Get unique id for instance object
+        // Get unique id for instance object
 
-    System.out.println("1st Instance ID: " + System.identityHashCode(newInstance));
+        System.out.println("1st Instance ID: " + System.identityHashCode(newInstance));
 
-    // Get all of the letters stored in the List
+        // Get all of the letters stored in the List
 
-    System.out.println(newInstance.getLetterList());
+        System.out.println(newInstance.getLetterList());
 
-    final LinkedList<String> playerOneTiles = newInstance.getTiles(7);
+        final LinkedList<String> playerOneTiles = newInstance.getTiles(7);
 
-    System.out.println("Player 1: " + playerOneTiles);
+        System.out.println("Player 1: " + playerOneTiles);
 
-    System.out.println(newInstance.getLetterList());
+        System.out.println(newInstance.getLetterList());
 
-    // Try to make another instance of Singleton
-    // This doesn't work because the constructor is private
+        // Try to make another instance of Singleton
+        // This doesn't work because the constructor is private
 
-    // Singleton instanceTwo = new Singleton();
+        // Singleton instanceTwo = new Singleton();
 
-    // Try getting a new instance using getInstance
+        // Try getting a new instance using getInstance
 
-    final Singleton instanceTwo = Singleton.getInstance();
+        final Singleton instanceTwo = Singleton.getInstance();
 
-    // Get unique id for the new instance object
+        // Get unique id for the new instance object
 
-    System.out.println("2nd Instance ID: " + System.identityHashCode(instanceTwo));
+        System.out.println("2nd Instance ID: " + System.identityHashCode(instanceTwo));
 
-    // This returns the value of the first instance created
+        // This returns the value of the first instance created
 
-    System.out.println(instanceTwo.getLetterList());
+        System.out.println(instanceTwo.getLetterList());
 
-    // Player 2 draws 7 tiles
+        // Player 2 draws 7 tiles
 
-    final LinkedList<String> playerTwoTiles = newInstance.getTiles(7);
+        final LinkedList<String> playerTwoTiles = newInstance.getTiles(7);
 
-    System.out.println("Player 2: " + playerTwoTiles);
+        System.out.println("Player 2: " + playerTwoTiles);
 
-  }
+    }
 
 }

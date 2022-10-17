@@ -6,10 +6,10 @@ package adapter;
 
 public interface EnemyAttacker {
 
-  void fireWeapon();
+    void fireWeapon();
 
-  void driveForward();
+    void driveForward();
 
-  void assignDriver(String driverName);
+    void assignDriver(String driverName);
 
 }

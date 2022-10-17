@@ -5,42 +5,42 @@ package builder;
 
 public class OldRobotBuilder implements RobotBuilder {
 
-  private Robot robot;
+    private final Robot robot;
 
-  public OldRobotBuilder() {
+    public OldRobotBuilder() {
 
-    this.robot = new Robot();
+        this.robot = new Robot();
 
-  }
+    }
 
-  public void buildRobotHead() {
+    public void buildRobotHead() {
 
-    robot.setRobotHead("Tin Head");
+        robot.setRobotHead("Tin Head");
 
-  }
+    }
 
-  public void buildRobotTorso() {
+    public void buildRobotTorso() {
 
-    robot.setRobotTorso("Tin Torso");
+        robot.setRobotTorso("Tin Torso");
 
-  }
+    }
 
-  public void buildRobotArms() {
+    public void buildRobotArms() {
 
-    robot.setRobotArms("Blowtorch Arms");
+        robot.setRobotArms("Blowtorch Arms");
 
-  }
+    }
 
-  public void buildRobotLegs() {
+    public void buildRobotLegs() {
 
-    robot.setRobotLegs("Rollar Skates");
+        robot.setRobotLegs("Rollar Skates");
 
-  }
+    }
 
-  public Robot getRobot() {
+    public Robot getRobot() {
 
-    return this.robot;
-  }
+        return this.robot;
+    }
 
 
 }

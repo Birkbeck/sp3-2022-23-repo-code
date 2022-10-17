@@ -4,25 +4,25 @@ import java.util.LinkedList;
 
 public class GetTheTiles implements Runnable {
 
-  public void run() {
+    public void run() {
 
-    // How you create a new instance of Singleton
+        // How you create a new instance of Singleton
 
-    final Singleton newInstance = Singleton.getInstance();
+        final Singleton newInstance = Singleton.getInstance();
 
-    // Get unique id for instance object
+        // Get unique id for instance object
 
-    System.out.println("1st Instance ID: " + System.identityHashCode(newInstance));
+        System.out.println("1st Instance ID: " + System.identityHashCode(newInstance));
 
-    // Get all of the letters stored in the List
+        // Get all of the letters stored in the List
 
-    System.out.println(newInstance.getLetterList());
+        System.out.println(newInstance.getLetterList());
 
-    final LinkedList<String> playerOneTiles = newInstance.getTiles(7);
+        final LinkedList<String> playerOneTiles = newInstance.getTiles(7);
 
-    System.out.println("Player 1: " + playerOneTiles);
+        System.out.println("Player 1: " + playerOneTiles);
 
-    System.out.println("Got Tiles");
-  }
+        System.out.println("Got Tiles");
+    }
 
 }

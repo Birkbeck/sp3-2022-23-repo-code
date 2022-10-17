@@ -5,50 +5,50 @@ import java.util.Iterator;
 
 public class SongsOfThe80s implements SongIterator {
 
-  // Create an array of SongInfo Objects
+    // Create an array of SongInfo Objects
 
-  SongInfo[] bestSongs;
+    SongInfo[] bestSongs;
 
-  // Used to increment to the next position in the array
+    // Used to increment to the next position in the array
 
-  int arrayValue;
+    int arrayValue;
 
-  public SongsOfThe80s() {
+    public SongsOfThe80s() {
 
-    bestSongs = new SongInfo[3];
+        bestSongs = new SongInfo[3];
 
-    addSong("Roam", "B 52s", 1989);
-    addSong("Cruel Summer", "Bananarama", 1984);
-    addSong("Head Over Heels", "Tears For Fears", 1985);
+        addSong("Roam", "B 52s", 1989);
+        addSong("Cruel Summer", "Bananarama", 1984);
+        addSong("Head Over Heels", "Tears For Fears", 1985);
 
-  }
+    }
 
-  // Add a SongInfo Object to the array and increment to the next position
+    // Add a SongInfo Object to the array and increment to the next position
 
-  public void addSong(String songName, String bandName, int yearReleased) {
+    public void addSong(String songName, String bandName, int yearReleased) {
 
-    final SongInfo song = new SongInfo(songName, bandName, yearReleased);
+        final SongInfo song = new SongInfo(songName, bandName, yearReleased);
 
-    bestSongs[arrayValue] = song;
+        bestSongs[arrayValue] = song;
 
-    arrayValue++;
+        arrayValue++;
 
-  }
+    }
 
-  // This is replaced by the Iterator
+    // This is replaced by the Iterator
 
-  public SongInfo[] getBestSongs() {
+    public SongInfo[] getBestSongs() {
 
-    return bestSongs;
+        return bestSongs;
 
-  }
+    }
 
-  // NEW By adding this method I'll be able to treat all
-  // collections the same
+    // NEW By adding this method I'll be able to treat all
+    // collections the same
 
-  @Override
-  public Iterator createIterator() {
-    return Arrays.asList(bestSongs).iterator();
-  }
+    @Override
+    public Iterator createIterator() {
+        return Arrays.asList(bestSongs).iterator();
+    }
 
 }

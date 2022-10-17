@@ -1,5 +1,5 @@
 package anonymous;
 
 public interface Sensor {
-  void myMethod();
+    void myMethod();
 }

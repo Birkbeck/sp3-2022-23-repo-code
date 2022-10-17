@@ -1,3 +1,3 @@
 public interface FeatheredCreature {
-    public void molt();
+    void molt();
 }

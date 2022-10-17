@@ -6,18 +6,18 @@ package bridge;
 
 public class DVDRemote extends RemoteButton {
 
-  private boolean play = true;
+    private boolean play = true;
 
-  public DVDRemote(EntertainmentDevice newDevice) {
-    super(newDevice);
-  }
+    public DVDRemote(EntertainmentDevice newDevice) {
+        super(newDevice);
+    }
 
-  public void buttonNinePressed() {
+    public void buttonNinePressed() {
 
-    play = !play;
+        play = !play;
 
-    System.out.println("DVD is Playing: " + play);
+        System.out.println("DVD is Playing: " + play);
 
-  }
+    }
 
 }

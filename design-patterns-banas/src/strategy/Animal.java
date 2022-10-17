@@ -2,79 +2,79 @@ package strategy;
 
 public class Animal {
 
-  public Flys flyingType;
-  private String name;
-  private double height;
-  private int weight;
-  private String favFood;
-  private double speed;
+    public Flys flyingType;
+    private String name;
+    private double height;
+    private int weight;
+    private String favFood;
+    private double speed;
 
-  // Instead of using an interface in a traditional way
-  // we use an instance variable that is a subclass
-  // of the Flys interface.
+    // Instead of using an interface in a traditional way
+    // we use an instance variable that is a subclass
+    // of the Flys interface.
 
-  // Animal doesn't care what flyingType does, it just
-  // knows the behavior is available to its subclasses
+    // Animal doesn't care what flyingType does, it just
+    // knows the behavior is available to its subclasses
 
-  // This is known as Composition : Instead of inheriting
-  // an ability through inheritance the class is composed
-  // with Objects with the right ability
+    // This is known as Composition : Instead of inheriting
+    // an ability through inheritance the class is composed
+    // with Objects with the right ability
 
-  // Composition allows you to change the capabilities of
-  // objects at run time!
-  private String sound;
+    // Composition allows you to change the capabilities of
+    // objects at run time!
+    private String sound;
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String newName) {
-    name = newName;
-  }
-
-  public double getHeight() {
-    return height;
-  }
-
-  public void setHeight(double newHeight) {
-    height = newHeight;
-  }
-
-  public double getWeight() {
-    return weight;
-  }
-
-  public void setWeight(int newWeight) {
-    if (newWeight > 0) {
-      weight = newWeight;
-    } else {
-      System.out.println("Weight must be bigger than 0");
+    public String getName() {
+        return name;
     }
-  }
 
-  public String getFavFood() {
-    return favFood;
-  }
+    public void setName(String newName) {
+        name = newName;
+    }
 
-  public void setFavFood(String newFavFood) {
-    favFood = newFavFood;
-  }
+    public double getHeight() {
+        return height;
+    }
 
-  public double getSpeed() {
-    return speed;
-  }
+    public void setHeight(double newHeight) {
+        height = newHeight;
+    }
 
-  public void setSpeed(double newSpeed) {
-    speed = newSpeed;
-  }
+    public double getWeight() {
+        return weight;
+    }
 
-  public String getSound() {
-    return sound;
-  }
+    public void setWeight(int newWeight) {
+        if (newWeight > 0) {
+            weight = newWeight;
+        } else {
+            System.out.println("Weight must be bigger than 0");
+        }
+    }
 
-  public void setSound(String newSound) {
-    sound = newSound;
-  }
+    public String getFavFood() {
+        return favFood;
+    }
+
+    public void setFavFood(String newFavFood) {
+        favFood = newFavFood;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double newSpeed) {
+        speed = newSpeed;
+    }
+
+    public String getSound() {
+        return sound;
+    }
+
+    public void setSound(String newSound) {
+        sound = newSound;
+    }
 
   /* BAD
    * You don't want to add methods to the super class.
@@ -85,17 +85,17 @@ public class Animal {
 	 }
 	 */
 
-  // Animal pushes off the responsibility for flying to flyingType
+    // Animal pushes off the responsibility for flying to flyingType
 
-  public String tryToFly() {
-    return flyingType.fly();
-  }
+    public String tryToFly() {
+        return flyingType.fly();
+    }
 
-  // If you want to be able to change the flyingType dynamically
-  // add the following method
+    // If you want to be able to change the flyingType dynamically
+    // add the following method
 
-  public void setFlyingAbility(Flys newFlyType) {
-    flyingType = newFlyType;
-  }
+    public void setFlyingAbility(Flys newFlyType) {
+        flyingType = newFlyType;
+    }
 
 }
