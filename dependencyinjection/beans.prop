@@ -6,4 +6,4 @@ renderer.(class)=helloworld.StandardOutMessageRenderer
 renderer.messageProvider(ref)=provider
 
 # Message provider
-provider.(class)=helloworld.AnotherWorldMessageProvider
+provider.(class)=helloworld.HelloWorldMessageProviderAlternative

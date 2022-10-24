@@ -1,7 +1,6 @@
 package helloworld;
 
 public class StandardOutMessageRenderer {
-
     private HelloWorldMessageProvider messageProvider = null;
 
     public void render() {

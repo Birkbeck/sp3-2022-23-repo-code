@@ -15,7 +15,6 @@ public class HelloWorldSpring {
 
         MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
         MessageProvider mp = (MessageProvider) factory.getBean("provider");
-
         mr.setMessageProvider(mp);
         mr.render();
     }

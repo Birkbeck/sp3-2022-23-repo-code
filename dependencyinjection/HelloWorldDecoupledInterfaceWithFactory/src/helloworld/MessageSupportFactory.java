@@ -11,7 +11,11 @@ public class MessageSupportFactory {
         instance = new MessageSupportFactory();
     }
 
-    private MessageRenderer renderer = null;
+    {
+        // initialisation for member fields
+    }
+
+    private MessageRenderer renderer;
     private MessageProvider provider = null;
 
     private MessageSupportFactory() {
@@ -46,5 +50,4 @@ public class MessageSupportFactory {
     public MessageProvider getMessageProvider() {
         return provider;
     }
-
 }
