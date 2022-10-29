@@ -12,12 +12,8 @@ public final class MessageSupportFactory {
   }
 
   private MessageRenderer renderer;
-  private MessageProvider provider = null;
-
-//  {
-//    // initialisation for member fields
-//  }
-
+  private MessageProvider provider;
+  
   private MessageSupportFactory() {
     Properties props = new Properties();
 
@@ -43,6 +39,7 @@ public final class MessageSupportFactory {
     return instance;
   }
 
+  @edu.umd.cs.findbugs.annotations.SuppressFBWarnings("EI_EXPOSE_REP")
   public MessageRenderer getMessageRenderer() {
     return renderer;
   }

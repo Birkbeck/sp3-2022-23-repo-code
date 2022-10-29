@@ -2,10 +2,10 @@ package helloworld;
 
 public interface MessageRenderer {
 
-    void render();
+  void render();
 
-    // autowiring will deal with these
-    //
-    // public void setMessageProvider(MessageProvider provider);
-    // public MessageProvider getMessageProvider();
+  // autowiring will deal with these
+  //
+  // public void setMessageProvider(MessageProvider provider);
+  // public MessageProvider getMessageProvider();
 }

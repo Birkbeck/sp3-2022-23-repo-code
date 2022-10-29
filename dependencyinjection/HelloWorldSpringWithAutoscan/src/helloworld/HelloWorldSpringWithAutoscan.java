@@ -5,12 +5,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public final class HelloWorldSpringWithAutoscan {
 
-    public static void main(final String[] args) throws Exception {
-        // get the bean factory
-        BeanFactory factory = new ClassPathXmlApplicationContext("/beans.xml");
-        var mr = (MessageRenderer) factory.getBean("renderer");
-        mr.render();
-    }
+  private HelloWorldSpringWithAutoscan() {
+  }
 
-    private HelloWorldSpringWithAutoscan() { }
+  public static void main(final String[] args) throws Exception {
+    // get the bean factory
+    BeanFactory factory = new ClassPathXmlApplicationContext("/beans.xml");
+    var mr = (MessageRenderer) factory.getBean("renderer");
+    mr.render();
+  }
 }

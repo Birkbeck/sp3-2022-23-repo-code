@@ -9,35 +9,37 @@ import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 
 public final class HelloWorldSpringWithDI {
 
-    /**
-     * To illustrate the creation of the factory and the dependency injection
-     * provided by the Spring Framework.
-     * @param args — unused command line arguments
-     * @throws Exception — as there is little (no?) handling of errors
-     */
-    public static void main(final String[] args) throws Exception {
-        // get the bean factory
-        var factory = getBeanFactory();
+  private HelloWorldSpringWithDI() {
+  }
 
-        var mr = (MessageRenderer) factory.getBean("renderer");
-        mr.render();
+  /**
+   * To illustrate the creation of the factory and the dependency injection
+   * provided by the Spring Framework.
+   *
+   * @param args — unused command line arguments
+   * @throws Exception — as there is little (no?) handling of errors
+   */
+  public static void main(final String[] args) throws Exception {
+    // get the bean factory
+    var factory = getBeanFactory();
+
+    var mr = (MessageRenderer) factory.getBean("renderer");
+    mr.render();
+  }
+
+  private static BeanFactory getBeanFactory() throws Exception {
+    // get the bean factory
+    var factory = new DefaultListableBeanFactory();
+    // create a definition reader
+    var rdr = new PropertiesBeanDefinitionReader(factory);
+
+    // load the configuration options
+    var props = new Properties();
+    try (var fis = new FileInputStream("beans.prop")) {
+      props.load(fis);
     }
 
-    private HelloWorldSpringWithDI() { }
-
-    private static BeanFactory getBeanFactory() throws Exception {
-        // get the bean factory
-        var factory = new DefaultListableBeanFactory();
-        // create a definition reader
-        var rdr = new PropertiesBeanDefinitionReader(factory);
-
-        // load the configuration options
-        var props = new Properties();
-        try (var fis = new FileInputStream("beans.prop")) {
-            props.load(fis);
-        }
-
-        rdr.registerBeanDefinitions(props);
-        return factory;
-    }
+    rdr.registerBeanDefinitions(props);
+    return factory;
+  }
 }
