@@ -2,8 +2,8 @@ package helloworld;
 
 import org.springframework.stereotype.Component;
 
-@Component("provider")
-public class HelloWorldMessageProvider implements MessageProvider {
+//@Component("provider")
+public class HelloWorldMP implements MessageProvider {
 
     @Override
     public String getMessage() {

@@ -7,24 +7,32 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 
-public class HelloWorldSpringWithDI {
+public final class HelloWorldSpringWithDI {
 
-    public static void main(String[] args) throws Exception {
+    /**
+     * To illustrate the creation of the factory and the dependency injection
+     * provided by the Spring Framework.
+     * @param args — unused command line arguments
+     * @throws Exception — as there is little (no?) handling of errors
+     */
+    public static void main(final String[] args) throws Exception {
         // get the bean factory
-        BeanFactory factory = getBeanFactory();
+        var factory = getBeanFactory();
 
-        MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
+        var mr = (MessageRenderer) factory.getBean("renderer");
         mr.render();
     }
 
+    private HelloWorldSpringWithDI() { }
+
     private static BeanFactory getBeanFactory() throws Exception {
         // get the bean factory
-        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+        var factory = new DefaultListableBeanFactory();
         // create a definition reader
-        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(factory);
+        var rdr = new PropertiesBeanDefinitionReader(factory);
 
         // load the configuration options
-        Properties props = new Properties();
+        var props = new Properties();
         try (var fis = new FileInputStream("beans.prop")) {
             props.load(fis);
         }
