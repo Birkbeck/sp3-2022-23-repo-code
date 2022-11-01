@@ -1,4 +1,4 @@
-package flyweight.drawing;
+package structural.flyweight.drawing;
 
 import java.awt.*;
 

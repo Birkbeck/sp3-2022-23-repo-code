@@ -1,4 +1,4 @@
-package compositealt;
+package structural.composite.compositealt;
 
 public class XExecutable implements Executable { // Leaf X
     @Override

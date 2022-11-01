@@ -1,4 +1,4 @@
-package compositealt;
+package structural.composite.compositealt;
 
 import java.util.Collection;
 import java.util.Iterator;

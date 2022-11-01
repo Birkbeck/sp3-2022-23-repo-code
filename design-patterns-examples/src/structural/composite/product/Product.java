@@ -1,4 +1,4 @@
-package composite.product;
+package structural.composite.product;
 
 public abstract class Product {
 

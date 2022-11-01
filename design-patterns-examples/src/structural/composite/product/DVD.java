@@ -1,4 +1,4 @@
-package composite.product;
+package structural.composite.product;
 
 public class DVD extends Product {
     private final String mtitle;

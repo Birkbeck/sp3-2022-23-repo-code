@@ -1,4 +1,4 @@
-package chain;
+package behavioural.chain;
 
 public class SpamHandler extends MessageHandler {
     public SpamHandler(MessageHandler next) {

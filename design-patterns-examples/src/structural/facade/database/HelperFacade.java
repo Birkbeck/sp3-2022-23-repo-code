@@ -1,4 +1,4 @@
-package facade.database;
+package structural.facade.database;
 
 import java.sql.Connection;
 

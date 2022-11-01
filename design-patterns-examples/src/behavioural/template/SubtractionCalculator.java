@@ -1,4 +1,4 @@
-package template;
+package behavioural.template;
 
 public class SubtractionCalculator extends CalculatorTemplate {
 

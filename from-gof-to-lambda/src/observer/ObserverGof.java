@@ -33,7 +33,7 @@ public final class ObserverGof {
             observable.register(this, new Listener() {
                 @Override
                 public void onEvent(final Object event) {
-                    System.out.println(event);
+                    System.out.println(this.getClass().toString() + ":" + event);
                 }
             });
         }
@@ -46,7 +46,7 @@ public final class ObserverGof {
 
         @Override
         public void onEvent(final Object event) {
-            System.out.println(event);
+            System.out.println(this.getClass().toString() + ":" + event);
         }
     }
 

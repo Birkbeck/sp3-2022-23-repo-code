@@ -1,4 +1,4 @@
-package abstractfactory.pc;
+package creational.abstractfactory.pc;
 
 public abstract class Computer {
     public abstract String getRAM();

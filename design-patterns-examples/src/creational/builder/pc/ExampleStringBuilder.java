@@ -1,4 +1,4 @@
-package builder.pc;
+package creational.builder.pc;
 
 public class ExampleStringBuilder {
     public static void main(String[] args) {

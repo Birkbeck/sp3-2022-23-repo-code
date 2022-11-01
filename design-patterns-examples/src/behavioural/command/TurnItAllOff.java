@@ -1,4 +1,4 @@
-package command;
+package behavioural.command;
 
 import java.util.List;
 

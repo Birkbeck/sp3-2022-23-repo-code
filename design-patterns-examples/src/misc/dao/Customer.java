@@ -1,4 +1,4 @@
-package dao;
+package misc.dao;
 
 public class Customer {
     private String id;

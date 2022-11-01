@@ -1,4 +1,4 @@
-package publish;
+package misc.publish;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

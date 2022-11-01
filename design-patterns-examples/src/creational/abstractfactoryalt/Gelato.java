@@ -1,4 +1,4 @@
-package abstractfactoryalt;
+package creational.abstractfactoryalt;
 
 public class Gelato implements Dessert {
     public void enjoy() {

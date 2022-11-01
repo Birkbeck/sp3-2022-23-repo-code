@@ -1,4 +1,4 @@
-package composite.shapes;
+package structural.composite.shapes;
 
 public class Triangle implements Shape {
     @Override

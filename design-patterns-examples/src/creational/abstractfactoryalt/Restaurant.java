@@ -1,4 +1,4 @@
-package abstractfactoryalt;
+package creational.abstractfactoryalt;
 
 public interface Restaurant {
     Appetizer getAppetizer();

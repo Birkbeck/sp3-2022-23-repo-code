@@ -1,4 +1,4 @@
-package state;
+package behavioural.state;
 
 // Abstract so we have to make something of a particular type
 public abstract class GiftType {

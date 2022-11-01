@@ -1,5 +1,6 @@
 package iterator;
 
+import java.util.Iterator;
 import java.util.List;
 
 import static java.util.Arrays.asList;
@@ -13,7 +14,8 @@ public final class IteratorGof {
             System.out.println(integer);
         }
 
-        for (Integer i : LIST) {
+        for (Iterator<Integer> iterator = LIST.iterator(); iterator.hasNext(); ) {
+            Integer i = iterator.next();
             System.out.println(i);
         }
     }

@@ -1,4 +1,4 @@
-package abstractfactory.pc;
+package creational.abstractfactory.pc;
 
 public class PC extends Computer {
     private final String ram;

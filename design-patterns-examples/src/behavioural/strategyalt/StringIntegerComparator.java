@@ -1,4 +1,4 @@
-package strategyalt;
+package behavioural.strategyalt;
 
 import java.util.Comparator;
 

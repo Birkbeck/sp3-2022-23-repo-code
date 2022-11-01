@@ -1,4 +1,4 @@
-package decorator.products;
+package structural.decorator.products;
 
 public class WrappedProduct extends Product {
     private final Product mContents;

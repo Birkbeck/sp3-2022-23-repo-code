@@ -3,7 +3,7 @@ Chain of Responsibility
 
 * Decouple senders of requests from receivers
 * Allow more than one object to attempt to handle a request
-* Pass the request along a chain of receivers until it is handled
+* Pass the request along a behavioural.chain of receivers until it is handled
 * Only one object handles the request
 * Some requests might not be handled
 

@@ -1,4 +1,4 @@
-package proxy.person;
+package structural.proxy.person;
 
 public class Person implements PersonInterface {
     private final String mName;

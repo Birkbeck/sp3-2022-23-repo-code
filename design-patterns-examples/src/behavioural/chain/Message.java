@@ -1,4 +1,4 @@
-package chain;
+package behavioural.chain;
 
 public interface Message {
     String toString();

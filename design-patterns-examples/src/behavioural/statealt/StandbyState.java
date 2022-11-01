@@ -1,4 +1,4 @@
-package statealt;
+package behavioural.statealt;
 
 public class StandbyState implements State {
     public void pressPlay(MP3PlayerContext context) {

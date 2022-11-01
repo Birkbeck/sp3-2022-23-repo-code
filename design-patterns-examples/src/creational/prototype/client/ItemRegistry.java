@@ -1,8 +1,4 @@
-package prototype.client;
-
-import prototype.client.Book;
-import prototype.client.CD;
-import prototype.client.Item;
+package creational.prototype.client;
 
 import java.util.Hashtable;
 import java.util.Map;

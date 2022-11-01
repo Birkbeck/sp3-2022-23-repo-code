@@ -1,4 +1,4 @@
-package builder.person;
+package creational.builder.person;
 
 public class Example {
     public static void main(String[] args) {

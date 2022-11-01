@@ -1,4 +1,4 @@
-package template;
+package behavioural.template;
 
 public abstract class CalculatorTemplate implements Calculator {
     private double result;

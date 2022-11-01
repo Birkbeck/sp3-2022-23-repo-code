@@ -1,4 +1,4 @@
-package bridge.shapes;
+package structural.bridge.shapes;
 
 public abstract class Shape {
     //Composition - implementor

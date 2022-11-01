@@ -1,4 +1,4 @@
-package abstractfactoryalt;
+package creational.abstractfactoryalt;
 
 public class ItalianRestaurant implements Restaurant {
     public Appetizer getAppetizer() {

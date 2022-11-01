@@ -1,4 +1,4 @@
-package abstractfactory.pc;
+package creational.abstractfactory.pc;
 
 public class PCFactory implements ComputerAbstractFactory {
     private final String ram;

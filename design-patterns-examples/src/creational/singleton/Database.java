@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 public final class Database {
 

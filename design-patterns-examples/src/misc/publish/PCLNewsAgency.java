@@ -1,12 +1,11 @@
-package publish;
+package misc.publish;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class PCLNewsAgency {
-    private String news;
-
     private final PropertyChangeSupport support;
+    private String news;
 
     public PCLNewsAgency() {
         support = new PropertyChangeSupport(this);

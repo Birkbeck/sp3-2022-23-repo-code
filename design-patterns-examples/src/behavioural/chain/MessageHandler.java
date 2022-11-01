@@ -1,4 +1,4 @@
-package chain;
+package behavioural.chain;
 
 public abstract class MessageHandler {
     private final MessageHandler next;

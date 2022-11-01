@@ -1,4 +1,4 @@
-package abstractfactory.pc;
+package creational.abstractfactory.pc;
 
 public class ComputerFactory {
     public static Computer getComputer(ComputerAbstractFactory factory) {

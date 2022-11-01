@@ -1,4 +1,4 @@
-package prototype.client;
+package creational.prototype.client;
 
 //Prototype
 

@@ -1,4 +1,4 @@
-package decorator.products;
+package structural.decorator.products;
 
 public abstract class Product {
     private final float mPrice;

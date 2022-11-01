@@ -1,4 +1,4 @@
-package abstractfactoryalt;
+package creational.abstractfactoryalt;
 
 public class Oysters implements Appetizer {
     public void eat() {

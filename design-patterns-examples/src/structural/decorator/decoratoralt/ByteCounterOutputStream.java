@@ -1,4 +1,4 @@
-package decoratoralt;
+package structural.decorator.decoratoralt;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;

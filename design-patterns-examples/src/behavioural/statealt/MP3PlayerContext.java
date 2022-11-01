@@ -1,4 +1,4 @@
-package statealt;
+package behavioural.statealt;
 
 //Context
 public class MP3PlayerContext {

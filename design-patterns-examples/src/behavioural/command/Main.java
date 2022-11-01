@@ -1,4 +1,4 @@
-package command;
+package behavioural.command;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ public class Main {
 
         final ElectronicDevice newDevice = new Television();
 
-        // TurnTVOn contains the command to turn on the tv
-        // When execute() is called on this command object
+        // TurnTVOn contains the behavioural.command to turn on the tv
+        // When execute() is called on this behavioural.command object
         // it will execute the method on() in Television
 
         final Command onCommand = new TurnTVOn(newDevice);
@@ -91,7 +91,7 @@ public class Main {
         //----------------------------------------------------------
 
         /*
-         * It is common to be able to undo a command in a command pattern
+         * It is common to be able to undo a behavioural.command in a behavioural.command pattern
          * To do so, DeviceButton will have a method called undo
          * Undo() will perform the opposite action that the normal
          * Command performs. undo() needs to be added to every class
@@ -100,7 +100,7 @@ public class Main {
 
         turnThemOff.pressUndo();
 
-        // To undo more than one command add them to a LinkedList using addFirst().
+        // To undo more than one behavioural.command add them to a LinkedList using addFirst().
         // Then execute undo on each item until there are none left.
     }
 

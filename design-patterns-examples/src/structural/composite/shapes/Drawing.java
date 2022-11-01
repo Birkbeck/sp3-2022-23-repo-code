@@ -1,4 +1,4 @@
-package composite.shapes;
+package structural.composite.shapes;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package singletonalt;
+package creational.singletonalt;
 
 public class Client {
     public static void main(String... args) {

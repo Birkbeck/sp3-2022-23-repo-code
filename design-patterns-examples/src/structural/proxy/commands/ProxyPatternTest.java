@@ -1,4 +1,4 @@
-package proxy.commands;
+package structural.proxy.commands;
 
 public class ProxyPatternTest {
     public static void main(String[] args) {

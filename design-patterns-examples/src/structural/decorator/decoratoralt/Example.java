@@ -1,4 +1,4 @@
-package decoratoralt;
+package structural.decorator.decoratoralt;
 
 import javax.crypto.Cipher;
 import javax.crypto.CipherOutputStream;

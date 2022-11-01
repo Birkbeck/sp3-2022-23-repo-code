@@ -1,4 +1,4 @@
-package proxy.commands;
+package structural.proxy.commands;
 
 import java.io.IOException;
 
@@ -7,6 +7,6 @@ public class CommandExecutorImpl implements CommandExecutor {
     public void runCommand(String cmd) throws IOException {
         //some heavy implementation
         Runtime.getRuntime().exec(cmd);
-        System.out.println("'" + cmd + "' command executed.");
+        System.out.println("'" + cmd + "' behavioural.command executed.");
     }
 }

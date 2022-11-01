@@ -1,4 +1,4 @@
-package chain;
+package behavioural.chain;
 
 public class DefaultHandler extends MessageHandler {
     public DefaultHandler(MessageHandler next) {

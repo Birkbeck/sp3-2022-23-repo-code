@@ -1,4 +1,4 @@
-package command;
+package behavioural.command;
 
 // This is known as the invoker
 // It has a method press() that when executed causes the execute method to be called

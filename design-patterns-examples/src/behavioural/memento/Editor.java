@@ -1,8 +1,8 @@
-package memento;
+package behavioural.memento;
 
 //Originator
 public class Editor {
-    //state
+    //behavioural.state
     public String editorContents;
 
     public void setState(String contents) {

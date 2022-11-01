@@ -1,4 +1,4 @@
-package abstractfactory.cars;
+package creational.abstractfactory.cars;
 
 public class Car {
 

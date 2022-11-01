@@ -1,4 +1,4 @@
-package prototype.employees;
+package creational.prototype.employees;
 
 import java.util.ArrayList;
 import java.util.List;
