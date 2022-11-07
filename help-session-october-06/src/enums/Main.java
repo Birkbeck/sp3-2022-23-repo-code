@@ -7,17 +7,11 @@ class Main {
         System.out.println(Constants.MIN);
         Constants con = Constants.NORMAL;
         switch (con) {
-            case MIN:
-                System.out.println("Min");
-                break;
-            case NORMAL:
-                // fall through
-            case MAX:
-                System.out.println("Normal or Max");
-                break;
-            default:
-                System.out.println("Error!");
-                break;
+            case MIN -> System.out.println("Min");
+
+            // fall through
+            case NORMAL, MAX -> System.out.println("Normal or Max");
+            default -> System.out.println("Error!");
         }
     }
 
@@ -34,6 +28,6 @@ class Main {
      */
 
     enum Colors {
-        RED, BLUE, YELLOW
+        BLUE, RED, YELLOW
     }
 }

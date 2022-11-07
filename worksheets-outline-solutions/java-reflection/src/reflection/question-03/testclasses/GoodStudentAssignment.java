@@ -8,6 +8,7 @@ public class GoodStudentAssignment {
     private static final int d = -1;
     private final int b = 3;
     private int a;
+
     GoodStudentAssignment() {
     }
 

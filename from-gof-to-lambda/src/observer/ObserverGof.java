@@ -5,6 +5,17 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public final class ObserverGof {
 
+    private ObserverGof() {
+    }
+
+    public static void main(final String... args) {
+        Observable observable = new Observable();
+        new Observer1(observable);
+        new Observer2(observable);
+
+        observable.sendEvent("Hello World!");
+    }
+
     interface Listener {
         void onEvent(Object event);
     }
@@ -48,16 +59,5 @@ public final class ObserverGof {
         public void onEvent(final Object event) {
             System.out.println(this.getClass().toString() + ":" + event);
         }
-    }
-
-    public static void main(final String... args) {
-        Observable observable = new Observable();
-        new Observer1(observable);
-        new Observer2(observable);
-
-        observable.sendEvent("Hello World!");
-    }
-
-    private ObserverGof() {
     }
 }

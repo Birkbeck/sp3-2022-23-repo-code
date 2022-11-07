@@ -13,7 +13,7 @@ package inner;
 // polymorphism
 //     - ad-hoc or parametric
 
-public class Main {
+public final class Main {
     public void main(String... args) {
         LinkedList l = new LinkedList();
         l.add(10);
@@ -21,7 +21,7 @@ public class Main {
     }
 }
 
-class LinkedList {
+final class LinkedList {
     Node head;
 
     public LinkedList() {
@@ -37,13 +37,9 @@ class LinkedList {
         start = temp;
     }
 
-    private class Node { // nested or inner class
-        private int value;
-        private Node next;
-
+    private record Node(int value, Node next) { // nested or inner class
         Node(int i) {
-            value = i;
-            next = null;
+            this(i, null);
         }
     }
 }

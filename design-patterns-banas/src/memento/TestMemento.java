@@ -7,26 +7,23 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TestMemento extends JFrame {
-    Caretaker caretaker = new Caretaker();
-    Originator originator = new Originator();
-
-    // JTextArea(rows, columns)
-    int saveFiles;
-    int currentArticle;
-
-    // ---------------------------------------------
-
     // Create a caretaker that contains the ArrayList
     // with all the articles in it. It can add and
     // retrieve articles from the ArrayList
     private final JButton saveBut;
     private final JButton undoBut;
     private final JButton redoBut;
-
     // The originator sets the value for the article,
     // creates a new memento with a new article, and
     // gets the article stored in the current memento
     private final JTextArea theArticle = new JTextArea(40, 60);
+
+    // ---------------------------------------------
+    Caretaker caretaker = new Caretaker();
+    Originator originator = new Originator();
+    // JTextArea(rows, columns)
+    int saveFiles;
+    int currentArticle;
 
     public TestMemento() {
 

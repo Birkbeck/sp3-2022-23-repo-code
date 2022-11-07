@@ -9,11 +9,10 @@ public class GetTheStock implements Runnable {
 
     // private int startTime;
     private final String stock;
-    private double price;
+    private final Subject stockGrabber;
 
     // Will hold reference to the StockGrabber object
-
-    private final Subject stockGrabber;
+    private double price;
 
     public GetTheStock(Subject stockgrabber, int newstarttime, String newstock, double newprice) {
 

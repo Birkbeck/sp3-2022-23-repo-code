@@ -163,7 +163,7 @@ public class EmployeeTest {
         assertEquals(employee.getSalary(), Double.valueOf(200000));
     }
 
-        @Test
+    @Test
     public void whenCollectStreamToList_thenGetList() {
         List<Employee> employees = empList.stream().collect(Collectors.toList());
 

@@ -2,12 +2,12 @@ package interpreter;
 
 public class ConversionContext {
 
+    private final double quantity;
     String[] partsOfQues;
     private String conversionQues = "";
     private String conversionResponse = "";
     private String fromConversion = "";
     private String toConversion = "";
-    private final double quantity;
 
     public ConversionContext(String input) {
         this.conversionQues = input;

@@ -5,18 +5,15 @@ package observer;
 public class StockObserver implements Observer {
 
     private static int observerIDTracker;
+    // Used to track the observers
+    private final int observerID;
+    private final Subject stockGrabber;
     private double ibmPrice;
     private double aaplPrice;
 
+    // Will hold reference to the StockGrabber object
     // Static used as a counter
     private double googPrice;
-
-    // Used to track the observers
-    private final int observerID;
-
-    // Will hold reference to the StockGrabber object
-
-    private final Subject stockGrabber;
 
     public StockObserver(Subject stockGrabber) {
 

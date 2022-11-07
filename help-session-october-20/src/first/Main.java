@@ -14,14 +14,15 @@ public class Main {
         new Student("Jennifer", "Shalen", 10),
         new Student("Shelley", "Higgins", 800));
 
-    public static String findStudentByID(int id){
-        for (var s : students){
-            if (s.getStuID() == id){
+    public static String findStudentByID(int id) {
+        for (var s : students) {
+            if (s.getStuID() == id) {
                 return printStudent(s);
             }
         }
         return "Not Found!";
     }
+
     public static void main(String[] args) {
         System.out.println(findStudentByID(110));
         System.out.println(findStudentByID(666));

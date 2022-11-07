@@ -4,6 +4,11 @@ import template.Resource;
 
 public class TemplateGof {
 
+    public static void main(String[] args) {
+        new ResourceUser().execute();
+        new ResourceEmployer().execute();
+    }
+
     public static abstract class AbstractResourceManipulatorTemplate {
         protected Resource resource;
 
@@ -40,10 +45,5 @@ public class TemplateGof {
         protected void doSomethingWithResource() {
             resource.employResource();
         }
-    }
-
-    public static void main(String[] args) {
-        new ResourceUser().execute();
-        new ResourceEmployer().execute();
     }
 }

@@ -2,6 +2,17 @@ package decorator;
 
 public class DecoratorGof {
 
+    public static void main(String[] args) {
+        System.out.println(
+            new HealthInsuranceDecorator(
+                new RegionalTaxDecorator(
+                    new GeneralTaxDecorator(
+                        new DefaultSalaryCalculator()
+                    )
+                )
+            ).calculate(30000.00));
+    }
+
     interface SalaryCalculator {
         double calculate(double grossAnnual);
     }
@@ -61,16 +72,5 @@ public class DecoratorGof {
         protected double applyTax(double salary) {
             return Taxes.healthInsurance(salary);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(
-            new HealthInsuranceDecorator(
-                new RegionalTaxDecorator(
-                    new GeneralTaxDecorator(
-                        new DefaultSalaryCalculator()
-                    )
-                )
-            ).calculate(30000.00));
     }
 }

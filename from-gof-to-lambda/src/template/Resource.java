@@ -7,6 +7,13 @@ public class Resource {
         System.out.println("Resource created");
     }
 
+    public static void main(String[] args) {
+        Resource resource = new Resource();
+        resource.useResource();
+        resource.employResource();
+        resource.dispose();
+    }
+
     public void useResource() {
         riskyOperation();
         System.out.println("Resource used");
@@ -25,12 +32,5 @@ public class Resource {
         if (new Random().nextInt(10) == 0) {
             throw new RuntimeException();
         }
-    }
-
-    public static void main(String[] args) {
-        Resource resource = new Resource();
-        resource.useResource();
-        resource.employResource();
-        resource.dispose();
     }
 }

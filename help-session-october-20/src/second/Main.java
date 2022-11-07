@@ -34,9 +34,9 @@ public class Main {
 
     public static String findStudentByID(List<Student> students,
                                          StudentIDChecker checker,
-                                         long id){
-        for (var s : students){
-            if (checker.checkID(s,id)){
+                                         long id) {
+        for (var s : students) {
+            if (checker.checkID(s, id)) {
                 return printStudent(s);
             }
         }
@@ -45,8 +45,8 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(findStudentByID(students,
-            new StudentIDEqualCheckerImpl(),110));
+            new StudentIDEqualCheckerImpl(), 110));
         System.out.println(findStudentByID(students,
-            new StudentIDGreaterThanCheckerImpl(),666));
+            new StudentIDGreaterThanCheckerImpl(), 666));
     }
 }

@@ -3,7 +3,7 @@ package bikeproject;
 public class MountainBike extends Bike {
 
     private final String suspension;
-	private final String type;
+    private final String type;
     private final int frameSize;
 
     public MountainBike() {

@@ -1,7 +1,7 @@
 package helloworld;
 
 public interface MessageRenderer {
-  void render();
+    void render();
 
-  void setMessageProvider(MessageProvider provider);
+    void setMessageProvider(MessageProvider provider);
 }

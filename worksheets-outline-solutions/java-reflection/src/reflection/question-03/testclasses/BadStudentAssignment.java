@@ -8,9 +8,10 @@ import java.util.ArrayList;
 public class BadStudentAssignment {
     private static final int d = -1;
     private final int b = 3;
-    public int failingPublicField = 1;
     private final ArrayList<Integer> failingArrayListField = new ArrayList<>();
     private final int a;
+    public int failingPublicField = 1;
+
     BadStudentAssignment(int a) {
         this.a = a;
     }

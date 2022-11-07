@@ -6,10 +6,10 @@ import abstractfactory.EnemyShip;
 import abstractfactory.EnemyShipFactory;
 
 public class UFOEnemyShip extends EnemyShip {
+    private final String idcode = "100";
     EnemyShipFactory shipFactory;
     private ESWeapon weapon;
     private ESEngine engine;
-    private final String idcode = "100";
 
     public UFOEnemyShip(int number, String randString) {
 

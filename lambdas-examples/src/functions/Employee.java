@@ -1,8 +1,8 @@
 package functions;
 
 public class Employee {
-    private String name;
     private final int age;
+    private String name;
 
     public Employee(String name, int age) {
         this.name = name;

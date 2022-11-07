@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 public class DynamicArrayIterator<E> implements Iterator<E> {
 
-    private int cursor = 0;
     private final DynamicArray<E> da;
+    private int cursor = 0;
 
     public DynamicArrayIterator(DynamicArray<E> da) {
         this.da = da;

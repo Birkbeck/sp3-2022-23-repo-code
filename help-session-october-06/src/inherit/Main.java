@@ -1,26 +1,27 @@
 package inherit;
 
-interface Academic {
+sealed interface Academic {
 }
 
-interface Professor extends Academic {
+non-sealed interface Professor extends Academic {
 } // single inheritance
 
-interface Student {
+sealed interface Student {
 }
 
-interface ResearchStudent extends Student {
+non-sealed interface ResearchStudent extends Student {
 }
 
-interface TeachingAssistant extends Academic, ResearchStudent {
+non-sealed interface TeachingAssistant extends Academic, ResearchStudent {
 } // multiple inheritance
 
-public class Main {
+public final class Main {
     public static void main(String... args) {
         TeachingAssistant t = new TAImpl();
         // if I want to use an alternative implementation then
         // I need to edit the source code!!!!
         t = new TAAltImpl();
+        System.out.println(t);
     }
 }
 

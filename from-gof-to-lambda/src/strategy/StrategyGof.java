@@ -2,20 +2,28 @@ package strategy;
 
 public class StrategyGof {
 
+    public static void main(String[] args) {
+        TextEditor textEditor = new TextEditor(new ErrorTextFormatter());
+        textEditor.publishText("ERROR - something bad happened");
+        textEditor.publishText("DEBUG - I'm here");
+    }
+
     interface TextFormatter {
         boolean filter(String text);
+
         String format(String text);
     }
 
     public static class PlainTextFormatter implements TextFormatter {
 
         @Override
-        public boolean filter( String text ) {
+        public boolean filter(String text) {
             return true;
 
         }
+
         @Override
-        public String format( String text ) {
+        public String format(String text) {
             return text;
         }
     }
@@ -23,12 +31,13 @@ public class StrategyGof {
     public static class ErrorTextFormatter implements TextFormatter {
 
         @Override
-        public boolean filter( String text ) {
-            return text.startsWith( "ERROR" );
+        public boolean filter(String text) {
+            return text.startsWith("ERROR");
 
         }
+
         @Override
-        public String format( String text ) {
+        public String format(String text) {
             return text.toUpperCase();
         }
     }
@@ -36,12 +45,13 @@ public class StrategyGof {
     public static class ShortTextFormatter implements TextFormatter {
 
         @Override
-        public boolean filter( String text ) {
+        public boolean filter(String text) {
             return text.length() < 20;
 
         }
+
         @Override
-        public String format( String text ) {
+        public String format(String text) {
             return text.toLowerCase();
         }
     }
@@ -54,15 +64,9 @@ public class StrategyGof {
         }
 
         public void publishText(String text) {
-            if (textFormatter.filter( text )) {
-                System.out.println( textFormatter.format( text ) );
+            if (textFormatter.filter(text)) {
+                System.out.println(textFormatter.format(text));
             }
         }
-    }
-
-    public static void main( String[] args ) {
-        TextEditor textEditor = new TextEditor( new ErrorTextFormatter() );
-        textEditor.publishText( "ERROR - something bad happened" );
-        textEditor.publishText( "DEBUG - I'm here" );
     }
 }

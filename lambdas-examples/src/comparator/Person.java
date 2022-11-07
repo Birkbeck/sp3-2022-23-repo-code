@@ -2,8 +2,8 @@ package comparator;
 
 public class Person {
     private final String first;
-    private String middle;
     private final String last;
+    private String middle;
 
     public Person(String first, String middle, String last) {
         this.first = first;

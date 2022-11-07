@@ -71,7 +71,9 @@ public class PatternMatching {
     static Function<Integer, String> testParen(Object obj) {
         boolean b = true;
         return switch (obj) {
-            case (String s && b) -> t -> s;
+            case (String s && b) -> {
+                yield t -> s;
+            }
             default -> t -> "Default string";
         };
     }

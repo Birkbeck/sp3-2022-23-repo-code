@@ -8,12 +8,12 @@ package facade;
 
 public class BankAccountFacade {
 
+    private final int accountNumber;
+    private final int securityCode;
     AccountNumberCheck acctChecker;
     SecurityCodeCheck codeChecker;
     FundsCheck fundChecker;
     WelcomeToBank bankWelcome;
-    private final int accountNumber;
-    private final int securityCode;
 
     public BankAccountFacade(int newAcctNum, int newSecCode) {
 

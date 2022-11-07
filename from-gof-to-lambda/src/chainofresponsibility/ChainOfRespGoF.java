@@ -2,6 +2,21 @@ package chainofresponsibility;
 
 public class ChainOfRespGoF {
 
+    public static void main(String[] args) {
+        FileParser textParser = new TextFileParser();
+        FileParser presentationParser = new PresentationFileParser();
+        FileParser audioParser = new AudioFileParser();
+        FileParser videoParser = new VideoFileParser();
+
+        textParser.setNextParser(presentationParser);
+        presentationParser.setNextParser(audioParser);
+        audioParser.setNextParser(videoParser);
+
+        File file = new File(chainofresponsibility.File.Type.AUDIO, "Dream Theater  - The Astonishing");
+
+        System.out.println(textParser.parse(file));
+    }
+
     interface FileParser {
         String parse(File file);
 
@@ -67,20 +82,5 @@ public class ChainOfRespGoF {
                 throw new RuntimeException("Unknown file: " + file);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        FileParser textParser = new TextFileParser();
-        FileParser presentationParser = new PresentationFileParser();
-        FileParser audioParser = new AudioFileParser();
-        FileParser videoParser = new VideoFileParser();
-
-        textParser.setNextParser(presentationParser);
-        presentationParser.setNextParser(audioParser);
-        audioParser.setNextParser(videoParser);
-
-        File file = new File(chainofresponsibility.File.Type.AUDIO, "Dream Theater  - The Astonishing");
-
-        System.out.println(textParser.parse(file));
     }
 }

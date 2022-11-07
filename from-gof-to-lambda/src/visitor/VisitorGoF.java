@@ -4,8 +4,34 @@ import java.util.Arrays;
 import java.util.List;
 
 public class VisitorGoF {
+    public static void main(String[] args) {
+        List<Element> figures = Arrays.asList(new Circle(4), new Square(5), new Rectangle(6, 7));
+
+        double totalArea = 0.0;
+        Visitor<Double> areaVisitor = new AreaVisitor();
+        for (Element figure : figures) {
+            totalArea += figure.accept(areaVisitor);
+        }
+        System.out.println("Total area = " + totalArea);
+
+        double totalPerimeter = 0.0;
+        Visitor<Double> perimeterVisitor = new PerimeterVisitor();
+        for (Element figure : figures) {
+            totalPerimeter += figure.accept(perimeterVisitor);
+        }
+        System.out.println("Total perimeter = " + totalPerimeter);
+    }
+
     interface Element {
         <T> T accept(Visitor<T> visitor);
+    }
+
+    interface Visitor<T> {
+        T visit(Square element);
+
+        T visit(Circle element);
+
+        T visit(Rectangle element);
     }
 
     public static class Square implements Element {
@@ -49,14 +75,6 @@ public class VisitorGoF {
         }
     }
 
-    interface Visitor<T> {
-        T visit(Square element);
-
-        T visit(Circle element);
-
-        T visit(Rectangle element);
-    }
-
     public static class AreaVisitor implements Visitor<Double> {
         public Double visit(Square element) {
             return element.side * element.side;
@@ -83,23 +101,5 @@ public class VisitorGoF {
         public Double visit(Rectangle element) {
             return (2 * element.height + 2 * element.weidht);
         }
-    }
-
-    public static void main(String[] args) {
-        List<Element> figures = Arrays.asList(new Circle(4), new Square(5), new Rectangle(6, 7));
-
-        double totalArea = 0.0;
-        Visitor<Double> areaVisitor = new AreaVisitor();
-        for (Element figure : figures) {
-            totalArea += figure.accept(areaVisitor);
-        }
-        System.out.println("Total area = " + totalArea);
-
-        double totalPerimeter = 0.0;
-        Visitor<Double> perimeterVisitor = new PerimeterVisitor();
-        for (Element figure : figures) {
-            totalPerimeter += figure.accept(perimeterVisitor);
-        }
-        System.out.println("Total perimeter = " + totalPerimeter);
     }
 }
