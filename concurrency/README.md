@@ -1,16 +1,12 @@
-# Concurrency examples
+# Related Tutorials
 
-| Package  | Descripotion  |
-|---------------|----------------|
-| `atomic`    |   Atomic operations on *primitive* values   |
-| `completablefuture`    |   Examines the role of future results   |
-| `hashmap` | Concurrency in accessing map data structures |
-| `locks` | Different types of lock one can apply |
-| `simpleexecutors` | Examples of the `Executors` framework in preference to `Runnable` and `Thread` |
-| `simplerunnable` | Revision on `Thread` and `Runnable` |
-| `sync` | Simple synchronisation |
-| `userordaemonexecutor` | Various examples of *user* or *daemon* threads |
-| `userordaemonrunnable` | |
-| `userordaemonthread` | |
-| `userthreadinterrupted`| Interrupting user threads and the results |
-| `utils` | A utility class to make (some of) the code cleaner |
+1. [How to Wait for Running Threads to Finish](https://howtodoinjava.com/java/multi-threading/wait-for-threads-to-finish/)
+2. [Guide to Java ConcurrentMap](https://howtodoinjava.com/java/collections/java-concurrentmap/)
+3. [How to Cancel a Task in ExecutorService](https://howtodoinjava.com/java/multi-threading/executor-service-cancel-task/)
+4. [How to Shutdown a Java ExecutorService](https://howtodoinjava.com/java/multi-threading/executorservice-shutdown/)
+5. [Java Fork/Join Framework Tutorial](https://howtodoinjava.com/java7/forkjoin-framework-tutorial-forkjoinpool-example/)
+6. [Java Thread Pools and ThreadPoolExecutor](https://howtodoinjava.com/java/multi-threading/java-thread-pool-executor-example/)
+7. [Kill a Thread in Java](https://howtodoinjava.com/java/multi-threading/killing-java-threads/)
+8. [Thread Priority](https://howtodoinjava.com/java/multi-threading/java-thread-priority/)
+9. [Start a New Thread](https://howtodoinjava.com/java/multi-threading/create-start-threads/)
+10. [Resolving IllegalMonitorStateException In Java](https://howtodoinjava.com/java/multi-threading/java-illegalmonitorstateexception/)
