@@ -51,6 +51,6 @@ record Task(String name) implements Runnable {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Task [" + name + "] executed on : " + LocalDateTime.now().toString());
+        System.out.println("Task [" + name + "] executed on : " + LocalDateTime.now());
     }
 }

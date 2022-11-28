@@ -19,17 +19,19 @@ public class HelloLoom {
             }
             //System.out.println("Work Done - " + atomicInteger.incrementAndGet());
         };
+//        doIt(Executors.newCachedThreadPool(), runnable, "Total elapsed time for cached thread pool: ");
+//        doIt(Executors.newVirtualThreadPerTaskExecutor(), runnable, "Total elapsed time for virtual threads: ");
 
         long sumPool = 0L;
         long sumVirtual = 0L;
-        final int DURATION = 5;
+        final int DURATION = 10;
 
-        for (var x=0; x < DURATION; x++) {
+        for (var x = 0; x < DURATION; x++) {
             sumPool += doIt(Executors.newCachedThreadPool(), runnable, "Total elapsed time for cached thread pool: ");
-            sumVirtual +=doIt(Executors.newVirtualThreadPerTaskExecutor(), runnable, "Total elapsed time for virtual threads: ");
+            sumVirtual += doIt(Executors.newVirtualThreadPerTaskExecutor(), runnable, "Total elapsed time for virtual threads: ");
         }
-        System.out.format("Average time elapsed for cached thread pool %d\n", sumPool/DURATION);
-        System.out.format("Average time elapsed f≤or virtual threads %d\n", sumVirtual/DURATION);
+        System.out.format("Average time elapsed for cached thread pool %d%n", sumPool / DURATION);
+        System.out.format("Average time elapsed for virtual threads %d%n", sumVirtual / DURATION);
     }
 
     private static long doIt(ExecutorService ex, Runnable runnable, String message) {

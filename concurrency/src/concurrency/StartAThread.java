@@ -6,14 +6,13 @@ import java.util.concurrent.Executors;
 public class StartAThread {
 
     public static void main(String[] args) {
-        Thread subTask = new SubTask();
+        var subTask = new SubTask();
         subTask.start();
 
-        Thread subTaskWithRunnable = new Thread(new SubTaskWithRunnable());
+        var subTaskWithRunnable = new Thread(new SubTaskWithRunnable());
         subTaskWithRunnable.start();
 
-        Runnable subTaskWithLambda = () ->
-        {
+        Runnable subTaskWithLambda = () -> {
             System.out.println("SubTaskWithLambda started...");
         };
 
@@ -34,7 +33,7 @@ public class StartAThread {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         executorService.execute(() ->
         {
-            System.out.println("SubTaskWithLambda started...");
+            System.out.println("SubTaskWithLambda started... from executor");
         });
     }
 }
