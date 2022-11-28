@@ -9,61 +9,59 @@ package folderexample;
  * uses a work-stealing algorithm to balance the workload.
  */
 
+import lombok.Data;
+import lombok.NonNull;
+import lombok.experimental.ExtensionMethod;
+
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
+@Data
 class FolderProcessor extends RecursiveTask<List<String>> {
+    // cannot use record structure as it already extends Record
     private final String path;
     private final String extension;
 
-    private final static int MAX_SIZE = 50;
-
-    public FolderProcessor(String path, String extension){
-        this.path = path;
-        this.extension = extension;
-    }
-
     @Override
     protected List<String> compute() {
-        System.out.format("Task: %s%n", Thread.currentThread().getName());
+        System.err.format("Task: %s%n", Thread.currentThread().getName());
 
         List<String> list = new ArrayList<>(); // files stored in folder
         List<FolderProcessor> tasks = new ArrayList<>(); // list of tasks to perform
 
         var file = new File(path); // The contents of the current folder
         File[] content = file.listFiles(); // files in the folder
-        if (content != null){
-            for (var i=0; i < content.length; i++){
-                //System.out.format("Looking at %s%n", content[i]);
-                if (content[i].isDirectory()){
-                    System.out.format("Examining directory %s%n", content[i]);
-                    var task = new FolderProcessor(content[i].getAbsolutePath(), extension);
-                    task.fork();
-                    tasks.add(task);
-                }
-                else {
-                    if (check(content[i].getName())){
-                        list.add(content[i].getAbsolutePath());
+        if (content != null) { // some files/folders to process
+            //System.err.format("Looking at %s%n", content[i]);
+            Arrays.stream(content).forEach(item -> {
+                if (item.isDirectory()) {
+                    System.err.format("Examining directory %s%n", item);
+                    // create a task to examine the folder/directory
+                    var task = new FolderProcessor(item.getAbsolutePath(), extension);
+                    task.fork(); // run the task
+                    tasks.add(task); // add to the list of tasks
+                } else { // an ordinary file
+                    if (check(item.getName())) {
+                        list.add(item.getAbsolutePath());
                     }
                 }
-            }
+            });
         }
-        if (tasks.size() > MAX_SIZE){
-            System.out.format("%s: %d tasks%n", file.getAbsolutePath(), tasks.size());
-        }
-        addToResults(list,tasks);
-        return list;
+        return addToResults(list, tasks);
     }
 
-    void addToResults(List<String> list, List<FolderProcessor> tasks){
-        for (var task: tasks){
-            list.addAll(task.join());
-        }
-    }
-    boolean check(String fileName){
-        System.out.format("Examining %s%n", fileName);
+    boolean check(@NonNull String fileName) {
+        System.err.format("Examining %s%n", fileName);
         return fileName.endsWith(extension);
+    }
+
+    List<String> addToResults(@NonNull List<String> list, @NonNull List<FolderProcessor> tasks) {
+        List<String> result = new ArrayList(list);
+        tasks.stream().map(ForkJoinTask::join).forEach(result::addAll);
+        return result;
     }
 }
