@@ -10,8 +10,8 @@ package folderexample;
  */
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
-import lombok.experimental.ExtensionMethod;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -21,6 +21,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 @Data
+@EqualsAndHashCode(callSuper=false)
 class FolderProcessor extends RecursiveTask<List<String>> {
     // cannot use record structure as it already extends Record
     private final String path;

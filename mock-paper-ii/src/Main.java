@@ -14,19 +14,14 @@ public class Main {
         data.put("specialty", new Point(7, 4));
         data.put("student", new Point(1, 3));
         data.put("umbrella", new Point(42, 8));
-        //System.out.println(data);
+        System.out.println(data);
         System.out.println(sumStrings(data));
     }
 
-    public static Map<Point, Integer> sumStrings(Map<String, Point> data) {
-        data.forEach((k,v) -> System.out.printf("%s = %s\n", k, v));
+    public static Map<Point, Integer> sumStrings(Map<String, Point> map) {
         return null;
     }
 }
 
 record Point(int x, int y) {
-    @Override
-    public String toString(){
-        return "[x=" + x +",y=" + y + "]";
-    }
 }

@@ -1,3 +1,4 @@
+
 // An eating student ....
 public class Student implements Runnable {
     int n; // this student’s number
@@ -15,6 +16,7 @@ public class Student implements Runnable {
         right = (n + 1) % 5;
         new Thread(this).start();
     }
+
 
     @Override
     public void run() {

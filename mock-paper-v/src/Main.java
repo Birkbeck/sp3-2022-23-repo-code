@@ -1,5 +1,5 @@
-public class Main {
-    public static void main(String... args) {
+class Main {
+    public static void main(String[] args) {
         Forks forks = new Forks();
         new Student(0, 1000, 5000, forks);
         new Student(1, 2000, 4000, forks);
