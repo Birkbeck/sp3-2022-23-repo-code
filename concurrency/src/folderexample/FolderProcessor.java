@@ -39,7 +39,7 @@ class FolderProcessor extends RecursiveTask<List<String>> {
             //System.err.format("Looking at %s%n", content[i]);
             Arrays.stream(content).forEach(item -> {
                 if (item.isDirectory()) {
-                    System.err.format("Examining directory %s%n", item);
+                    //System.err.format("Examining directory %s%n", item);
                     // create a task to examine the folder/directory
                     var task = new FolderProcessor(item.getAbsolutePath(), extension);
                     task.fork(); // run the task
@@ -55,7 +55,7 @@ class FolderProcessor extends RecursiveTask<List<String>> {
     }
 
     boolean check(@NonNull String fileName) {
-        System.err.format("Examining %s%n", fileName);
+        //System.err.format("Examining %s%n", fileName);
         return fileName.endsWith(extension);
     }
 
