@@ -18,7 +18,7 @@ public class PatternMatching {
     // switch Expressions
 
     public static double getPerimeter(Shape shape) throws
-        IllegalArgumentException {
+            IllegalArgumentException {
         if (shape instanceof Rectangle r) {
             return 2 * r.length() + 2 * r.width();
         } else if (shape instanceof Circle c) {
@@ -71,7 +71,7 @@ public class PatternMatching {
     static Function<Integer, String> testParen(Object obj) {
         boolean b = true;
         return switch (obj) {
-            case (String s && b) -> {
+            case (String s &&b) ->{
                 yield t -> s;
             }
             default -> t -> "Default string";

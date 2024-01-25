@@ -65,8 +65,8 @@ public class Example {
         Day day = Day.WEDNESDAY;
         int numLetters = switch (day) {
             case MONDAY,
-                FRIDAY,
-                SUNDAY -> {
+                    FRIDAY,
+                    SUNDAY -> {
                 System.out.println(6);
                 yield 6;
             }
@@ -75,7 +75,7 @@ public class Example {
                 yield 7;
             }
             case THURSDAY,
-                SATURDAY -> {
+                    SATURDAY -> {
                 System.out.println(8);
                 yield 8;
             }

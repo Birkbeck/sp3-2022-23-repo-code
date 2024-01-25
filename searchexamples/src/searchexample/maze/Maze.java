@@ -35,16 +35,16 @@ public class Maze {
     final static int START_I = 1, START_J = 1;
     final static int END_I = 2, END_J = 9;
     private static final char[][] maze = {
-        {X, X, X, X, X, X, X, X, X, X},
-        {X, S, C, C, C, C, C, C, C, X},
-        {X, C, C, C, X, C, X, X, C, E},
-        {X, C, X, X, X, C, X, X, C, X},
-        {X, C, C, C, C, X, X, X, C, X},
-        {X, X, X, X, C, X, X, X, C, X},
-        {X, X, X, X, C, X, C, C, C, X},
-        {X, X, C, X, C, X, X, C, C, X},
-        {X, X, C, C, C, C, C, C, C, X},
-        {X, X, X, X, X, X, C, X, X, X}
+            {X, X, X, X, X, X, X, X, X, X},
+            {X, S, C, C, C, C, C, C, C, X},
+            {X, C, C, C, X, C, X, X, C, E},
+            {X, C, X, X, X, C, X, X, C, X},
+            {X, C, C, C, C, X, X, X, C, X},
+            {X, X, X, X, C, X, X, X, C, X},
+            {X, X, X, X, C, X, C, C, C, X},
+            {X, X, C, X, C, X, X, C, C, X},
+            {X, X, C, C, C, C, C, C, C, X},
+            {X, X, X, X, X, X, C, X, X, X}
     };
 
     public static void main(String[] args) {
@@ -132,7 +132,7 @@ public class Maze {
         return mazeCopy;
     }
 
-        public void restore(char[][] savedMaze) {
+    public void restore(char[][] savedMaze) {
         for (int i = 0; i < size(); i++)
             for (int j = 0; j < size(); j++)
                 maze[i][j] = savedMaze[i][j];

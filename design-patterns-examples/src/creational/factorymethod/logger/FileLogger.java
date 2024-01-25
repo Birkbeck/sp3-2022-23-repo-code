@@ -1,4 +1,4 @@
-package factorymethod.logger;
+package creational.factorymethod.logger;
 
 import java.io.IOException;
 import java.io.PrintStream;

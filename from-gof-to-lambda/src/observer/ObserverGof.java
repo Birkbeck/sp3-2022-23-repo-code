@@ -22,7 +22,7 @@ public final class ObserverGof {
 
     public static final class Observable {
         private final Map<Object, Listener> listeners
-            = new ConcurrentHashMap<>();
+                = new ConcurrentHashMap<>();
 
         public void register(final Object key, final Listener listener) {
             listeners.put(key, listener);

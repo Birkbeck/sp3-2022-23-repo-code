@@ -17,7 +17,7 @@ public class Construct {
             // For a constructor that required two Strings one could
             // specify it in the following manner: (one of many approaches)
             var css = c.getConstructor(
-                String.class, String.class);
+                    String.class, String.class);
             // So, the "trick" is to form a "Class" array and populate it
             // with the types you require.
 

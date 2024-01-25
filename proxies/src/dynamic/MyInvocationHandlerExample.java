@@ -10,8 +10,8 @@ public class MyInvocationHandlerExample implements InvocationHandler {
         MyInvocationHandlerExample handler = new MyInvocationHandlerExample();
 
         MyInterface o = (MyInterface) Proxy.newProxyInstance(
-            MyInvocationHandlerExample.class.getClassLoader(),
-            new Class[]{MyInterface.class}, handler);
+                MyInvocationHandlerExample.class.getClassLoader(),
+                new Class[]{MyInterface.class}, handler);
         o.doSomething();
     }
 

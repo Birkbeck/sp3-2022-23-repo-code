@@ -51,11 +51,11 @@ class Person {
     @Override
     public String toString() {
         return "Person{" +
-            "first='" + first + '\'' +
-            ", second='" + second + '\'' +
-            ", age=" + age +
-            ", address='" + address + '\'' +
-            '}';
+                "first='" + first + '\'' +
+                ", second='" + second + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                '}';
     }
 
     public static final class PersonBuilder {

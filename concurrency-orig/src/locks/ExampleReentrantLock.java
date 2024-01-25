@@ -33,7 +33,7 @@ public class ExampleReentrantLock {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, NUM_INCREMENTS)
-            .forEach(i -> executor.submit(ExampleReentrantLock::increment));
+                .forEach(i -> executor.submit(ExampleReentrantLock::increment));
 
         ConcurrentUtils.stop(executor);
 

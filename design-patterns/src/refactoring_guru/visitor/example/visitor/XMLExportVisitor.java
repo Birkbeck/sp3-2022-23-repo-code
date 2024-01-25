@@ -15,36 +15,36 @@ public class XMLExportVisitor implements Visitor {
 
     public String visitDot(Dot d) {
         return "<dot>" + "\n" +
-            "    <id>" + d.getId() + "</id>" + "\n" +
-            "    <x>" + d.getX() + "</x>" + "\n" +
-            "    <y>" + d.getY() + "</y>" + "\n" +
-            "</dot>";
+                "    <id>" + d.getId() + "</id>" + "\n" +
+                "    <x>" + d.getX() + "</x>" + "\n" +
+                "    <y>" + d.getY() + "</y>" + "\n" +
+                "</dot>";
     }
 
     public String visitCircle(Circle c) {
         return "<circle>" + "\n" +
-            "    <id>" + c.getId() + "</id>" + "\n" +
-            "    <x>" + c.getX() + "</x>" + "\n" +
-            "    <y>" + c.getY() + "</y>" + "\n" +
-            "    <radius>" + c.getRadius() + "</radius>" + "\n" +
-            "</circle>";
+                "    <id>" + c.getId() + "</id>" + "\n" +
+                "    <x>" + c.getX() + "</x>" + "\n" +
+                "    <y>" + c.getY() + "</y>" + "\n" +
+                "    <radius>" + c.getRadius() + "</radius>" + "\n" +
+                "</circle>";
     }
 
     public String visitRectangle(Rectangle r) {
         return "<rectangle>" + "\n" +
-            "    <id>" + r.getId() + "</id>" + "\n" +
-            "    <x>" + r.getX() + "</x>" + "\n" +
-            "    <y>" + r.getY() + "</y>" + "\n" +
-            "    <width>" + r.getWidth() + "</width>" + "\n" +
-            "    <height>" + r.getHeight() + "</height>" + "\n" +
-            "</rectangle>";
+                "    <id>" + r.getId() + "</id>" + "\n" +
+                "    <x>" + r.getX() + "</x>" + "\n" +
+                "    <y>" + r.getY() + "</y>" + "\n" +
+                "    <width>" + r.getWidth() + "</width>" + "\n" +
+                "    <height>" + r.getHeight() + "</height>" + "\n" +
+                "</rectangle>";
     }
 
     public String visitCompoundGraphic(CompoundShape cg) {
         return "<compound_graphic>" + "\n" +
-            "   <id>" + cg.getId() + "</id>" + "\n" +
-            _visitCompoundGraphic(cg) +
-            "</compound_graphic>";
+                "   <id>" + cg.getId() + "</id>" + "\n" +
+                _visitCompoundGraphic(cg) +
+                "</compound_graphic>";
     }
 
     private String _visitCompoundGraphic(CompoundShape cg) {

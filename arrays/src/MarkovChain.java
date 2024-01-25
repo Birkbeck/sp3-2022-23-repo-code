@@ -12,7 +12,7 @@ public class MarkovChain {
     private final HashMap<String, int[][]> sourceModels;
 
     public MarkovChain(HashMap<String, FileInputStream> corpora)
-        throws FileNotFoundException {
+            throws FileNotFoundException {
         sourceModels = new HashMap<String, int[][]>();
         for (String source : corpora.keySet()) {
             sourceModels.put(source, new int[27][27]);
@@ -22,10 +22,10 @@ public class MarkovChain {
 
 
     private void train(Collection<String> trainingFiles)
-        throws FileNotFoundException {
+            throws FileNotFoundException {
         for (String source : trainingFiles) {
             FileInputStream fis =
-                new FileInputStream(new File(source + ".corpus"));
+                    new FileInputStream(new File(source + ".corpus"));
             System.out.println("Training " + source + " model.");
             Scanner reader = new Scanner(fis);
             reader.useDelimiter("[.?!]");
@@ -53,7 +53,7 @@ public class MarkovChain {
         int[] indexes = new int[chars.length];
         for (int i = 0; i < chars.length; ++i) {
             indexes[i] = Character.getNumericValue(chars[i])
-                - Character.getNumericValue('A');
+                    - Character.getNumericValue('A');
         }
         return indexes;
     }

@@ -36,7 +36,7 @@ public class StockMediator implements Mediator {
             if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
 
                 System.out.println(shares + " shares of " + stock +
-                    " sold to colleague code " + offer.getCollCode());
+                        " sold to colleague code " + offer.getCollCode());
 
                 stockBuyOffers.remove(offer);
 
@@ -53,7 +53,7 @@ public class StockMediator implements Mediator {
         if (!stockSold) {
 
             System.out.println(shares + " shares of " + stock +
-                " added to inventory");
+                    " added to inventory");
 
             final StockOffer newOffering = new StockOffer(shares, stock, collCode);
 
@@ -72,7 +72,7 @@ public class StockMediator implements Mediator {
             if ((offer.getStockSymbol() == stock) && (offer.getstockShares() == shares)) {
 
                 System.out.println(shares + " shares of " + stock +
-                    " bought by colleague code " + offer.getCollCode());
+                        " bought by colleague code " + offer.getCollCode());
 
                 stockSaleOffers.remove(offer);
 
@@ -89,7 +89,7 @@ public class StockMediator implements Mediator {
         if (!stockBought) {
 
             System.out.println(shares + " shares of " + stock +
-                " added to inventory");
+                    " added to inventory");
 
             final StockOffer newOffering = new StockOffer(shares, stock, collCode);
 

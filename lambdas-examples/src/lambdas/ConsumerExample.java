@@ -15,7 +15,7 @@ public class ConsumerExample {
         System.out.println("Retrieving rate for currency " + currency);
         //just a test , no real exchange rate service call made.
         Executors.newSingleThreadExecutor().submit(() ->
-            rateConsumer.accept(new BigDecimal(Math.round(Math.random() * 100))));
+                rateConsumer.accept(new BigDecimal(Math.round(Math.random() * 100))));
 
     }
 }

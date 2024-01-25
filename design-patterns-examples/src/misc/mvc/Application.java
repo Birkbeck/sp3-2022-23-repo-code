@@ -1,4 +1,4 @@
-package mvc;
+package misc.mvc;
 
 import javax.swing.SwingUtilities;
 

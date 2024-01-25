@@ -41,6 +41,7 @@ public class GetTheStock implements Runnable {
                 // Use Thread.sleep(startTime * 1000); to
                 // make sleep time variable
             } catch (InterruptedException e) {
+                e.printStackTrace();
             }
 
             // Generates a random number between -.03 and .03
@@ -64,7 +65,7 @@ public class GetTheStock implements Runnable {
             }
 
             System.out.println(stock + ": " + df.format((price + randNum))
-                + " " + df.format(randNum));
+                    + " " + df.format(randNum));
             System.out.println();
         }
     }

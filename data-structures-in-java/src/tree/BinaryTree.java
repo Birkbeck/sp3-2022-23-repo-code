@@ -53,8 +53,8 @@ public class BinaryTree {
         }
 
         return value < current.value
-            ? containsNodeRecursive(current.left, value)
-            : containsNodeRecursive(current.right, value);
+                ? containsNodeRecursive(current.left, value)
+                : containsNodeRecursive(current.right, value);
     }
 
     public void delete(int value) {

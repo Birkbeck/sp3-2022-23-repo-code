@@ -27,9 +27,9 @@ public final class MessageSupportFactory {
             String providerClass = props.getProperty("provider.class");
 
             renderer = (MessageRenderer) Class.forName(rendererClass)
-                .getDeclaredConstructor().newInstance();
+                    .getDeclaredConstructor().newInstance();
             provider = (MessageProvider) Class.forName(providerClass)
-                .getDeclaredConstructor().newInstance();
+                    .getDeclaredConstructor().newInstance();
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -31,7 +31,7 @@ public class InterfaceConstructor {
             this.c = Class.forName(className);
         } catch (ClassNotFoundException e) {
             System.err.println("Unknown classname '" + className +
-                "' supplied to InterfaceConstructor constructor method.");
+                    "' supplied to InterfaceConstructor constructor method.");
         }
     }
 
@@ -45,8 +45,8 @@ public class InterfaceConstructor {
      */
     private static String joinArrayRemovingNullEntries(String[] strings, String delimiter) {
         return Arrays.stream(strings)
-            .filter(Objects::nonNull)
-            .collect(Collectors.joining(delimiter));
+                .filter(Objects::nonNull)
+                .collect(Collectors.joining(delimiter));
     }
 
     /**
@@ -76,8 +76,8 @@ public class InterfaceConstructor {
      */
     private static String getDelimiterSeparatedParameterTypes(Parameter[] params, String delimiter) {
         return Stream.of(params)
-            .map(Parameter -> simplifyTypeClass(Parameter.getParameterizedType()))
-            .collect(Collectors.joining(delimiter));
+                .map(Parameter -> simplifyTypeClass(Parameter.getParameterizedType()))
+                .collect(Collectors.joining(delimiter));
     }
 
     private static String simplifyTypeClass(Type t) {
@@ -106,20 +106,20 @@ public class InterfaceConstructor {
     public String getInterfaces() {
         if (c.getInterfaces().length != 0) {
             return "implements " + Stream.of(c.getInterfaces())
-                .map(Class::getSimpleName)
-                .collect(Collectors.joining(", "));
+                    .map(Class::getSimpleName)
+                    .collect(Collectors.joining(", "));
         }
         return null;
     }
 
     public String getClassDeclaration() {
         return joinArrayRemovingNullEntries(new String[]{
-                getSimpleModifiers(c.getModifiers()),
-                getClassType(),
-                c.getSimpleName(),
-                getExtension(),
-                getInterfaces()},
-            " ");
+                        getSimpleModifiers(c.getModifiers()),
+                        getClassType(),
+                        c.getSimpleName(),
+                        getExtension(),
+                        getInterfaces()},
+                " ");
     }
 
     public String getFieldInformation() {
@@ -128,10 +128,10 @@ public class InterfaceConstructor {
         List<String> output = new ArrayList<>(Arrays.asList(INDENT + "// Field information", ""));
         for (Field fld : c.getDeclaredFields()) {
             output.add(1, joinArrayRemovingNullEntries(new String[]{INDENT,
-                    getSimpleModifiers(fld.getModifiers()),
-                    simplifyTypeClass(fld.getGenericType()),
-                    fld.getName() + ";",},
-                " "));
+                            getSimpleModifiers(fld.getModifiers()),
+                            simplifyTypeClass(fld.getGenericType()),
+                            fld.getName() + ";",},
+                    " "));
         }
         return String.join("\n", output);
     }
@@ -142,10 +142,10 @@ public class InterfaceConstructor {
         List<String> output = new ArrayList<>(Arrays.asList(INDENT + "// Constructor information", ""));
         for (Constructor<?> constr : c.getConstructors()) {
             output.add(1, joinArrayRemovingNullEntries(new String[]{INDENT,
-                    getSimpleModifiers(constr.getModifiers()),
-                    simplifyClass(constr.getName())
-                        + "(" + getDelimiterSeparatedParameterTypes(constr.getParameters(), ", ") + ");",},
-                " "));
+                            getSimpleModifiers(constr.getModifiers()),
+                            simplifyClass(constr.getName())
+                                    + "(" + getDelimiterSeparatedParameterTypes(constr.getParameters(), ", ") + ");",},
+                    " "));
         }
         return String.join("\n", output);
     }
@@ -156,11 +156,11 @@ public class InterfaceConstructor {
         List<String> output = new ArrayList<>(Arrays.asList(INDENT + "// Declared method information", ""));
         for (Method method : c.getDeclaredMethods()) {
             output.add(1, joinArrayRemovingNullEntries(new String[]{INDENT,
-                    getSimpleModifiers(method.getModifiers()),
-                    simplifyTypeClass(method.getGenericReturnType()),
-                    method.getName()
-                        + "(" + getDelimiterSeparatedParameterTypes(method.getParameters(), ", ") + ");"},
-                " "));
+                            getSimpleModifiers(method.getModifiers()),
+                            simplifyTypeClass(method.getGenericReturnType()),
+                            method.getName()
+                                    + "(" + getDelimiterSeparatedParameterTypes(method.getParameters(), ", ") + ");"},
+                    " "));
         }
         return String.join("\n", output);
     }
@@ -169,14 +169,14 @@ public class InterfaceConstructor {
     public String toString() {
         if (c == null) return null;
         return joinArrayRemovingNullEntries(new String[]{
-                "/**",
-                " * Interface created for " + c.getCanonicalName(),
-                " */",
-                getClassDeclaration() + " {",
-                getFieldInformation(),
-                getConstructorsInformation(),
-                getMethodsInformation(),
-                "}"},
-            "\n");
+                        "/**",
+                        " * Interface created for " + c.getCanonicalName(),
+                        " */",
+                        getClassDeclaration() + " {",
+                        getFieldInformation(),
+                        getConstructorsInformation(),
+                        getMethodsInformation(),
+                        "}"},
+                "\n");
     }
 } // InterfaceConstructor

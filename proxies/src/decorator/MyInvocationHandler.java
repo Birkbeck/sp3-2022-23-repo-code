@@ -17,8 +17,8 @@ public class MyInvocationHandler implements InvocationHandler {
         MyInvocationHandler handler = new MyInvocationHandler("the example string");
 
         CharSequence o = (CharSequence) Proxy.newProxyInstance(
-            MyInvocationHandler.class.getClassLoader(),
-            new Class[]{CharSequence.class}, handler);
+                MyInvocationHandler.class.getClassLoader(),
+                new Class[]{CharSequence.class}, handler);
         System.out.println(o.length());
         System.out.println(o.subSequence(4, 8));
     }

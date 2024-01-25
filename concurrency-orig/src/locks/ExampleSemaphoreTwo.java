@@ -15,7 +15,7 @@ public class ExampleSemaphoreTwo {
         ExecutorService executor = Executors.newFixedThreadPool(10);
 
         IntStream.range(0, 10)
-            .forEach(i -> executor.submit(ExampleSemaphoreTwo::doWork));
+                .forEach(i -> executor.submit(ExampleSemaphoreTwo::doWork));
 
         ConcurrentUtils.stop(executor);
     }

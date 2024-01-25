@@ -1,8 +1,8 @@
-package factorymethod.logger;
+package creational.factorymethod.logger;
 
 public abstract class LoggerFactory {
     public static LoggerFactory getFactory(String f)
-        throws Exception {
+            throws Exception {
         return (LoggerFactory) Class.forName(f).getDeclaredConstructor().newInstance();
     }
 

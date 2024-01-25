@@ -71,9 +71,9 @@ public class LambdaTroopers {
         // Here we resolve the ambiguity in the overloaded foo() mthods by
         // casting the lambda expression
         foo((Bar) (Trooper t1, Trooper t2) ->
-            t1.hasMustache() && t2.hasMustache()
-                ? t1.getName().compareTo(t2.getName())
-                : (t1.hasMustache() ? 1 : -1));
+                t1.hasMustache() && t2.hasMustache()
+                        ? t1.getName().compareTo(t2.getName())
+                        : (t1.hasMustache() ? 1 : -1));
 
         /////////////////////////////////////////////////////////////////////
         // Method reference examples
@@ -104,9 +104,9 @@ public class LambdaTroopers {
         // Trooper::hasMustache is a method reference to an instance method
         // It is equivalent to (Trooper e) -> e.hasMustache()
         Comparator<Trooper> byMustacheThenName =
-            // Class::instanceMethod method reference
-            Comparator.comparing(Trooper::hasMustache)
-                .thenComparing(Trooper::getName);
+                // Class::instanceMethod method reference
+                Comparator.comparing(Trooper::hasMustache)
+                        .thenComparing(Trooper::getName);
         Collections.sort(troopers, byMustacheThenName);
         System.out.println("\nBy mustache, then name:\n" + troopers);
     }

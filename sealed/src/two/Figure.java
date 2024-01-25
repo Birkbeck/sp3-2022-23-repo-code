@@ -1,9 +1,9 @@
 package two;
 
 public sealed class Figure
-    // The permits clause has been omitted
-    // as its permitted classes have been
-    // defined in the same file.
+        // The permits clause has been omitted
+        // as its permitted classes have been
+        // defined in the same file.
 {
 }
 

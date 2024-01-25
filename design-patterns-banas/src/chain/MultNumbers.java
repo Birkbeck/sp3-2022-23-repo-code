@@ -17,7 +17,7 @@ public class MultNumbers implements Chain {
         if (request.getCalcWanted() == "mult") {
 
             System.out.print(request.getNumber1() + " * " + request.getNumber2() + " = " +
-                (request.getNumber1() * request.getNumber2()));
+                    (request.getNumber1() * request.getNumber2()));
 
         } else {
 

@@ -19,7 +19,7 @@ public class ProcessHandleExample {
         info.arguments().ifPresent(array -> System.out.printf("Arguments: %s%n", array));
         info.startInstant().ifPresent(instant -> System.out.printf("StartInstant: %s%n", instant));
         info.totalCpuDuration().ifPresent(duration ->
-            System.out.printf("CpuDuration: %s millis%n", duration.toMillis()));
+                System.out.printf("CpuDuration: %s millis%n", duration.toMillis()));
         info.user().ifPresent(str -> System.out.printf("User: %s%n", str));
 
         System.out.println("-- destroying --");

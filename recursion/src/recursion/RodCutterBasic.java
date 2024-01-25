@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class RodCutterBasic {
     static
     final List<Integer> priceValues =
-        Arrays.asList(2, 1, 1, 2, 2, 2, 1, 8, 9, 15);
+            Arrays.asList(2, 1, 1, 2, 2, 2, 1, 8, 9, 15);
     final List<Integer> prices;
 
     //...

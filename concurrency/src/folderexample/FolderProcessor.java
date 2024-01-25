@@ -21,7 +21,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 @Data
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 class FolderProcessor extends RecursiveTask<List<String>> {
     // cannot use record structure as it already extends Record
     private final String path;

@@ -1,21 +1,21 @@
 import java.util.*;
 
 public class Sample {
-  public static void main(String[] args) {
-    List<String> names = List.of("Dory", "Gill", "Bruce", "Nemo", "Darla", "Marlin", "Jacques");
+    public static void main(String[] args) {
+        List<String> names = List.of("Dory", "Gill", "Bruce", "Nemo", "Darla", "Marlin", "Jacques");
 
-    //find if Nemo is there.
+        //find if Nemo is there.
 
-    //imperative style: we tell what to do and also how to do it
-    //declarative style: we tell what to do but *not* how to do it
-    //  we delegate the how to some underlying functions in the library
+        //imperative style: we tell what to do and also how to do it
+        //declarative style: we tell what to do but *not* how to do it
+        //  we delegate the how to some underlying functions in the library
 
-    if(names.contains("Nemo")) {
-      System.out.println("Nemo found");
-    } else {
-      System.out.println("Nemo not found");
+        if (names.contains("Nemo")) {
+            System.out.println("Nemo found");
+        } else {
+            System.out.println("Nemo not found");
+        }
     }
-  }
 }
 
 /*

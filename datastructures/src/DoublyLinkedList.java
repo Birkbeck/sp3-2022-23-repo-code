@@ -28,7 +28,7 @@ public class DoublyLinkedList<E> {
         lst.remove(4);
         System.out.println("After lst.remove(4) (last element): " + lst);
         System.out.println("toReverseString still works: "
-            + lst.toReverseString());
+                + lst.toReverseString());
 
         lst.remove(22);
         System.out.println("After lst.remove(22): " + lst);
@@ -136,7 +136,7 @@ public class DoublyLinkedList<E> {
     public void insertAfter(E existingItem, E newItem) {
         Node<E> curNode = first;
         while (!curNode.data.equals(existingItem)
-            && (curNode.next != null)) {
+                && (curNode.next != null)) {
             curNode = curNode.next;
         }
         Node<E> newNode = new Node<E>(newItem, curNode.next, curNode);

@@ -28,7 +28,7 @@ public class SumLists {
     }
 
     public static <T> List<T> tail(List<T> xs)
-        throws IndexOutOfBoundsException, IllegalArgumentException {
+            throws IndexOutOfBoundsException, IllegalArgumentException {
         return xs.subList(1, xs.size());
     }
 }

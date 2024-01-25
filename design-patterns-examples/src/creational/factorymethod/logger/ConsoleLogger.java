@@ -1,4 +1,4 @@
-package factorymethod.logger;
+package creational.factorymethod.logger;
 
 public class ConsoleLogger implements Logger {
     @Override

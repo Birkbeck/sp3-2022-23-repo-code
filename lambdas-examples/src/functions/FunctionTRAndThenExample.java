@@ -25,7 +25,7 @@ public class FunctionTRAndThenExample {
         List<Employee> employeeList = Util.load();
         Function<String, String> initialFunction = (String s) -> s.substring(0, 1);
         List<String> empNameListInitials = convertEmpListToNamesList(employeeList,
-            funcEmpToString.andThen(initialFunction));
+                funcEmpToString.andThen(initialFunction));
         empNameListInitials.forEach(str -> {
             System.out.print(" " + str);
         });

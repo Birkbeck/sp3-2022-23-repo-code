@@ -20,10 +20,10 @@ class TestReporterDemo {
     @Test
     void reportMultipleKeyValuePairs(TestReporter testReporter) {
         testReporter.publishEntry(
-            Map.of(
-                "user name", "dk38",
-                "award year", "1974"
-            ));
+                Map.of(
+                        "user name", "dk38",
+                        "award year", "1974"
+                ));
     }
 
 }

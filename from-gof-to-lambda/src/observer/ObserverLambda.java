@@ -18,7 +18,7 @@ public final class ObserverLambda {
 
     public static final class Observable {
         private final Map<Object, Consumer<Object>> listeners =
-            new ConcurrentHashMap<>();
+                new ConcurrentHashMap<>();
 
         public void register(final Object key, final Consumer<Object> listener) {
             listeners.put(key, listener);

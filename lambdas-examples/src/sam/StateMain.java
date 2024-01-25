@@ -5,7 +5,7 @@ public class StateMain {
         StateOwner stateOwner = new StateOwner();
 
         stateOwner.addStateListener(
-            (oldState, newState) -> System.out.println("State changed")
+                (oldState, newState) -> System.out.println("State changed")
         );
     }
 }

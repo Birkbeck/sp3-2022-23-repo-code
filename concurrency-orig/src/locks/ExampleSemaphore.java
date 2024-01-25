@@ -23,7 +23,7 @@ public class ExampleSemaphore {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, NUM_INCREMENTS)
-            .forEach(i -> executor.submit(ExampleSemaphore::increment));
+                .forEach(i -> executor.submit(ExampleSemaphore::increment));
 
         ConcurrentUtils.stop(executor);
 

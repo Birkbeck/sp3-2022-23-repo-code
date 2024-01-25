@@ -54,8 +54,8 @@ public class SortTroopers {
 
         // Using a composed comparator
         Comparator<Trooper> byMustacheThenName =
-            Comparator.comparing(Trooper::hasMustache)
-                .thenComparing(Trooper::getName);
+                Comparator.comparing(Trooper::hasMustache)
+                        .thenComparing(Trooper::getName);
         Collections.sort(troopers, byMustacheThenName);
         System.out.println("\nBy mustache, then name:\n" + troopers);
     }

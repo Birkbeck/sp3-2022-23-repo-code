@@ -14,7 +14,7 @@ public class Example {
         OutputStream out = Files.newOutputStream(Paths.get("somefile"));
         out = new BufferedOutputStream(out); // buffer before writing
         out = new CipherOutputStream(out,        // encrypt all data
-            Cipher.getInstance("DES/CBC/PKCS5Padding"));
+                Cipher.getInstance("DES/CBC/PKCS5Padding"));
         out = new ZipOutputStream(out);      // compress all data
 
 

@@ -19,8 +19,8 @@ public class MyInvocationHandlerIntercept implements InvocationHandler {
         MyInvocationHandlerIntercept handler = new MyInvocationHandlerIntercept("the example string");
 
         CharSequence o = (CharSequence) Proxy.newProxyInstance(
-            MyInvocationHandler.class.getClassLoader(),
-            new Class[]{CharSequence.class}, handler);
+                MyInvocationHandler.class.getClassLoader(),
+                new Class[]{CharSequence.class}, handler);
         System.out.println(o.length());
         System.out.println(o.subSequence(4, 8));
     }

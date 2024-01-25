@@ -11,4 +11,5 @@
 9. [Start a New Thread](https://howtodoinjava.com/java/multi-threading/create-start-threads/)
 10. [Resolving IllegalMonitorStateException In Java](https://howtodoinjava.com/java/multi-threading/java-illegalmonitorstateexception/)
 
-All of these tutorials are from [howtodoinjava.com](https://howtodoinjava.com), an excellent resource for a `Java` "deep dive".
+All of these tutorials are from [howtodoinjava.com](https://howtodoinjava.com), an excellent resource for a `Java` "deep
+dive".

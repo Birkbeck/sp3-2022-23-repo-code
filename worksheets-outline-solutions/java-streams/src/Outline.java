@@ -51,8 +51,8 @@ public class Outline {
         List<Integer> list2 = Arrays.asList(3, 4);
 
         List<List<Integer>> output2 = list1.stream()
-            .flatMap(num1 -> list2.stream().map(num2 -> Arrays.asList(num1, num2)))
-            .collect(Collectors.toList());
+                .flatMap(num1 -> list2.stream().map(num2 -> Arrays.asList(num1, num2)))
+                .collect(Collectors.toList());
 
         System.out.println(output2);
 
@@ -64,14 +64,14 @@ public class Outline {
 
 
         List<List<Integer>> output3 = list1.stream()
-            .flatMap(num1 -> list2.stream().filter(num2 -> (num1 + num2) % 3 == 0)
-                .map(num2 -> Arrays.asList(num1, num2)))
-            .collect(Collectors.toList());
+                .flatMap(num1 -> list2.stream().filter(num2 -> (num1 + num2) % 3 == 0)
+                        .map(num2 -> Arrays.asList(num1, num2)))
+                .collect(Collectors.toList());
         System.out.println(output3);
 
 
         List<String> words = Arrays.asList("hi", "bat", "ear", "hello", "iguana", "beaver"
-            , "winterland", "elephant", "eye", "qi");
+                , "winterland", "elephant", "eye", "qi");
 
     /* 6. Loop through the words and print each one on a separate line, with two spaces
     in front of each word. */
@@ -96,16 +96,16 @@ public class Outline {
         System.out.println("\n8.");
 
         List<String> excitingWords = words.stream()
-            .map(s -> s + "!")
-            .collect(Collectors.toList());
+                .map(s -> s + "!")
+                .collect(Collectors.toList());
 
         List<String> eyeWords = words.stream()
-            .map(s -> s.replace("i", "eye"))
-            .collect(Collectors.toList());
+                .map(s -> s.replace("i", "eye"))
+                .collect(Collectors.toList());
 
         List<String> upperCaseWords = words.stream()
-            .map(String::toUpperCase)
-            .collect(Collectors.toList());
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
 
         System.out.println(excitingWords);
         System.out.println(eyeWords);
@@ -121,16 +121,16 @@ public class Outline {
         System.out.println("\n9.");
 
         List<String> shortWords = words.stream()
-            .filter(s -> s.length() < 4)
-            .collect(Collectors.toList());
+                .filter(s -> s.length() < 4)
+                .collect(Collectors.toList());
 
         List<String> wordsWithB = words.stream()
-            .filter(s -> s.contains("b"))
-            .collect(Collectors.toList());
+                .filter(s -> s.contains("b"))
+                .collect(Collectors.toList());
 
         List<String> evenLengthWords = words.stream()
-            .filter(s -> (s.length() % 2) == 0)
-            .collect(Collectors.toList());
+                .filter(s -> (s.length() % 2) == 0)
+                .collect(Collectors.toList());
 
         System.out.println(shortWords);
         System.out.println(wordsWithB);
@@ -143,17 +143,17 @@ public class Outline {
 
         System.out.println("\n10a.");
         words.stream()
-            .filter(s -> s.length() < 4 && s.contains("e"))
-            .map(String::toUpperCase)
-            .limit(1)
-            .forEach(System.out::println);
+                .filter(s -> s.length() < 4 && s.contains("e"))
+                .map(String::toUpperCase)
+                .limit(1)
+                .forEach(System.out::println);
 
         System.out.println("\n10b.");
         words.stream()
-            .filter(s -> s.length() < 4 && s.contains("q"))
-            .map(String::toUpperCase)
-            .limit(1)
-            .forEach(System.out::println);
+                .filter(s -> s.length() < 4 && s.contains("q"))
+                .map(String::toUpperCase)
+                .limit(1)
+                .forEach(System.out::println);
 
     /* 11. (** ) The above example uses lazy evaluation, but it is not easy to see
     that it is doing so. Create a variation of the above example that shows
@@ -171,9 +171,9 @@ public class Outline {
      */
 
         words.stream().peek(s -> System.out.println("pre-filter2: " + s))
-            .filter(s -> s.length() < 4 && s.contains("e"))
-            .map(String::toUpperCase)
-            .forEach(System.out::println);
+                .filter(s -> s.length() < 4 && s.contains("e"))
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
 
     /* 12. (*) Write a static method that produces a List of a specified length of
     random numbers. For example,
@@ -215,7 +215,7 @@ public class Outline {
 
         System.out.println("\n15.");
         int sumP = list1.parallelStream()
-            .reduce((n1, n2) -> n1 + n2).get();
+                .reduce((n1, n2) -> n1 + n2).get();
         System.out.println(sumP);
 
     /* 16. (**) Now, use streams to compute the product of some doubles. Show that
@@ -224,7 +224,7 @@ public class Outline {
         System.out.println("\n16.");
         Double[] doubleArray = {2.0, 7.0, 3.0, 4.0, 8.0, 2.0};
         double productDouble = Stream.of(doubleArray)
-            .reduce(1.0, (n1, n2) -> n1 * n2);
+                .reduce(1.0, (n1, n2) -> n1 * n2);
         System.out.println(productDouble);
 
         BinaryOperator<Double> dProduct = (aDouble, aDouble2) -> aDouble * aDouble2;
@@ -232,8 +232,8 @@ public class Outline {
         // Ouch! "for" loop...
         for (int i = 0; i < TEN_THOUSAND; i++) {
             double productDoubleP = Stream.of(doubleArray)
-                .parallel()
-                .collect(Collectors.reducing(1.0, (aDouble, aDouble2) -> aDouble * aDouble2));
+                    .parallel()
+                    .collect(Collectors.reducing(1.0, (aDouble, aDouble2) -> aDouble * aDouble2));
             if (productDouble != productDoubleP) {
                 System.out.println("Not equal (" + i + ")");
             }
@@ -245,7 +245,7 @@ public class Outline {
 
         System.out.println("\n17.");
         String concat1 = words.stream()
-            .reduce("", (sA, sB) -> sA + sB.toUpperCase());
+                .reduce("", (sA, sB) -> sA + sB.toUpperCase());
         System.out.println(concat1);
 
     /* 18. (*) Produce the same String as above, but this time via a map operation that
@@ -254,8 +254,8 @@ public class Outline {
 
         System.out.println("\n18.");
         String concat2 = words.stream()
-            .map(String::toUpperCase)
-            .reduce("", (sA, sB) -> sA + sB);
+                .map(String::toUpperCase)
+                .reduce("", (sA, sB) -> sA + sB);
         System.out.println(concat2);
 
     /* 19. (*) Produce a String that is all the words concatenated together, but
@@ -272,14 +272,14 @@ public class Outline {
 
     static List<Double> randomNumberList(int size) {
         return Stream.generate(new Random()::nextDouble)
-            .limit(size)
-            .collect(Collectors.toList());
+                .limit(size)
+                .collect(Collectors.toList());
     }
 
     static List<Integer> orderedNumberList(int start, int step, int size) {
         return Stream.iterate(start, n -> n + step)
-            .limit(size)
-            .collect(Collectors.toList());
+                .limit(size)
+                .collect(Collectors.toList());
     }
 
 }

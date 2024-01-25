@@ -1,4 +1,4 @@
-package mvc.controller;
+package misc.mvc.controller;
 
 import mvc.model.Model;
 import mvc.view.View;

@@ -10,17 +10,17 @@ public class ShutdownExecutor {
         System.out.println("WorkerTasks scheduled at : " + LocalDateTime.now());
 
         ScheduledFuture<String> result1 = executor.schedule(new WorkerTask(
-            "WorkerTask-1"), 10, TimeUnit.SECONDS);
+                "WorkerTask-1"), 10, TimeUnit.SECONDS);
 
         ScheduledFuture<String> result2 = executor.schedule(new WorkerTask(
-            "WorkerTask-2"), 20, TimeUnit.SECONDS);
+                "WorkerTask-2"), 20, TimeUnit.SECONDS);
 
         ScheduledFuture<String> result3 = executor.schedule(new WorkerTask(
-            "WorkerTask-3"), 30, TimeUnit.SECONDS);
+                "WorkerTask-3"), 30, TimeUnit.SECONDS);
 
         Thread.sleep(15_000);
         System.out.println("***********Shutting down the executor " +
-            "service*********");
+                "service*********");
         executor.shutdown();
 
         System.out.println("***********Tasks are partially completed*********");
@@ -64,7 +64,7 @@ class WorkerTask implements Callable<String> {
     @Override
     public String call() throws Exception {
         System.out.println("WorkerTask [" + name + "] executed on : "
-            + LocalDateTime.now().toString());
+                + LocalDateTime.now().toString());
         return "WorkerTask [" + name + "] is SUCCESS !!";
     }
 }

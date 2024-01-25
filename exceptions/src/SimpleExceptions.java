@@ -34,7 +34,7 @@ public class SimpleExceptions {
             foo();
         } catch (Exception e) {
             System.err.println("Caught Exception in foo()'s catch block: "
-                + e.getMessage());
+                    + e.getMessage());
         } catch (Throwable e) {
             System.err.println("Resulted in a throwable!" + e.getMessage());
         }

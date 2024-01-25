@@ -29,6 +29,7 @@ public class Employees implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
+        super.clone();
         List<String> temp = new ArrayList<>();
         for (String s : this.getEmpList()) {
             temp.add(s);

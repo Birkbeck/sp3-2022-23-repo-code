@@ -9,6 +9,6 @@ public interface BonusCalculator {
 
     default BigDecimal getBonus() {
         return getSalary().multiply(getBonusPercent())
-            .divide(new BigDecimal(100));
+                .divide(new BigDecimal(100));
     }
 }

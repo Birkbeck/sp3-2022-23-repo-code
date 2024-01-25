@@ -12,7 +12,7 @@ public class Factorial {
     }
 
     public static TailCall<Integer> factorialTailRec(
-        final int factorial, final int number) {
+            final int factorial, final int number) {
         if (number == 1)
             return done(factorial);
         else

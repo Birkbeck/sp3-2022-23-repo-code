@@ -42,11 +42,11 @@ public class TestExecutor {
         // Create a new ThreadFactory object that will spawn either
         // "user" threads or "daemon" threads.
         final ThreadFactory threadFactory =
-            runnable -> {
-                Thread thr = new Thread(runnable);
-                if (daemonThread) thr.setDaemon(true);
-                return thr;
-            };
+                runnable -> {
+                    Thread thr = new Thread(runnable);
+                    if (daemonThread) thr.setDaemon(true);
+                    return thr;
+                };
 
         // Create a pool of threads that's will concurrently execute
         // the runnableCommands.

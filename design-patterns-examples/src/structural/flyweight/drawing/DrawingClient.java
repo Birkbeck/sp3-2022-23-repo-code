@@ -32,7 +32,7 @@ public class DrawingClient extends JFrame {
             for (int i = 0; i < 20; ++i) {
                 Shape shape = ShapeFactory.getShape(getRandomShape());
                 shape.draw(g, getRandomX(), getRandomY(), getRandomWidth(),
-                    getRandomHeight(), getRandomColor());
+                        getRandomHeight(), getRandomColor());
             }
         });
     }

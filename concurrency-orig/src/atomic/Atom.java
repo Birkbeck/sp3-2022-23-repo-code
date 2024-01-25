@@ -25,7 +25,7 @@ public class Atom {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, NUM_INCREMENTS)
-            .forEach(i -> executor.submit(atomicInt::incrementAndGet));
+                .forEach(i -> executor.submit(atomicInt::incrementAndGet));
 
         ConcurrentUtils.stop(executor);
 
@@ -38,11 +38,11 @@ public class Atom {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, NUM_INCREMENTS)
-            .forEach(i -> {
-                Runnable task = () ->
-                    atomicInt.accumulateAndGet(i, (n, m) -> n + m);
-                executor.submit(task);
-            });
+                .forEach(i -> {
+                    Runnable task = () ->
+                            atomicInt.accumulateAndGet(i, (n, m) -> n + m);
+                    executor.submit(task);
+                });
 
         ConcurrentUtils.stop(executor);
 
@@ -55,11 +55,11 @@ public class Atom {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, NUM_INCREMENTS)
-            .forEach(i -> {
-                Runnable task = () ->
-                    atomicInt.updateAndGet(n -> n + 2);
-                executor.submit(task);
-            });
+                .forEach(i -> {
+                    Runnable task = () ->
+                            atomicInt.updateAndGet(n -> n + 2);
+                    executor.submit(task);
+                });
 
         ConcurrentUtils.stop(executor);
 

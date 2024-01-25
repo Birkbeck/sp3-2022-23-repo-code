@@ -1,4 +1,4 @@
-package adapter.enumerator;
+package structural.adapter.enumerator;
 
 import java.util.Enumeration;
 import java.util.Iterator;

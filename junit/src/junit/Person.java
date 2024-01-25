@@ -27,7 +27,7 @@ public class Person {
         if (this == o) return true;
         if (!(o instanceof Person person)) return false;
         return Objects.equals(getFirstName(), person.getFirstName()) &&
-            Objects.equals(getLastName(), person.getLastName());
+                Objects.equals(getLastName(), person.getLastName());
     }
 
     @Override
@@ -38,8 +38,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            '}';
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }

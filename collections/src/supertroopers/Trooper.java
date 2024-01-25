@@ -29,7 +29,7 @@ public class Trooper implements Comparable<Trooper> {
         if (this == other) return true;
         if (!(other instanceof Trooper that)) return false;
         return this.name.equals(that.name)
-            && this.mustached == that.mustached;
+                && this.mustached == that.mustached;
     }
 
     public int compareTo(Trooper other) {

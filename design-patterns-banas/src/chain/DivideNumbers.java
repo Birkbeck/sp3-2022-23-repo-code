@@ -17,7 +17,7 @@ public class DivideNumbers implements Chain {
         if (request.getCalcWanted() == "div") {
 
             System.out.print(request.getNumber1() + " / " + request.getNumber2() + " = "
-                + (request.getNumber1() / request.getNumber2()));
+                    + (request.getNumber1() / request.getNumber2()));
 
         } else {
 

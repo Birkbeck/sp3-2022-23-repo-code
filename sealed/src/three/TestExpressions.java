@@ -1,7 +1,7 @@
 package three;
 
 sealed interface Expr
-    permits ConstantExpr, PlusExpr, TimesExpr, NegExpr {
+        permits ConstantExpr, PlusExpr, TimesExpr, NegExpr {
     int eval();
 }
 
@@ -9,13 +9,13 @@ public class TestExpressions {
     public static void main(String[] args) {
         //(6 + 7) * -8
         System.out.println(
-            new TimesExpr(
-                new PlusExpr(
-                    new ConstantExpr(6),
-                    new ConstantExpr(7)
-                ),
-                new NegExpr(new ConstantExpr(8))
-            ).eval());
+                new TimesExpr(
+                        new PlusExpr(
+                                new ConstantExpr(6),
+                                new ConstantExpr(7)
+                        ),
+                        new NegExpr(new ConstantExpr(8))
+                ).eval());
     }
 }
 

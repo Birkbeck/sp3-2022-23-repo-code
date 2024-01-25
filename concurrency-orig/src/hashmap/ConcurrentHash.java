@@ -22,7 +22,7 @@ public class ConcurrentHash {
         map.putIfAbsent("c3", "p0");
 
         String reduced = map.reduce(1, (key, value) -> key + "=" + value,
-            (s1, s2) -> s1 + ", " + s2);
+                (s1, s2) -> s1 + ", " + s2);
 
         System.out.println(reduced);
     }

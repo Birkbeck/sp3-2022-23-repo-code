@@ -29,21 +29,21 @@ public class Streams {
         System.out.println(zipped);
 
         List<String> words =
-            Arrays.asList("Hello", "World", "Welcome", "To", "Java", "8");
+                Arrays.asList("Hello", "World", "Welcome", "To", "Java", "8");
         System.out.println("words: " + words);
         double avg = words.stream()
-            .map(String::length)
-            .reduce(0, (a, b) -> a + b) / (0.0 + words.size());
+                .map(String::length)
+                .reduce(0, (a, b) -> a + b) / (0.0 + words.size());
         System.out.println("avg: " + avg);
 
         int longest = words.stream()
-            .map(String::length)
-            .reduce(0, (a, b) -> (a > b) ? a : b);
+                .map(String::length)
+                .reduce(0, (a, b) -> (a > b) ? a : b);
         System.out.println("longest: " + longest);
 
         List<String> longWords = words.stream()
-            .filter(word -> word.length() > avg)
-            .collect(Collectors.toList());
+                .filter(word -> word.length() > avg)
+                .collect(Collectors.toList());
         System.out.println(longWords);
 
         System.out.println("factorial(1): " + factorial(1));

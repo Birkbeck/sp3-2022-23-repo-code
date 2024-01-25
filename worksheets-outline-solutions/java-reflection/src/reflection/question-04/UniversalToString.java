@@ -48,15 +48,15 @@ public class UniversalToString {
                 // get and assign field values for primitive types
                 if (fieldTypeClass.isPrimitive()) {
                     fieldValues.add(fld.getName() + "="
-                        + (fieldTypeClass == Character.TYPE ? "'" + fieldValue + "'" : fieldValue));
+                            + (fieldTypeClass == Character.TYPE ? "'" + fieldValue + "'" : fieldValue));
                 } else {
                     try {
                         // check if there's a declared toString method
                         Method m = fieldTypeClass.getDeclaredMethod("toString");
 
                         fieldValues.add(fld.getName() + "="
-                            + (fieldTypeClass == String.class && fieldValue != null
-                            ? "\"" + fieldValue + "\"" : fieldValue));
+                                + (fieldTypeClass == String.class && fieldValue != null
+                                ? "\"" + fieldValue + "\"" : fieldValue));
                     } catch (NoSuchMethodException e) {
                         // if there's no toString - recursively call GeneralToString on the fieldValue Object
                         fieldValues.add(fld.getName() + "=" + toString(fieldValue));

@@ -38,9 +38,9 @@ class User {
 
 class Users {
     private static final User[] users = {
-        new User("gboole", "George Boole"),
-        new User("achurch", "Alonzo Church"),
-        new User("hcurry", "Haskell Curry")};
+            new User("gboole", "George Boole"),
+            new User("achurch", "Alonzo Church"),
+            new User("hcurry", "Haskell Curry")};
 
     public static Optional<User> lookup(String id) {
         return Stream.of(users).filter(u -> u.getId().equals(id)).findFirst();
@@ -100,7 +100,7 @@ public class OptionalDemo {
 
         optionalValue = wordList.stream().filter(s -> s.contains("blue")).findFirst();
         optionalValue.ifPresentOrElse(s -> System.out.println(s + " contains blue"),
-            () -> System.out.println("Nothing contains blue"));
+                () -> System.out.println("Nothing contains blue"));
 
         Set<String> results = new HashSet<>();
         optionalValue.ifPresent(results::add);

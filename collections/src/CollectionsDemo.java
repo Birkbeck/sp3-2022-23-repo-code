@@ -16,7 +16,7 @@ public class CollectionsDemo {
 
         for (String state : capitals.keySet()) {
             System.out.println("Capital of " + state + " is "
-                + capitals.get(state));
+                    + capitals.get(state));
         }
     }
 }

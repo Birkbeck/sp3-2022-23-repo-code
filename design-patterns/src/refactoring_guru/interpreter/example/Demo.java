@@ -22,8 +22,8 @@ public class Demo {
         // example 1:
         // A ∧ (B ∨ C)
         var example1 = new AndExpression(
-            a,
-            new OrExpression(b, c)
+                a,
+                new OrExpression(b, c)
         );
 
         context.assign(a, true);
@@ -45,11 +45,11 @@ public class Demo {
         // example 2:
         // B ∨ (A ∧ (B ∨ C))
         var example2 = new OrExpression(
-            b,
-            new AndExpression(
-                a,
-                new OrExpression(b, c)
-            )
+                b,
+                new AndExpression(
+                        a,
+                        new OrExpression(b, c)
+                )
         );
 
         context.assign(a, false);

@@ -5,16 +5,14 @@
 package threads_02_03;
 
 /**
- *
  * @author MFisher
  */
 public class ID {
-   private static int counter; // initialized to 0 by default
+    private static int counter; // initialized to 0 by default
 
-   public static synchronized int getID()
-   {
-      return counter++;
-   }
+    public static synchronized int getID() {
+        return counter++;
+    }
 
-    
+
 }

@@ -62,7 +62,7 @@ public class ConversionContext {
         // Make the first character uppercase
 
         wordToCapitalize = Character.toUpperCase(wordToCapitalize.charAt(0))
-            + wordToCapitalize.substring(1);
+                + wordToCapitalize.substring(1);
 
         // Put s on the end if not there
 

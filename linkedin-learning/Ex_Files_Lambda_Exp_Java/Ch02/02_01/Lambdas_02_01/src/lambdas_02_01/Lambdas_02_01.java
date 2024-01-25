@@ -45,15 +45,15 @@ public class Lambdas_02_01 {
 
         //total pages in your book collection
         Book book1 = new Book("Miss Peregrine's Home for Peculiar Children",
-            "Ranson", "Riggs", 382);
+                "Ranson", "Riggs", 382);
         Book book2 = new Book("Harry Potter and The Sorcerers Stone",
-            "JK", "Rowling", 411);
+                "JK", "Rowling", 411);
         Book book3 = new Book("The Cat in the Hat",
-            "Dr", "Seuss", 45);
+                "Dr", "Seuss", 45);
 
         List<Book> books = Arrays.asList(book1, book2, book3);
         int total = books.stream()
-            .collect(Collectors.summingInt(Book::getPages));
+                .collect(Collectors.summingInt(Book::getPages));
         System.out.println(total);
 
         //create a list with duplicates
@@ -68,8 +68,8 @@ public class Lambdas_02_01 {
 
         //aggregate author first names into a list
         List<String> list = books.stream()
-            .map(Book::getAuthorLName)
-            .collect(Collectors.toList());
+                .map(Book::getAuthorLName)
+                .collect(Collectors.toList());
         System.out.println(list);
 
         //example of using Set to eliminate dups and sort automatically

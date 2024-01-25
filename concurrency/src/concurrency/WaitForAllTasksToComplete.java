@@ -46,11 +46,11 @@ public class WaitForAllTasksToComplete {
         executor = Executors.newFixedThreadPool(10);
 
         List<DemoCallable> tasks = Arrays.asList(
-            new DemoCallable(1), new DemoCallable(2),
-            new DemoCallable(3), new DemoCallable(4),
-            new DemoCallable(5), new DemoCallable(6),
-            new DemoCallable(7), new DemoCallable(8),
-            new DemoCallable(9), new DemoCallable(10));
+                new DemoCallable(1), new DemoCallable(2),
+                new DemoCallable(3), new DemoCallable(4),
+                new DemoCallable(5), new DemoCallable(6),
+                new DemoCallable(7), new DemoCallable(8),
+                new DemoCallable(9), new DemoCallable(10));
 
         System.out.println("###### Submitting all tasks.");
 
@@ -70,14 +70,14 @@ public class WaitForAllTasksToComplete {
 
         executor = Executors.newFixedThreadPool(10);
         CompletionService<Integer> service
-            = new ExecutorCompletionService<>(executor);
+                = new ExecutorCompletionService<>(executor);
 
         tasks = Arrays.asList(
-            new DemoCallable(1), new DemoCallable(2),
-            new DemoCallable(3), new DemoCallable(4),
-            new DemoCallable(5), new DemoCallable(6),
-            new DemoCallable(7), new DemoCallable(8),
-            new DemoCallable(9), new DemoCallable(10));
+                new DemoCallable(1), new DemoCallable(2),
+                new DemoCallable(3), new DemoCallable(4),
+                new DemoCallable(5), new DemoCallable(6),
+                new DemoCallable(7), new DemoCallable(8),
+                new DemoCallable(9), new DemoCallable(10));
 
         for (DemoCallable task : tasks) {
             service.submit(task);

@@ -1,4 +1,4 @@
-package adapter.current;
+package structural.adapter.current;
 
 public class AdapterPatternTest {
 

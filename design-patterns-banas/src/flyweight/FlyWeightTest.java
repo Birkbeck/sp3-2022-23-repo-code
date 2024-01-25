@@ -8,12 +8,12 @@ package flyweight;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.io.Serial;
 import java.util.Random;
 
 public class FlyWeightTest extends JFrame {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     JButton startDrawing;
@@ -24,8 +24,8 @@ public class FlyWeightTest extends JFrame {
     // A new rectangle is created only if a new color is needed
 
     Color[] shapeColor = {Color.orange, Color.red, Color.yellow,
-        Color.blue, Color.pink, Color.cyan, Color.magenta,
-        Color.black, Color.gray};
+            Color.blue, Color.pink, Color.cyan, Color.magenta,
+            Color.black, Color.gray};
 
     public FlyWeightTest() {
 
@@ -48,46 +48,27 @@ public class FlyWeightTest extends JFrame {
 
         contentPane.add(startDrawing, BorderLayout.SOUTH);
 
-        startDrawing.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent event) {
-                final Graphics g = drawingPanel.getGraphics();
+        startDrawing.addActionListener(event -> {
+            final Graphics g = drawingPanel.getGraphics();
 
 
-                final long startTime = System.currentTimeMillis();
+            final long startTime = System.currentTimeMillis();
 
 
-                for (int i = 0; i < 100000; ++i) {
+            for (int i = 0; i < 100000; ++i) {
 
-                    //
-                    // Uses rectangles stored in the HashMap to
-                    // speed up the program
+                //
+                // Uses rectangles stored in the HashMap to
+                // speed up the program
 
-                    final MyRect rect = RectFactory.getRect(getRandColor());
-                    rect.draw(g, getRandX(), getRandY(),
-                        getRandX(), getRandY());
-
-                    //
-                    /*
-                    MyRect rect = new MyRect(getRandColor(), getRandX(), getRandY(), getRandX(), getRandY());
-	            	rect.draw(g);
-	            	*/
-
-
-                    //
-	            	/*
-	            	g.setColor(getRandColor());
-	            	g.fillRect(getRandX(), getRandY(), getRandX(), getRandY());
-	            	*/
-
-
-                }
-
-                final long endTime = System.currentTimeMillis();
-
-                System.out.println("That took " + (endTime - startTime) + " milliseconds");
-
+                final MyRect rect = RectFactory.getRect(getRandColor());
+                rect.draw(g, getRandX(), getRandY(), getRandX(), getRandY());
             }
+
+            final long endTime = System.currentTimeMillis();
+
+            System.out.println("That took " + (endTime - startTime) + " milliseconds");
+
         });
 
         this.add(contentPane);

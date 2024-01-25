@@ -1,4 +1,4 @@
-package adapter.current;
+package structural.adapter.current;
 
 /*
  * Using inheritance for adapter pattern

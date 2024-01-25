@@ -11,7 +11,7 @@ import java.util.concurrent.TimeoutException;
 
 public class CallableFutureExample {
     public static void main(String[] args) throws ExecutionException,
-        InterruptedException, TimeoutException {
+            InterruptedException, TimeoutException {
 
         var executor = Executors.newFixedThreadPool(1);
         Future<String> future = executor.submit(new Work("Demo-Task"));

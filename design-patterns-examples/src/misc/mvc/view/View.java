@@ -1,4 +1,4 @@
-package mvc.view;
+package misc.mvc.view;
 
 import javax.swing.JFrame;
 

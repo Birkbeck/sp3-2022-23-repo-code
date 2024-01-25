@@ -13,8 +13,8 @@ public class MyInvocationHandler implements InvocationHandler {
         MyInvocationHandler handler = new MyInvocationHandler();
 
         MyInterface o = (MyInterface) Proxy.newProxyInstance(
-            MyInvocationHandler.class.getClassLoader(),
-            new Class[]{MyInterface.class}, handler);
+                MyInvocationHandler.class.getClassLoader(),
+                new Class[]{MyInterface.class}, handler);
         o.doSomething();
     }
 
@@ -22,8 +22,8 @@ public class MyInvocationHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         Arrays.stream(Thread.currentThread()
-                .getStackTrace())
-            .forEach(System.out::println);
+                        .getStackTrace())
+                .forEach(System.out::println);
         System.out.println(method);
 
 

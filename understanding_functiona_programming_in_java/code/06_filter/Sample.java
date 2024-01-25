@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class Sample {
-  public static void main(String[] args) {
-    List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6);
+    public static void main(String[] args) {
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6);
 
-    numbers.stream()
-      .filter(e -> e % 2 == 0)
-      .forEach(System.out::println);
-  }
+        numbers.stream()
+                .filter(e -> e % 2 == 0)
+                .forEach(System.out::println);
+    }
 }
 
 /*

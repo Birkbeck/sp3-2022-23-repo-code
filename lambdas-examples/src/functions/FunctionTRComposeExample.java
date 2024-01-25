@@ -23,12 +23,12 @@ public class FunctionTRComposeExample {
             return e.getName();
         };
         Function<Employee, Employee> funcEmpFirstName =
-            (Employee e) -> {
-                int index = e.getName().indexOf(" ");
-                String firstName = e.getName().substring(0, index);
-                e.setName(firstName);
-                return e;
-            };
+                (Employee e) -> {
+                    int index = e.getName().indexOf(" ");
+                    String firstName = e.getName().substring(0, index);
+                    e.setName(firstName);
+                    return e;
+                };
         List<Employee> employeeList = Util.load();
         List<String> empFirstNameList = convertEmpListToNamesList(employeeList, funcEmpToString.compose(funcEmpFirstName));
         empFirstNameList.forEach(str -> {

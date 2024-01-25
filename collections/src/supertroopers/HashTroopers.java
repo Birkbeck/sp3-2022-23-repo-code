@@ -18,7 +18,7 @@ public class HashTroopers {
         troopers.add(new Trooper("Foster", true));
 
         System.out.println("\nUsing Trooper without properly overriden"
-            + " hashCode()");
+                + " hashCode()");
 
         // Notice that you can create a new collection by passing an
         // existing collection to the constructor.  This is a
@@ -33,18 +33,18 @@ public class HashTroopers {
         // Mac gets different hashcodes for distinct instances -
         // not what we want
         System.out.println("Mac's hashCode: "
-            + new Trooper("Mac", true).hashCode());
+                + new Trooper("Mac", true).hashCode());
         System.out.println("Mac's hashCode: "
-            + new Trooper("Mac", true).hashCode());
+                + new Trooper("Mac", true).hashCode());
 
         // Mac is in the set, but we don't find him because we didn't
         // override hashCode().
         System.out.println("\nOops!  Didn't override hashCode():");
         System.out.println("trooperSet.contains(new Trooper(\"Mac\", true))="
-            + trooperSet.contains(new Trooper("Mac", true)));
+                + trooperSet.contains(new Trooper("Mac", true)));
 
         System.out.println("\nNow using HashTrooper with properly overriden"
-            + " hashCode()");
+                + " hashCode()");
 
         List<HashTrooper> hTroopers = new ArrayList<>();
         hTroopers.add(new HashTrooper("Thorny", true));
@@ -63,15 +63,15 @@ public class HashTroopers {
 
         // Mac now has same hashcode for distinct instances, as he should
         System.out.println("Mac's hashCode: "
-            + new HashTrooper("Mac", true).hashCode());
+                + new HashTrooper("Mac", true).hashCode());
         System.out.println("Mac's hashCode: "
-            + new HashTrooper("Mac", true).hashCode());
+                + new HashTrooper("Mac", true).hashCode());
 
         // Mac is in the set, we find him because HashTrooperj properly
         // overrides hashCode().
         System.out.println("hTrooperSet.contains("
-            + "new HashTrooper(\"Mac\", true))="
-            + hTrooperSet.contains(new HashTrooper("Mac", true)));
+                + "new HashTrooper(\"Mac\", true))="
+                + hTrooperSet.contains(new HashTrooper("Mac", true)));
     }
 
     static class HashTrooper extends Trooper {

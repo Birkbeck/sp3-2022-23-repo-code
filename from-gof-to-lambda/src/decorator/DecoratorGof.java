@@ -4,13 +4,13 @@ public class DecoratorGof {
 
     public static void main(String[] args) {
         System.out.println(
-            new HealthInsuranceDecorator(
-                new RegionalTaxDecorator(
-                    new GeneralTaxDecorator(
-                        new DefaultSalaryCalculator()
-                    )
-                )
-            ).calculate(30000.00));
+                new HealthInsuranceDecorator(
+                        new RegionalTaxDecorator(
+                                new GeneralTaxDecorator(
+                                        new DefaultSalaryCalculator()
+                                )
+                        )
+                ).calculate(30000.00));
     }
 
     interface SalaryCalculator {

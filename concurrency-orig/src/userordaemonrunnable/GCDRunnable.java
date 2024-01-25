@@ -38,7 +38,7 @@ public class GCDRunnable implements Runnable {
             return number1;
         // Recursive call.
         return computeGCD(number2,
-            number1 % number2);
+                number1 % number2);
     }
 
     /**
@@ -47,13 +47,13 @@ public class GCDRunnable implements Runnable {
      */
     public void run() {
         final String threadString =
-            " with "
-                + threadType
-                + " thread id "
-                + Thread.currentThread();
+                " with "
+                        + threadType
+                        + " thread id "
+                        + Thread.currentThread();
 
         System.out.println("Entering run()"
-            + threadString);
+                + threadString);
 
         try {
             // Iterate for the give number of times.
@@ -66,13 +66,13 @@ public class GCDRunnable implements Runnable {
                     int r1 = r.nextInt();
                     int r2 = r.nextInt();
                     System.out.println("In run()"
-                        + threadString
-                        + " the GCD of "
-                        + r1
-                        + " and "
-                        + r2
-                        + " is "
-                        + computeGCD(r1, r2));
+                            + threadString
+                            + " the GCD of "
+                            + r1
+                            + " and "
+                            + r2
+                            + " is "
+                            + computeGCD(r1, r2));
                 }
             }
         } finally {

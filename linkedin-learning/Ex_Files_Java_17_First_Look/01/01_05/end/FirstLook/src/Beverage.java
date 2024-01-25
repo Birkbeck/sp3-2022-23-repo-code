@@ -1,5 +1,5 @@
 public sealed class Beverage implements Consumable
-    permits Coffee, Tea {
+        permits Coffee, Tea {
 
     private double temperature;
 

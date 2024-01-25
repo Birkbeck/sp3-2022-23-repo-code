@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class BinarySearchTree<E extends Comparable<? super E>>
-    implements Iterable<E> {
+        implements Iterable<E> {
 
     protected Node<E> root;
 

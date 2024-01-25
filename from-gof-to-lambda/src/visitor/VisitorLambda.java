@@ -9,13 +9,13 @@ import java.util.function.Function;
 public class VisitorLambda {
 
     static Function<Object, Double> areaVisitor = new LambdaVisitor<Double>()
-        .on(Square.class).then(s -> s.side * s.side)
-        .on(Circle.class).then(c -> Math.PI * c.radius * c.radius)
-        .on(Rectangle.class).then(r -> r.height * r.weidht);
+            .on(Square.class).then(s -> s.side * s.side)
+            .on(Circle.class).then(c -> Math.PI * c.radius * c.radius)
+            .on(Rectangle.class).then(r -> r.height * r.weidht);
     static Function<Object, Double> perimeterVisitor = new LambdaVisitor<Double>()
-        .on(Square.class).then(s -> 4 * s.side)
-        .on(Circle.class).then(c -> 2 * Math.PI * c.radius)
-        .on(Rectangle.class).then(r -> 2 * r.height + 2 * r.weidht);
+            .on(Square.class).then(s -> 4 * s.side)
+            .on(Circle.class).then(c -> 2 * Math.PI * c.radius)
+            .on(Rectangle.class).then(r -> 2 * r.height + 2 * r.weidht);
 
     public static void main(String[] args) {
         List<Object> figures = Arrays.asList(new Circle(4), new Square(5), new Rectangle(6, 7));

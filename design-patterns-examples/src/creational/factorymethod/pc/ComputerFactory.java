@@ -1,4 +1,4 @@
-package factorymethod.pc;
+package creational.factorymethod.pc;
 
 public class ComputerFactory {
 

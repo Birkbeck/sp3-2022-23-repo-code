@@ -38,10 +38,10 @@ public class BalancedNesting {
 
     public static void main(String[] args) {
         String[] testStrings = {
-            "( { [ ] } )", "( { [ } ] )", "} ( { [ ] } )",
-            "f(e -> { g(); return a[e]; })",
-            "(map (lambda (x) (* x x)) (list 1 2 3 4))",
-            "(map (lambda (x) (* x x)) (list 1 2 3 4)))"
+                "( { [ ] } )", "( { [ } ] )", "} ( { [ ] } )",
+                "f(e -> { g(); return a[e]; })",
+                "(map (lambda (x) (* x x)) (list 1 2 3 4))",
+                "(map (lambda (x) (* x x)) (list 1 2 3 4)))"
         };
 
         for (String s : testStrings) {

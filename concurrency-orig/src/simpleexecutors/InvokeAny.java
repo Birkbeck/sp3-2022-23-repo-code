@@ -9,9 +9,9 @@ public class InvokeAny {
         ExecutorService executor = Executors.newWorkStealingPool();
 
         List<Callable<String>> callables = Arrays.asList(
-            callable("task1", 2),
-            callable("task2", 1),
-            callable("task3", 3));
+                callable("task1", 2),
+                callable("task2", 1),
+                callable("task3", 3));
 
         try {
             String result = executor.invokeAny(callables);

@@ -21,7 +21,7 @@ public class AddNumbers implements Chain {
         if (request.getCalcWanted() == "add") {
 
             System.out.print(request.getNumber1() + " + " + request.getNumber2() + " = "
-                + (request.getNumber1() + request.getNumber2()));
+                    + (request.getNumber1() + request.getNumber2()));
         } else {
             nextInChain.calculate(request);
         }

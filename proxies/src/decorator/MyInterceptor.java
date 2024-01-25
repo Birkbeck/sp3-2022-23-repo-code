@@ -16,7 +16,7 @@ public class MyInterceptor<T> implements InvocationHandler {
     public static <T> T getProxy(T t, Class<? super T> interfaceType) {
         MyInterceptor handler = new MyInterceptor(t);
         return (T) Proxy.newProxyInstance(interfaceType.getClassLoader(),
-            new Class<?>[]{interfaceType}, handler
+                new Class<?>[]{interfaceType}, handler
         );
     }
 

@@ -39,11 +39,11 @@ public class Computer {
     @Override
     public String toString() {
         return "Computer{" +
-            "HDD='" + HDD + '\'' +
-            ", RAM='" + RAM + '\'' +
-            ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
-            ", isBluetoothEnabled=" + isBluetoothEnabled +
-            '}';
+                "HDD='" + HDD + '\'' +
+                ", RAM='" + RAM + '\'' +
+                ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
+                ", isBluetoothEnabled=" + isBluetoothEnabled +
+                '}';
     }
 
     @Override
@@ -95,11 +95,11 @@ public class Computer {
         @Override
         public String toString() {
             return "ComputerBuilder{" +
-                "HDD='" + HDD + '\'' +
-                ", RAM='" + RAM + '\'' +
-                ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
-                ", isBluetoothEnabled=" + isBluetoothEnabled +
-                '}';
+                    "HDD='" + HDD + '\'' +
+                    ", RAM='" + RAM + '\'' +
+                    ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
+                    ", isBluetoothEnabled=" + isBluetoothEnabled +
+                    '}';
         }
 
         @Override

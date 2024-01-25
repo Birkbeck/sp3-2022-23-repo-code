@@ -31,9 +31,9 @@ public class Demo {
 
         SocialSpammer spammer = new SocialSpammer(network);
         spammer.sendSpamToFriends("anna.smith@bing.com",
-            "Hey! This is Anna's friend Josh. Can you do me a favor and like this post [link]?");
+                "Hey! This is Anna's friend Josh. Can you do me a favor and like this post [link]?");
         spammer.sendSpamToCoworkers("anna.smith@bing.com",
-            "Hey! This is Anna's boss Jason. Anna told me you would be interested in [link].");
+                "Hey! This is Anna's boss Jason. Anna told me you would be interested in [link].");
     }
 
     public static List<Profile> createTestProfiles() {

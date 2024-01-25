@@ -35,7 +35,7 @@ public class AssignmentTest {
     @Test
     void classHasFewerThanFiveFields() {
         assertTrue(c.getDeclaredFields().length < 5,
-            "More than four fields declared.");
+                "More than four fields declared.");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class AssignmentTest {
             // If the method is static the operation result will
             // still equal the original modifier value.
             assertEquals(fld.getModifiers(), fld.getModifiers() | Modifier.PRIVATE,
-                "Non-private field found.");
+                    "Non-private field found.");
         }
     }
 
@@ -55,7 +55,7 @@ public class AssignmentTest {
         Field[] flds = c.getDeclaredFields();
         for (Field fld : flds) {
             assertNotEquals(java.util.ArrayList.class, fld.getType(),
-                "Field with an ArrayList type found.");
+                    "Field with an ArrayList type found.");
         }
     }
 
@@ -71,12 +71,12 @@ public class AssignmentTest {
             // If the method is static the operation result will
             // still equal the original modifier value.
             if ((method.getModifiers() | Modifier.STATIC) == method.getModifiers() &&
-                !method.getName().equals("main")) {
+                    !method.getName().equals("main")) {
                 helper += 1;
             }
         }
         assertTrue(helper >= 2,
-            "The class has fewer than 2 helper methods.");
+                "The class has fewer than 2 helper methods.");
     }
 
     @Test
@@ -84,7 +84,7 @@ public class AssignmentTest {
         Method[] methods = c.getDeclaredMethods();
         for (Method method : methods) {
             assertEquals(0, method.getExceptionTypes().length,
-                "Method with a throw clause found in the class.");
+                    "Method with a throw clause found in the class.");
         }
     }
 
@@ -93,7 +93,7 @@ public class AssignmentTest {
         Method[] methods = c.getDeclaredMethods();
         for (Method method : methods) {
             assertNotEquals(int.class, method.getReturnType(),
-                "Method returning an int found in the class.");
+                    "Method returning an int found in the class.");
         }
     }
 

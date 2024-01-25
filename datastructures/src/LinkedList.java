@@ -96,7 +96,7 @@ public class LinkedList {
     public void insertAfter(Object existingItem, Object newItem) {
         Node curNode = head;
         while (!curNode.data.equals(existingItem) &&
-            (curNode.next != null)) {
+                (curNode.next != null)) {
             curNode = curNode.next;
         }
         Node newNode = new Node(newItem, curNode.next);

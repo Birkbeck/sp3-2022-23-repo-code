@@ -26,15 +26,15 @@ public class ArrayListEqualsDemo {
         // that's stored in peeps
         System.out.println("\n1: Querying with alias: ");
         System.out.println("peeps.contains(wilma)) == "
-            + peeps.contains(wilma));
+                + peeps.contains(wilma));
         System.out.println("\n1.1: Querying with equal-valued distinct object: ");
         System.out.println("peeps.contains(new LostPerson(\"Wilma\")) == "
-            + peeps.contains(new LostPerson("Wilma")));
+                + peeps.contains(new LostPerson("Wilma")));
 
         // The rest of the examples each use new objects, so can't rely
         // on object identity
         System.out.println("\nRemaining examples query with equal-valued "
-            + "distinct objects.");
+                + "distinct objects.");
 
         // 2:
         // Will print true because we're querying with a FoundPerson,
@@ -42,14 +42,14 @@ public class ArrayListEqualsDemo {
         System.out.println("\nSearching for FoundPerson in list.");
         System.out.println("\n2: Querying with FoundPerson object: ");
         System.out.println("peeps.contains(new FoundPerson(\"Fred\")) == "
-            + peeps.contains(new FoundPerson("Fred")));
+                + peeps.contains(new FoundPerson("Fred")));
 
         // 3:
         // Will print false because we're querying with a LostPerson,
         // which does not hashave a properly implemented equals()
         System.out.println("\n3: Querying with LostPerson: ");
         System.out.println("peeps.contains(new LostPerson(\"Fred\")) == "
-            + peeps.contains(new LostPerson("Fred")));
+                + peeps.contains(new LostPerson("Fred")));
 
         // 4:
         // Will print true because we're querying with a FoundPerson,
@@ -58,23 +58,23 @@ public class ArrayListEqualsDemo {
         // type LostPerson.  The query object's equals() method is used.
         System.out.println("\nSearching for LostPerson in list.");
         System.out.println("\nNotice that contains method uses query object's"
-            + " equals method.");
+                + " equals method.");
         System.out.println("4: Querying with FoundPerson: "
-            + peeps.contains(new FoundPerson("Barney")));
+                + peeps.contains(new FoundPerson("Barney")));
 
         // 5:
         // Will print false because we're querying with a LostPerson,
         // which does not have a properly implemented equals()
         System.out.println("\n5: Querying with LostPerson: ");
         System.out.println("peeps.contains(new LostPerson(\"Barney\")) == "
-            + peeps.contains(new LostPerson("Barney")));
+                + peeps.contains(new LostPerson("Barney")));
 
         // 6:
         // Will print false because OverloadedPerson does not override equals,
         // rather OverloadedPerson overloads equals.
         System.out.println("\n6: Querying with OverloadedPerson: ");
         System.out.println("peeps.contains(new OverloadedPerson(\"Bam-Bam\"))== "
-            + peeps.contains(new OverloadedPerson("Bam-Bam")));
+                + peeps.contains(new OverloadedPerson("Bam-Bam")));
     }
 
     abstract static class Person {

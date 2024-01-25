@@ -18,7 +18,7 @@ public class TestJoinClass extends Thread {
                 System.out.println(e);
             }
             System.out.println(Thread.currentThread().getName() +
-                " i = " + i);
+                    " i = " + i);
         }
     }
 }

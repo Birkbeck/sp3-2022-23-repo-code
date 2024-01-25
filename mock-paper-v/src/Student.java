@@ -1,4 +1,3 @@
-
 // An eating student ....
 public class Student implements Runnable {
     int n; // this student’s number

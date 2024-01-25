@@ -46,13 +46,13 @@ public class GCDRunnable implements Runnable {
      */
     public void run() {
         final String threadString =
-            " with "
-                + threadType
-                + " thread id "
-                + Thread.currentThread();
+                " with "
+                        + threadType
+                        + " thread id "
+                        + Thread.currentThread();
 
         System.out.println("Entering run()"
-            + threadString);
+                + threadString);
 
         try {
             Random r = new Random();
@@ -65,14 +65,14 @@ public class GCDRunnable implements Runnable {
                 // Print results every 10 million iterations.
                 if ((i % 10000000) == 0)
                     System.out.println("In run()"
-                        + threadString
-                        + " the GCD of "
-                        + number1
-                        + " and "
-                        + number2
-                        + " is "
-                        + computeGCD(number1,
-                        number2));
+                            + threadString
+                            + " the GCD of "
+                            + number1
+                            + " and "
+                            + number2
+                            + " is "
+                            + computeGCD(number1,
+                            number2));
             }
         } finally {
             System.out.println("Leaving run() " + threadString);

@@ -25,8 +25,8 @@ public class Demo {
         String message = reader.readLine();
 
         System.out.println("\nChoose social network for posting message.\n" +
-            "1 - Facebook\n" +
-            "2 - Twitter");
+                "1 - Facebook\n" +
+                "2 - Twitter");
         int choice = Integer.parseInt(reader.readLine());
 
         // Create proper network object and send the message.

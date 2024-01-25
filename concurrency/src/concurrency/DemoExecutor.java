@@ -8,11 +8,11 @@ import java.util.concurrent.TimeUnit;
 public class DemoExecutor {
     public static void main(String[] args) throws InterruptedException {
         BlockingQueue<Runnable> blockingQueue =
-            new LinkedBlockingQueue<Runnable>();
+                new LinkedBlockingQueue<Runnable>();
 
         CustomThreadPoolExecutor executor =
-            new CustomThreadPoolExecutor(10, 20, 5, TimeUnit.SECONDS,
-                blockingQueue, new ThreadPoolExecutor.AbortPolicy());
+                new CustomThreadPoolExecutor(10, 20, 5, TimeUnit.SECONDS,
+                        blockingQueue, new ThreadPoolExecutor.AbortPolicy());
 
         // Let start all core threads initially
         executor.prestartAllCoreThreads();

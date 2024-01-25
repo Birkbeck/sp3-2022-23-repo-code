@@ -61,7 +61,7 @@ public class MeasurementConversion {
             // Print the results
 
             final String answerToQues = question.getResponse() +
-                toQuantity + " " + toConversion;
+                    toQuantity + " " + toConversion;
 
             JOptionPane.showMessageDialog(null, answerToQues);
 

@@ -20,14 +20,14 @@
              public void run() {
                  //perform some work inside the thread
                  System.out.println("Hello from " +
-                     Thread.currentThread().getName()
-                     + " NOT USING LAMBDA");
+                         Thread.currentThread().getName()
+                         + " NOT USING LAMBDA");
              }
          };
          //Create a runnable object using lambda notation
          Runnable r2 = () -> System.out.println("Hello from "
-             + Thread.currentThread().getName() + " USING LAMBDA "
-             + "notation");
+                 + Thread.currentThread().getName() + " USING LAMBDA "
+                 + "notation");
          /*Create and start a thread using the first runnable object
           *This thread is also given a name in the arguments */
          Thread t1 = new Thread(r1, "Thread t1");

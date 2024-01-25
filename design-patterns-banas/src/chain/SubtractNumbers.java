@@ -17,7 +17,7 @@ public class SubtractNumbers implements Chain {
         if (request.getCalcWanted() == "sub") {
 
             System.out.print(request.getNumber1() + " - " + request.getNumber2() + " = " +
-                (request.getNumber1() - request.getNumber2()));
+                    (request.getNumber1() - request.getNumber2()));
 
         } else {
 

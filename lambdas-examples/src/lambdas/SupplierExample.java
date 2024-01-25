@@ -8,7 +8,7 @@ public class SupplierExample {
     public static void main(String[] args) {
 
         displayCurrencyCode(() -> Currency.getInstance(Locale.CHINA)
-            .getCurrencyCode());
+                .getCurrencyCode());
 
     }
 

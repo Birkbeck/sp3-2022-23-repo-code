@@ -49,7 +49,7 @@ public class SongGroup extends SongComponent {
     public void displaySongInfo() {
 
         System.out.println(getGroupName() + " " +
-            getGroupDescription() + "\n");
+                getGroupDescription() + "\n");
 
         // Cycles through and prints any Songs or SongGroups added
         // to this SongGroups ArrayList songComponents

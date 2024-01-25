@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class ProducerConsumerLiveTest {
     private final String[] shapes = {"Circle", "Triangle", "Rectangle", "Square", "Rhombus", "Trapezoid",
-        "Pentagon", "Pentagram", "Hexagon", "Hexagram"};
+            "Pentagon", "Pentagram", "Hexagon", "Hexagram"};
 
     @Test
     public void givenACircularBuffer_whenInterleavingProducerConsumer_thenElementsMatch() throws Exception {

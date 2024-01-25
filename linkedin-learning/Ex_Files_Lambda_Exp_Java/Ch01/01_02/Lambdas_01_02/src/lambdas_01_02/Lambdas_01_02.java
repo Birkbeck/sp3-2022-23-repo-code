@@ -45,7 +45,7 @@ public class Lambdas_01_02 {
 
         //example of passing one value 
         GreetingFunction greeting = message ->
-            System.out.println("Java Programming " + message);
+                System.out.println("Java Programming " + message);
         greeting.sayMessage("Rocks with lambda expressions");
     }
 

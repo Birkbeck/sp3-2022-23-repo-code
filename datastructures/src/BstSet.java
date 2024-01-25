@@ -1,7 +1,7 @@
 package datastructure;
 
 public class BstSet<E extends Comparable<? super E>>
-    extends BinarySearchTree<E> {
+        extends BinarySearchTree<E> {
 
     public static void main(String[] args) {
         BinarySearchTree<Integer> nums = new BstSet<>();

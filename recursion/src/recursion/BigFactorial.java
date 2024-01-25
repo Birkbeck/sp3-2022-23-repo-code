@@ -15,19 +15,19 @@ public class BigFactorial {
     }
 
     public static BigInteger multiply(
-        final BigInteger first, final BigInteger second) {
+            final BigInteger first, final BigInteger second) {
         return first.multiply(second);
     }
 
     //...
 
     private static TailCall<BigInteger> factorialTailRec(
-        final BigInteger factorial, final BigInteger number) {
+            final BigInteger factorial, final BigInteger number) {
         if (number.equals(BigInteger.ONE))
             return done(factorial);
         else
             return call(() ->
-                factorialTailRec(multiply(factorial, number), decrement(number)));
+                    factorialTailRec(multiply(factorial, number), decrement(number)));
     }
 
     public static BigInteger factorial(final BigInteger number) {

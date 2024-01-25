@@ -20,7 +20,7 @@ public class Problems {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, 10_000)
-            .forEach(i -> executor.submit(Problems::increment));
+                .forEach(i -> executor.submit(Problems::increment));
 
         stop(executor);
 

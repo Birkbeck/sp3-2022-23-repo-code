@@ -1,4 +1,4 @@
-package adapter.current;
+package structural.adapter.current;
 
 public interface SocketAdapter {
     Volt get120Volt();

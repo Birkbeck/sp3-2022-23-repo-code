@@ -49,14 +49,14 @@ public class GCDRunnable implements Runnable {
                 } // Print results every 10 million iterations.
                 else if ((i % 10000000) == 0)
                     System.out.println("In run()"
-                        + threadString
-                        + " the GCD of "
-                        + number1
-                        + " and "
-                        + number2
-                        + " is "
-                        + computeGCD(number1,
-                        number2));
+                            + threadString
+                            + " the GCD of "
+                            + number1
+                            + " and "
+                            + number2
+                            + " is "
+                            + computeGCD(number1,
+                            number2));
             }
         } catch (InterruptedException e) {
             System.out.println("Thread interrupted" + threadString);

@@ -150,14 +150,14 @@ public class JavaBankList extends JFrame {
         inputDetailJPanel.add(CreateAccountJButton);
         CreateAccountJButton.addActionListener(
 
-            new ActionListener() {
-                // event handler called when CreateAccountJButton
-                // is clicked
-                public void actionPerformed(ActionEvent event) {
-                    CreateAccountJButtonActionPerformed(event);
-                }
+                new ActionListener() {
+                    // event handler called when CreateAccountJButton
+                    // is clicked
+                    public void actionPerformed(ActionEvent event) {
+                        CreateAccountJButtonActionPerformed(event);
+                    }
 
-            }
+                }
 
         ); // end call to addActionListener
 
@@ -168,16 +168,16 @@ public class JavaBankList extends JFrame {
         inputDetailJPanel.add(DeleteAccountJButton);
         DeleteAccountJButton.addActionListener(
 
-            new ActionListener() // anonymous inner class
-            {
-                // event handler called when DeleteAccountJButton
-                // is clicked
-                public void actionPerformed(ActionEvent event) {
-                    DeleteAccountJButtonActionPerformed(event);
+                new ActionListener() // anonymous inner class
+                {
+                    // event handler called when DeleteAccountJButton
+                    // is clicked
+                    public void actionPerformed(ActionEvent event) {
+                        DeleteAccountJButtonActionPerformed(event);
+
+                    }
 
                 }
-
-            }
 
         ); // end call to addActionListener
 
@@ -188,15 +188,15 @@ public class JavaBankList extends JFrame {
         inputDetailJPanel.add(TransactionJButton);
         TransactionJButton.addActionListener(
 
-            new ActionListener() // anonymous inner class
-            {
-                // event handler called when TransactionJButton
-                // is clicked
-                public void actionPerformed(ActionEvent event) {
-                    TransactionJButtonActionPerformed(event);
-                }
+                new ActionListener() // anonymous inner class
+                {
+                    // event handler called when TransactionJButton
+                    // is clicked
+                    public void actionPerformed(ActionEvent event) {
+                        TransactionJButtonActionPerformed(event);
+                    }
 
-            } // end anonymous inner class
+                } // end anonymous inner class
 
         ); // end call to addActionListener
 
@@ -207,15 +207,15 @@ public class JavaBankList extends JFrame {
         inputDetailJPanel.add(DisplayJButton);
         DisplayJButton.addActionListener(
 
-            new ActionListener() // anonymous inner class
-            {
-                // event handler called when TransactionJButton
-                // is clicked
-                public void actionPerformed(ActionEvent event) {
-                    DisplayJButtonActionPerformed(event);
-                }
+                new ActionListener() // anonymous inner class
+                {
+                    // event handler called when TransactionJButton
+                    // is clicked
+                    public void actionPerformed(ActionEvent event) {
+                        DisplayJButtonActionPerformed(event);
+                    }
 
-            } // end anonymous inner class
+                } // end anonymous inner class
 
         ); // end call to addActionListener
 
