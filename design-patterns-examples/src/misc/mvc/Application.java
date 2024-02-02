@@ -2,9 +2,9 @@ package misc.mvc;
 
 import javax.swing.SwingUtilities;
 
-import mvc.controller.Controller;
-import mvc.model.Model;
-import mvc.view.View;
+import misc.mvc.controller.Controller;
+import misc.mvc.model.Model;
+import misc.mvc.view.View;
 
 public class Application {
 

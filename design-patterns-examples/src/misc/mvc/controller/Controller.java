@@ -1,7 +1,7 @@
 package misc.mvc.controller;
 
-import mvc.model.Model;
-import mvc.view.View;
+import misc.mvc.model.Model;
+import misc.mvc.view.View;
 
 public class Controller {
     private final View view;

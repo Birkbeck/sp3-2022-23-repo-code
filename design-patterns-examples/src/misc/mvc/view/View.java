@@ -2,7 +2,7 @@ package misc.mvc.view;
 
 import javax.swing.JFrame;
 
-import mvc.model.Model;
+import misc.mvc.model.Model;
 
 public class View extends JFrame {
     private final Model model;

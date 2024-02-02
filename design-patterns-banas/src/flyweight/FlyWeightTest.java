@@ -13,8 +13,7 @@ import java.util.Random;
 
 public class FlyWeightTest extends JFrame {
 
-    @Serial
-    private static final long serialVersionUID = 1L;
+    @Serial private static final long serialVersionUID = 1L;
 
     JButton startDrawing;
 
