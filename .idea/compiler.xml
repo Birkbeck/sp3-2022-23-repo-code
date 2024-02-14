@@ -2,9 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true">
-        <option name="jps.track.ap.dependencies" value="" />
-      </profile>
+      <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
   </component>
 </project>
