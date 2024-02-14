@@ -1,4 +1,4 @@
-# Example code — 2023-24
+# Example code
 
 The examples, exercises, and coursework files for the Software and Programming III module at Birkbeck, University of
 London.
