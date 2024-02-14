@@ -5,36 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ee3445-371f-48b8-85e7-a66da2b4772b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example-spring/dependency-injection-example-spring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example-spring/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorld/HelloWorld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldCommandLineArguments/HelloWorldCommandLineArguments.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupled/HelloWorldDecoupled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/HelloWorldDecoupledInterface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/src/helloworld/HelloWorldDecoupledInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/src/helloworld/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/src/helloworld/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/src/helloworld/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/HelloWorldDecoupledInterfaceWithFactory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/HelloWorldMessageProviderAlternative.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/MessageSupportFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/dependency-injection-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencyinjection/Spring/Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/SpringWithDI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/MessageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencyinjection/dependencyinjection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/beans" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/AnotherWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/AnotherWorldMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/HelloWorldSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/HelloWorldSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/MessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/MessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/app/src/main/java/helloworld/StandardOutMessageRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpring/src/helloworld/AnotherWorldMessageProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpring/src/helloworld/HelloWorldSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpring/src/helloworld/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/StandardOutMessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpringWithDI/src/helloworld/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpringWithDI/src/helloworld/HelloWorldMessageProviderAlternative.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/HelloWorldMessageProviderAlternative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpringWithDI/src/helloworld/HelloWorldSpringWithDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/HelloWorldSpringWithDI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpringWithDI/src/helloworld/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src/helloworld/MessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencyinjection/HelloWorldSpringWithDI/src/helloworld/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependencyinjection/Spring/src/helloworld/StandardOutMessageRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,9 @@
         <entry key="$USER_HOME$/tmp/kotlin-koans" value="PREVIEW" />
       </map>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -82,6 +84,10 @@
     "Application.HelloWorldDecoupled.executor": "Run",
     "Application.HelloWorldWithCommandLineArguments.executor": "Run",
     "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -93,14 +99,19 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.42528737",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dependencyinjection/SpringWithDI/src" />
+      <recent name="$PROJECT_DIR$/dependencyinjection/Spring/src" />
+      <recent name="$PROJECT_DIR$/dependency-injection-example-spring/HelloWorldSpring/src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="helloworld" />
     </key>
@@ -218,7 +229,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707919644025</updated>
-      <workItem from="1707919645020" duration="1464000" />
+      <workItem from="1707919645020" duration="3681000" />
     </task>
     <servers />
   </component>

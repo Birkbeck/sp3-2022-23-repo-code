@@ -14,7 +14,6 @@ London.
 + consolidation — The Java "refresher" sessions.
 + `dagger` and `dagger2` — Google Dagger examples
 + datastructures
-+ dependencyinjection — dependency injection examples from class including the `HelloWorld` set of examples
 + design-patterns-banas — code examples accompanying the videos by Derek Banas
 + design-patterns-examples — examples of the various GoF design patterns
 + exceptions
