@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldCommandLineArguments/HelloWorldCommandLineArguments.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldCommandLineArguments/HelloWorldCommandLineArguments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupled/HelloWorldDecoupled.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupled/HelloWorldDecoupled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/HelloWorldDecoupledInterface.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterface/HelloWorldDecoupledInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/HelloWorldDecoupledInterfaceWithFactory.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/HelloWorldDecoupledInterfaceWithFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/dependency-injection-example.iml" filepath="$PROJECT_DIR$/dependency-injection-example/dependency-injection-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp3-example-code.iml" filepath="$PROJECT_DIR$/sp3-example-code.iml" />
+    </modules>
+  </component>
+</project>

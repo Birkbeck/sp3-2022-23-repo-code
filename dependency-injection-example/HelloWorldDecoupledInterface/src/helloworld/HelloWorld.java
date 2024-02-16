@@ -1,6 +1,6 @@
 package helloworld;
 
-public class HelloWorldDecoupledInterface {
+public class HelloWorld {
     public static void main(String[] args) {
         MessageRenderer mr = new StandardOutMessageRenderer();
         MessageProvider mp = new HelloWorldMessageProvider();

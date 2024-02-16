@@ -1,6 +1,6 @@
 package helloworld;
 
-public class HelloWorldDecoupledWithFactory {
+public class HelloWorld {
 
     public static void main(String[] args) {
         MessageRenderer mr = MessageSupportFactory.getInstance().getMessageRenderer();
