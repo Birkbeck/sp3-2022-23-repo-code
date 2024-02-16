@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dbc71c8-3fd3-444f-9245-bd41071d9a3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_3_0_adapters.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_beans_6_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_beans_6_1_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core_6_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_expression_6_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/HelloWorldSpring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/HelloWorldSpringWithDI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/src/helloworld/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/HelloWorldSpringWithDIXMLFile.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFileConstructorArgument/HelloWorldSpringWithDIXMLFileConstructorArgument.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-adapters.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-test-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0-tests.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/commons-logging-1.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/findsecbugs-plugin-1.12.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/spring-beans-6.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/spring-context-6.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/spring-core-6.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection-example/lib/spring-expression-6.1.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/MessageSupportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src/helloworld/MessageSupportFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld/HelloWorldSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/src/helloworld/HelloWorldSpringWithDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/src/helloworld/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/src/helloworld/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/src/helloworld/HelloWorldMessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/src/helloworld/HelloWorldSpringWithDIXMLFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/src/helloworld/HelloWorldSpringWithDIXMLFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/beans" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/resources/beans.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-injection-example/beans.prop" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/resources/beans.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +274,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708091378653</updated>
       <workItem from="1708091380068" duration="183000" />
-      <workItem from="1708091591606" duration="8732000" />
+      <workItem from="1708091591606" duration="10079000" />
     </task>
     <servers />
   </component>
