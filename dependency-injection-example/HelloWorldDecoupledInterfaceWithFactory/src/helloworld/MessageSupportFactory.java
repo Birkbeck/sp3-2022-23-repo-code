@@ -16,14 +16,6 @@ public final class MessageSupportFactory {
     private MessageProvider provider;
 
     private MessageSupportFactory() {
-//        Properties props = new Properties();
-
-
-//        try {
-//            try (var fis = new FileInputStream("bean.properties")) {
-//                props.load(fis);
-//            }
-
         try {
             ResourceBundle bundle = ResourceBundle.getBundle("bean");
 

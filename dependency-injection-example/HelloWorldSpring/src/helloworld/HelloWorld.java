@@ -2,19 +2,32 @@ package helloworld;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 
-public class HelloWorldSpring {
+public class HelloWorld {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // get the bean factory
-        BeanFactory factory = getBeanFactory();
+        BeanFactory factory = null;
+        try {
+            factory = getBeanFactory();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-        MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
-        MessageProvider mp = (MessageProvider) factory.getBean("provider");
+        MessageRenderer mr = null;
+        MessageProvider mp = null;
+        try {
+            mr = (MessageRenderer) factory.getBean("renderer");
+            mp = (MessageProvider) factory.getBean("provider");
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
         mr.setMessageProvider(mp);
         mr.render();
     }
@@ -28,11 +41,12 @@ public class HelloWorldSpring {
         PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(factory);
 
         // load the configuration options
-        Properties props = new Properties();
-        try (var fis = new FileInputStream("beans")) {
-            props.load(fis);
+        ResourceBundle bundle = ResourceBundle.getBundle("beans");
+        try {
+            rdr.registerBeanDefinitions(bundle);
+        } catch (BeansException e) {
+            throw new RuntimeException(e);
         }
-        rdr.registerBeanDefinitions(props);
 
         return factory;
     }

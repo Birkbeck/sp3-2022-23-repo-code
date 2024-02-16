@@ -1,15 +1,14 @@
 package helloworld;
 
-import java.io.FileInputStream;
-import java.util.Properties;
+import java.util.ResourceBundle;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 
-public final class HelloWorldSpringWithDI {
+public final class HelloWorld {
 
-    private HelloWorldSpringWithDI() {
+    private HelloWorld() {
     }
 
     /**
@@ -21,25 +20,24 @@ public final class HelloWorldSpringWithDI {
      */
     public static void main(final String[] args) throws Exception {
         // get the bean factory
-        var factory = getBeanFactory();
+        BeanFactory factory = getBeanFactory();
 
         var mr = (MessageRenderer) factory.getBean("renderer");
         mr.render();
     }
 
     private static BeanFactory getBeanFactory() throws Exception {
-        // get the bean factory
-        var factory = new DefaultListableBeanFactory();
+        // get the bean factory - understanding DefaultListableBeanFactory() not really important.
+        //It is just an Factory class example from Spring.
+        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+
         // create a definition reader
-        var rdr = new PropertiesBeanDefinitionReader(factory);
+        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(factory);
 
         // load the configuration options
-        var props = new Properties();
-        try (var fis = new FileInputStream("beans.prop")) {
-            props.load(fis);
-        }
+        ResourceBundle bundle = ResourceBundle.getBundle("beans");
 
-        rdr.registerBeanDefinitions(props);
+        rdr.registerBeanDefinitions(bundle);
         return factory;
     }
 }
