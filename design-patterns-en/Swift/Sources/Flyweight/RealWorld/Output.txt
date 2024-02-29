@@ -1,0 +1,17 @@
+Client: I created a number of objects to display
+Client: Let's show animals for the 1st time
+
+AppearanceFactory: Can't find a cached cat-object, creating a new one.
+Cell: Updating an appearance of a cat-cell: photos 1
+
+AppearanceFactory: Reusing an existing cat-appearance.
+Cell: Updating an appearance of a cat-cell: photos 1
+
+AppearanceFactory: Can't find a cached dog-object, creating a new one.
+Cell: Updating an appearance of a dog-cell: photos 2
+
+
+Client: I have a new dog, let's show it the same way!
+
+AppearanceFactory: Reusing an existing dog-appearance.
+Cell: Updating an appearance of a dog-cell: photos 2

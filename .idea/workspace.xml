@@ -5,21 +5,1399 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dbc71c8-3fd3-444f-9245-bd41071d9a3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bridgebetween/bridgebetween.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/application/BootstrappingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/events/ExampleEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/events/ExampleEventSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/observers/AnotherExampleEventObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/observers/ExampleEventObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/cdi2observers/services/TextService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/application/FileApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/factories/TimeLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/imagefileeditors/GifFileEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/imagefileeditors/ImageFileEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/imagefileeditors/JpgFileEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/imagefileeditors/PngFileEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/imageprocessors/ImageFileProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/loggers/TimeLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/qualifiers/GifFileEditorQualifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/qualifiers/JpgFileEditorQualifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/dependencyinjection/qualifiers/PngFileEditorQualifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/interceptor/Audited.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/interceptor/AuditedInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/service/SuperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/spring/aspect/SpringTestAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/spring/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/java/com/baeldung/spring/service/SpringSuperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/InterceptorIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/SpringInterceptorIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/cdi2observers/tests/TextServiceUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/GifFileEditorUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/ImageProcessorUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/JpgFileEditorUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/PngFileEditorUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/TimeLoggerFactoryUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi/src/test/java/com/baeldung/test/dependencyinjection/TimeLoggerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cdi_/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/dagger.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/java/com/baeldung/dagger/intro/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/java/com/baeldung/dagger/intro/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/java/com/baeldung/dagger/intro/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/java/com/baeldung/dagger/intro/VehiclesComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/java/com/baeldung/dagger/intro/VehiclesModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dagger/src/test/java/com/baeldung/dagger/intro/DaggerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFileConstructorArgument/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/AbstractFactory.Conceptual/AbstractFactory.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/AbstractFactory.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/AbstractFactory.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Adapter.Conceptual/Adapter.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Adapter.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Adapter.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Bridge.Conceptual/Bridge.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Bridge.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Bridge.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Builder.Conceptual/Builder.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Builder.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Builder.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/ChainOfResponsibility.Conceptual/ChainOfResponsibility.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/ChainOfResponsibility.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/ChainOfResponsibility.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Command.Conceptual/Command.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Command.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Command.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Composite.Conceptual/Composite.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Composite.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Composite.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Decorator.Conceptual/Decorator.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Decorator.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Decorator.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Facade.Conceptual/Facade.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Facade.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Facade.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/FactoryMethod.Conceptual/FactoryMethod.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/FactoryMethod.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/FactoryMethod.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Flyweight.Conceptual/Flyweight.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Flyweight.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Flyweight.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Iterator.Conceptual/Iterator.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Iterator.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Iterator.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Mediator.Conceptual/Mediator.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Mediator.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Mediator.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Prototype.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Prototype.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Prototype.Conceptual/Prototype.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Proxy.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Proxy.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Proxy.Conceptual/Proxy.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/NonThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/NonThreadSafe/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/NonThreadSafe/Singleton.Conceptual.NonThreadSafe.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/ThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/ThreadSafe/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Singleton.Conceptual/ThreadSafe/Singleton.Conceptual.ThreadSafe.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/State.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/State.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/State.Conceptual/State.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Strategy.Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Strategy.Conceptual/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C#/Strategy.Conceptual/Strategy.Conceptual.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/AbstractFactory/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/AbstractFactory/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Adapter/Conceptual/MultipleInheritance/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Adapter/Conceptual/MultipleInheritance/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Adapter/Conceptual/Normal/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Adapter/Conceptual/Normal/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Bridge/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Bridge/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Builder/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Builder/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/ChainOfResponsibility/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/ChainOfResponsibility/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Command/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Command/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Composite/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Composite/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Decorator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Decorator/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Facade/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Facade/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/FactoryMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/FactoryMethod/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Flyweight/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Flyweight/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Iterator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Iterator/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Mediator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Mediator/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Memento/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Memento/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Observer/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Observer/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Prototype/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Prototype/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Proxy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Proxy/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Singleton/Conceptual/NonThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Singleton/Conceptual/NonThreadSafe/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Singleton/Conceptual/ThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Singleton/Conceptual/ThreadSafe/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/State/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/State/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Strategy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Strategy/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/TemplateMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/TemplateMethod/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Visitor/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/C++/src/Visitor/Conceptual/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/lib/text_canvas.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/lib/text_canvas/canvas.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/lib/text_canvas/primitives.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/app/application.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/button/button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/button/mac_os_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/button/windows_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/checkbox/checkbox.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/checkbox/mac_os_checkbox.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/checkbox/windows_checkbox.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/factories/gui_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/factories/mac_os_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/factories/window_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/conceptual_gui_factory/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/app/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/app/shapes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/app/tools.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/factories/circle_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/factories/line_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/factories/star_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/factories/text_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/factories/triangle_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/mixin/icon_box_mixin.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/pattern/property.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/pattern/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/pattern/tool_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/base_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/circle_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/line_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/star_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/text_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/shapes/triangle_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/colors_tool_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/drawing_board.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/factories_tool_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/independent/event_listenable_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/independent/hove.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/independent/panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/independent/tool_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/independent/tool_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/bool_property_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/double_property_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/factories/property_widget_factories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/factories/property_widget_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/primitive/filed_label.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/primitive/theme_property.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/property_widgets/string_property_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/abstract_factory/tool_panel_factory/widgets/tool_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/adapter/classic_app_adapter_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/adapter/classic_app_render_object.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/classic_app/classic_app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/classic_app/repaint_compatible.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/classic_app/repaint_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/business_rules/color_rules.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/business_rules/text_coloring.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/widgets/color_buttons_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/widgets/slider_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/client_app/widgets/text_property_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/flutter_adapter/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/square_round_conflict/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/square_round_conflict/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/engine/shape_engine.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/shapes/graph_element_adapter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/shapes/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/third_party_graphics_lib/graph_element.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/third_party_graphics_lib/star.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/adapter/text_graphics/third_party_graphics_lib/wave.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/bells/bell.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/bells/melody.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/bells/signal.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/clocks/clock.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/clocks/interval.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/clocks/once.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/clock/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/devices/device.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/devices/empty_device.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/devices/radio.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/devices/tv.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/remotes/basic_advance_remote.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/bridge/devices_remote_control/remotes/remote.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/builders/builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/builders/car_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/builders/car_manual_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/cars/car.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/cars/car_manual.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/cars/car_type.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/components/engine.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/director/director.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/director/gps_navigation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/director/transmission.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/director/trip_computer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/cars/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/color_reader/color_text_reader.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/converters/console_converter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/converters/converter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/converters/html_converter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/converters/json_converter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/formats/console_format.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/formats/html_format.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/formats/json_format.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/formats/text_format.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/color_text_format/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/concrete_builder/concrete_builder_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/concrete_builder/concrete_builder_2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/pattern/builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/pattern/director.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/pattern/product.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/product/concrete_product_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/builder/conceptual/product/concrete_product_2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/middleware/role_check_middleware.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/middleware/throttling_middleware.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/middleware/user_exists_middleware.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/server/middleware.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/chain_of_responsibility/server_middleware/server/server.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/command/add_text_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/command/insert_text_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/mut_str/mut_str.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/conceptual/pattern/command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/application/application.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/application/command_history.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/application/editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/application/text_cursor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/copy_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/cut_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/input_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/move_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/past_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/commands/select_command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/command/text_editor/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/editor/image_editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/base_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/circle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/compound_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/dot.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/rectangle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/image_editor/shapes/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/diagram/convert_product_to_render_element.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/diagram/diagram.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/products/box.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/products/product.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/products/product_leaf.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_column.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_connecting_lines.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_element.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_layout.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_position.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_row.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/composite/products_and_boxes/render_elements/render_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/Secret.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/src/compression_decorator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/src/data_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/src/data_source_decorator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/src/encryption_decorator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/decorator/data_source_decoder/src/file_data_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/pattern/video_conversion_facade.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/audio_mixer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/bitrate_reader.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/codec.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/codec_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/mpeg4_compression_codec.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/ogg_compression_codec.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/facade/conceptual/some_complex_media_library/video_file.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/buttons/button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/buttons/html_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/buttons/windows_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/dialogs_factory/dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/dialogs_factory/html_dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/dialogs_factory/windows_dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/factory_method/conceptual_platform_dialog/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/params/share_params.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/pattern/flyweight.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/pattern/flyweight_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/flyweight/conceptual/utils/fake_value.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/operations/and.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/operations/operation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/operations/or.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/operations/xor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/pattern/context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/pattern/expression.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/interpreter/conceptual/variable/bool_variable.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/github_commit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/github_commit/github/commit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/github_commit/github/github_loader.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/github_commit/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/github_commit/pattern/github_repo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/word_iterator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/word_iterator/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/word_iterator/pattern/word_iterator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/iterator/word_iterator/text/text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/components/component1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/components/component2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/concrete_mediator/concrete_mediator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/pattern/component.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/mediator/conceptual/pattern/mediator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/conceptual/app/command.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/conceptual/app/editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/conceptual/app/snapshot.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/application.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/editor/editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/editor/manipulator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/editor/memento_create_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/memento_pattern/caretaker.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/memento_pattern/memento.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/memento_pattern/originator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/memento_pattern/snapshot.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/shapes/active_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/shapes/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/shapes/shapes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/composite/colors_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/composite/named_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/composite/snapshot_list_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/panels/memento_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/panels/shape_properties_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/memento/memento_editor/widgets/right_panel_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/app_observer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/app_observer/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/app_observer/observer/app_observer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/app_observer/observer/event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/editor/editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/event_manager/event_manager.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/listeners/email_notification_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/listeners/event_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/listeners/log_open_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/open_close_editor_events/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/events/new_hash_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/subscriber/subscriber_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/widgets/hash_generator_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/observer/subscriber_flutter_widget/widgets/hash_user_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/prototype/shapes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/prototype/shapes/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/prototype/shapes/shape/circle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/prototype/shapes/shape/rectangle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/prototype/shapes/shape/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/proxy/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/proxy/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/proxy/conceptual/pattern/proxy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/proxy/conceptual/pattern/real_subject.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/proxy/conceptual/pattern/subject.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/singleton/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/singleton/conceptual/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/singleton/conceptual/pattern/singleton.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/app/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/app/base_manipulation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/app/shapes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/app/tool.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/pattern/manipulation_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/pattern/manipulator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/base_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/circle_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/marker_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/rectangle_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/shapes/text_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/creation_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/marker.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/mixins/hover_shape_mixin.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/paint_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/sub_states/child_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/_/sub_states/parent_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/creations/circle_creation_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/creations/rectangle_creation_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/creations/text_creation_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/free_sate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/inner_radius_markers/inner_radius_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/inner_radius_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/move_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/resizable_markers/bottom_left_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/resizable_markers/bottom_right_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/resizable_markers/top_left_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/resizable_markers/top_right_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/resizable_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/selection_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text/keyboard_actions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text/text_cursor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text/text_cursor_animation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text/text_size_marker_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text_edit_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/states/selections/text_resize_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/widgets/current_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/widgets/drawing_board.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/manipulator_state/widgets/tool_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/pattern/state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/pattern/switcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/states/one.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/states/three.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/state/three_state/states/two.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/application/application.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/application/order_confirmation_sequence.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/partners/cargo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/partners/voyage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/reservation_cargo_spaces/policy/overbooking_policy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/pattern/byte_context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/pattern/view_strategy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/strategies/hex_view_strategy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/strategies/str_view_strategy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/strategy/view_strategy/strategies/zip_view_strategy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/miners/csv_miner.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/miners/html_analyzer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/miners/zip_miner.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/pattern/data_miner.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/reports/google_workers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/reports/refactoring_guru_workers.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/reports/twitter_workers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/utils/analysis.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/utils/formatted_table.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/template_method/data_miner/utils/raw_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/elements/one.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/elements/three.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/elements/two.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/operations/concrete_visitor1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/operations/concrete_visitor2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/pattern/element.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/after/pattern/visitor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/before/elements/elements.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/conceptual/before/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/shapes/circle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/shapes/compound_shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/shapes/dot.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/shapes/rectangle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/shapes/shape.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/visitor/visitor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/patterns/visitor/shapes_exporter/visitor/xml_export_visitor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/icons/Icon-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/icons/Icon-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/icons/Icon-maskable-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/icons/Icon-maskable-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/logo-screen-ukraine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/logo-screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Dart/web/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/adidas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/adidasShirt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/adidasShoe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/iShirt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/iShoe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/iSportsFactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/nike.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/nikeShirt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/nikeShoe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/abstractFactory/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/computer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/mac.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/adapter/windowsAdapter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/computer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/epson.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/hp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/mac.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/printer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/bridge/windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/director.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/house.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/iBuilder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/iglooBuilder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/normalBuilder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/builder/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/cashier.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/department.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/departmentBase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/doctor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/medical.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/patient.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/chainOfResponsibility/reception.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/button.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/command.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/device.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/offCommand.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/onCommand.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/command/tv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/component.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/folder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/composite/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/cheeseTopping.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/pizza.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/tomatoTopping.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/decorator/veggieMania.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/account.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/ledger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/notification.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/securityCode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/wallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/facade/walletFacade.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/ak47.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/gun.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/gunFactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/iGun.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/musket.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/factory/player.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/counterTerroristDress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/dress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/dressFactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/player.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/flyweight/terroristDress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/collection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/iterator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/userCollection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/iterator/userIterator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/freightTrain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/mediator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/passengerTrain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/stationManager.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/mediator/train.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/caretaker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/memento.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/originator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/memento/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/item.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/observer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/observer/subject.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/folder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/inode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/prototype/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/application.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/nginx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/proxy/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/default/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/default/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/default/single.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/syncOnce/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/syncOnce/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/singleton/syncOnce/syncOnce.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/hasItemState.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/hasMoneyState.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/itemRequestedState.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/noItemState.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/state.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/state/vendingMachine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/cache.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/evictionAlgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/fifo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/lfu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/lru.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/strategy/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/email.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/otp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/template/sms.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/areaCalculator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/circle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/middleCoordinates.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/rectangle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/shape.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/square.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Go/visitor/visitor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/buttons/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/buttons/MacOSButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/buttons/WindowsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/checkboxes/Checkbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/checkboxes/MacOSCheckbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/checkboxes/WindowsCheckbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/factories/GUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/factories/MacOSFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/abstract_factory/example/factories/WindowsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/builders/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/builders/CarBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/builders/CarManualBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/cars/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/cars/CarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/cars/Manual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/builder/example/director/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/chain_of_responsibility/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/chain_of_responsibility/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/chain_of_responsibility/example/middleware/Middleware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/chain_of_responsibility/example/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/facade/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/facade/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/facade/example/facade/VideoConversionFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/expressions/AbstractExpressions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/expressions/AndExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/expressions/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/expressions/OrExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/interpreter/example/expressions/VariableExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/caching/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/caching/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/caching/cache/BundledShapeCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/example/shapes/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/example/shapes/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/prototype/example/shapes/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/strategy/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/strategy/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/strategy/example/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/OutputDemo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/shapes/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/shapes/Dot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/shapes/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/shapes/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Java/src/refactoring_guru/visitor/example/visitor/XMLExportVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/ruleset.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/AbstractFactory/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/AbstractFactory/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/AbstractFactory/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/AbstractFactory/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Adapter/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Adapter/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Adapter/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Adapter/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Bridge/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Bridge/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Bridge/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Bridge/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Builder/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Builder/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Builder/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Builder/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/ChainOfResponsibility/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/ChainOfResponsibility/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Command/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Command/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Command/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Command/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Composite/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Composite/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Composite/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Composite/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Decorator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Decorator/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Decorator/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Decorator/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Facade/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Facade/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Facade/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Facade/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/FactoryMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/FactoryMethod/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/FactoryMethod/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/FactoryMethod/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Flyweight/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Flyweight/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Flyweight/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Flyweight/RealWorld/cats.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Flyweight/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Interpreter/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Interpreter/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Iterator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Iterator/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Iterator/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Iterator/RealWorld/cats.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Iterator/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Mediator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Mediator/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Mediator/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Mediator/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Mediator/RealWorld/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Memento/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Memento/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Observer/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Observer/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Observer/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Observer/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Observer/RealWorld/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Prototype/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Prototype/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Prototype/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Prototype/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Proxy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Proxy/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Proxy/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Proxy/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Singleton/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Singleton/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Singleton/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Singleton/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/State/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/State/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Strategy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Strategy/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Strategy/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Strategy/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/TemplateMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/TemplateMethod/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/TemplateMethod/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/TemplateMethod/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Visitor/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Visitor/Conceptual/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Visitor/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/PHP/src/RefactoringGuru/Visitor/RealWorld/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/AbstractFactory/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/AbstractFactory/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Adapter/Conceptual/class/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Adapter/Conceptual/class/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Adapter/Conceptual/object/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Adapter/Conceptual/object/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Bridge/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Bridge/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Builder/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Builder/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/ChainOfResponsibility/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/ChainOfResponsibility/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Command/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Command/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Composite/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Composite/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Decorator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Decorator/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Facade/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Facade/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/FactoryMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/FactoryMethod/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Flyweight/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Flyweight/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Iterator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Iterator/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Mediator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Mediator/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Memento/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Memento/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Observer/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Observer/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Prototype/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Prototype/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Proxy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Proxy/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Singleton/Conceptual/NonThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Singleton/Conceptual/NonThreadSafe/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Singleton/Conceptual/ThreadSafe/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Singleton/Conceptual/ThreadSafe/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/State/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/State/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Strategy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Strategy/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/TemplateMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/TemplateMethod/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Visitor/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Python/src/Visitor/Conceptual/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/.rubocop.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/.ruby-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/abstract_factory/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/abstract_factory/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/adapter/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/adapter/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/bridge/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/bridge/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/builder/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/builder/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/chain_of_responsibility/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/chain_of_responsibility/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/command/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/command/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/composite/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/composite/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/decorator/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/decorator/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/facade/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/facade/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/factory_method/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/factory_method/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/flyweight/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/flyweight/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/iterator/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/iterator/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/mediator/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/mediator/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/memento/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/memento/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/observer/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/observer/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/prototype/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/prototype/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/proxy/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/proxy/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/singleton/conceptual/non_thread_safe/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/singleton/conceptual/non_thread_safe/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/singleton/conceptual/thread_safe/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/singleton/conceptual/thread_safe/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/state/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/state/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/strategy/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/strategy/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/template_method/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/template_method/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/visitor/conceptual/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Ruby/src/visitor/conceptual/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/.github/workflows/test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/department.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/department/cashier.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/department/doctor.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/department/medical.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/department/reception.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/chain-of-responsibility/patient.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/command.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/command/copy.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/command/cut.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/command/paste.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/command/res/editor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/iterator/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/iterator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/iterator/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/iterator/users.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/train_station.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/trains/freight_train.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/trains/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/mediator/trains/passenger_train.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/memento/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/memento/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/memento/conceptual.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/memento/serde.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/observer/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/observer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/observer/editor.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/observer/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/observer/observer.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/images/playing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/images/state_machine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/images/stopped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/player.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/state/state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/strategy/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/strategy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/strategy/conceptual.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/strategy/functional.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/template-method/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/template-method/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/template-method/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/visitor/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/visitor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/visitor/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/behavioral/visitor/visitor.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app-dyn/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app-dyn/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app-dyn/render.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/app/render.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/gui/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/gui/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/macos-gui/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/macos-gui/button.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/macos-gui/checkbox.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/macos-gui/factory.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/macos-gui/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/windows-gui/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/windows-gui/button.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/windows-gui/checkbox.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/windows-gui/factory.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/abstract-factory/windows-gui/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/builders/car.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/builders/car_manual.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/builders/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/cars/car.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/cars/manual.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/cars/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/components.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/director.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/builder/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/maze-game/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/maze-game/game.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/maze-game/magic_maze.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/maze-game/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/maze-game/ordinary_maze.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/gui.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/html_gui.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/init.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/factory-method/render-dialog/windows_gui.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/prototype/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/prototype/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/prototype/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/button/id.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/button/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/button/title.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/simple-factory/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/singleton/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/singleton/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/singleton/lazy.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/singleton/mutex.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/singleton/safe.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/static-creation-method/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/static-creation-method/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/creational/static-creation-method/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/adaptee.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/adapter.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/adapter/target.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/device/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/device/radio.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/device/tv.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/remotes/advanced.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/remotes/basic.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/bridge/remotes/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/fs/file.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/fs/folder.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/fs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/composite/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/decorator/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/decorator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/decorator/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/account.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/ledger.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/notification.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/security_code.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/wallet.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/facade/wallet_facade.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/forest.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/forest/tree.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/flyweight/res/forest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/server.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/server/application.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Rust/structural/proxy/server/nginx.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/ProjectBundle/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/AbstractFactoryConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/AbstractFactoryRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/AdapterConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/AdapterRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/BridgeConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/BridgeRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/BuilderConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/BuilderRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ChainOfResponsibilityConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ChainOfResponsibilityRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/CommandConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/CommandRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/CompositeConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/CompositeRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/DecoratorConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/DecoratorRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FacadeConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FacadeRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FactoryMethodConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FactoryMethodRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FlyweightConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/FlyweightRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/IteratorConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/IteratorRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/MediatorConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/MediatorRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/MementoConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/MementoRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ObserverConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ObserverRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/PrototypeConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/PrototypeRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ProxyConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/ProxyRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/SingletonConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/SingletonRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/StateConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/StateRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/StrategyConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/StrategyRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/TemplateMethodConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/TemplateMethodRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/VisitorConceptual.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/RefactoringGuru.Patterns.xcodeproj/xcshareddata/xcschemes/VisitorRealWorld.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/AbstractFactory/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/AbstractFactory/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/AbstractFactory/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Builder/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Builder/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Builder/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/FactoryMethod/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Flyweight/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Observer/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Prototype/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Proxy/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Proxy/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Proxy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Singleton/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Singleton/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/Singleton/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/Conceptual/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/Conceptual/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/RealWorld/Example.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/RealWorld/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/Swift/Sources/TemplateMethod/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/AbstractFactory/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/AbstractFactory/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Adapter/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Adapter/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Bridge/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Bridge/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Builder/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Builder/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/ChainOfResponsibility/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/ChainOfResponsibility/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Command/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Command/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Composite/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Composite/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Decorator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Decorator/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Decorator/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Decorator/RealWorld/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Facade/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Facade/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Facade/RealWorld/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Facade/RealWorld/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/FactoryMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/FactoryMethod/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Flyweight/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Flyweight/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Iterator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Iterator/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Mediator/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Mediator/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Memento/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Memento/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Observer/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Observer/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Prototype/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Prototype/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Proxy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Proxy/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Singleton/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Singleton/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/State/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/State/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Strategy/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Strategy/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Strategy/RealWorld/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Strategy/RealWorld/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/TemplateMethod/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/TemplateMethod/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Visitor/Conceptual/Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/src/Visitor/Conceptual/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patterns-en/TypeScript/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/org/example/springboothelloworld/SpringBootHelloworldApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/org/example/springboothelloworld/SpringBootHelloworldApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/src/top/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/src/top/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/src/top/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/src/top/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/src/top/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/src/top/Thing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/src/top/ThingBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/src/top/ThingBridge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BridgeBetween/src/top/items/MySubClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/bridgebetween/src/top/items/MySubClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cdi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/resources/META-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/GifFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/GifFileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/ImageFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/ImageFileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/ImageFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/ImageFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/JpgFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/JpgFileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi/src/cdi/PngFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi_/src/cdi/PngFileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/BrandImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/BrandImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/EngineImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/EngineImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/EngineImplTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/EngineImplTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/VehiclesComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/VehiclesComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/src/VehiclesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/src/VehiclesModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dagger/test/DaggerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dagger_/test/DaggerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/HelloWorldSpringWithDIXMLFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/HelloWorldSpringWithDIXMLFile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp3-example-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sp3-example-code.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/spring-boot-helloworld">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-boot-helloworld" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubPullRequestsUISettings">{}</component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -27,6 +1405,7 @@
       </map>
     </option>
   </component>
+  <component name="KubernetesApiProvider">{}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -48,42 +1427,50 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloWorld (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloWorldSpringWithDIXMLFile.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/keith/Documents/Courses/sdp-sp3/sp3-example-code/dependency-injection-example/HelloWorldSpring/src/helloworld&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloWorld (1).executor": "Run",
+    "Application.HelloWorld (2).executor": "Run",
+    "Application.HelloWorld.executor": "Run",
+    "Application.HelloWorldSpringWithDIXMLFile.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build spring-boot-helloworld.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SpringBootHelloworldApplication.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/keith/Documents/Courses/sdp-sp3/repo/springframeworkexample/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31724137",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springframeworkexample/src" />
+      <recent name="$PROJECT_DIR$/springframeworkexample/resources" />
       <recent name="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpring/src/helloworld" />
       <recent name="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/resources" />
       <recent name="$PROJECT_DIR$/dependency-injection-example" />
-      <recent name="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory" />
-      <recent name="$PROJECT_DIR$/dependency-injection-example/HelloWorldDecoupledInterfaceWithFactory/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/resources" />
@@ -98,7 +1485,7 @@
       <recent name="helloworld" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloWorldSpringWithDIXMLFile">
+  <component name="RunManager" selected="Application.HelloWorld (2)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -117,6 +1504,20 @@
     <configuration name="HelloWorld (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="helloworld.HelloWorld" />
       <module name="HelloWorldSpringWithDI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="helloworld.HelloWorld" />
+      <module name="springframeworkexample" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -239,6 +1640,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootHelloworldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring-boot-helloworld.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springboothelloworld.SpringBootHelloworldApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.springboothelloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -250,9 +1665,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloWorld (2)" />
         <item itemvalue="Application.HelloWorldSpringWithDIXMLFile" />
-        <item itemvalue="Application.HelloWorld (1)" />
-        <item itemvalue="Application.HelloWorld (1)" />
+        <item itemvalue="Spring Boot.SpringBootHelloworldApplication" />
         <item itemvalue="Application.HelloWorld (1)" />
         <item itemvalue="Application.HelloWorld (1)" />
       </list>
@@ -261,7 +1676,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-IU-241.11761.10" />
+        <option value="bundled-js-predefined-1d06a55b98c1-db596990d856-JavaScript-IU-241.13688.18" />
         <option value="jdk-21.0.2-openjdk-21.0.2-ec33d87e4238-12eb03b9" />
       </set>
     </attachedChunks>
@@ -278,11 +1693,27 @@
       <workItem from="1708091591606" duration="11985000" />
       <workItem from="1708184766505" duration="193000" />
       <workItem from="1708343398555" duration="21000" />
+      <workItem from="1708685829229" duration="1716000" />
+      <workItem from="1708713366312" duration="3117000" />
+      <workItem from="1708792088898" duration="162000" />
+      <workItem from="1708862156302" duration="556000" />
+      <workItem from="1709048773334" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

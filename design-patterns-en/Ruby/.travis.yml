@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 2.6.0
+sudo: required
+dist: trusty
+cache: bundler
+before_install:
+  - gem install bundler
+install:
+  - bundle install
+script:
+  - bundle exec rubocop

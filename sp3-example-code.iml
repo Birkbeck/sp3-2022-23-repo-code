@@ -7,6 +7,9 @@
       <excludeFolder url="file://$MODULE_DIR$/topic-08/flutter/flutter_application/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/topic-08/flutter/flutter_application/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/topic-08/flutter/flutter_application/build" />
+      <excludeFolder url="file://$MODULE_DIR$/design-patterns-en/Dart/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/design-patterns-en/Dart/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/design-patterns-en/Dart/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

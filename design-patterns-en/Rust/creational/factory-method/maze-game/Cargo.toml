@@ -1,0 +1,8 @@
+[package]
+edition = "2021"
+name = "maze-game"
+version = "0.1.0"
+
+[[bin]]
+name = "factory-method-maze-game"
+path = "main.rs"

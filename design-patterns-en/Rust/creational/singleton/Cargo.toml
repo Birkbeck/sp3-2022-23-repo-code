@@ -1,0 +1,19 @@
+[package]
+edition = "2021"
+name = "singleton"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[[bin]]
+name = "singleton"
+path = "safe.rs"
+
+[[bin]]
+name = "singleton-lazy"
+path = "lazy.rs"
+
+[[bin]]
+name = "singleton-mutex"
+path = "mutex.rs"

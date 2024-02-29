@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/HelloWorldSpringWithDI.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDI/HelloWorldSpringWithDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/HelloWorldSpringWithDIXMLFile.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFile/HelloWorldSpringWithDIXMLFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFileConstructorArgument/HelloWorldSpringWithDIXMLFileConstructorArgument.iml" filepath="$PROJECT_DIR$/dependency-injection-example/HelloWorldSpringWithDIXMLFileConstructorArgument/HelloWorldSpringWithDIXMLFileConstructorArgument.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bridgebetween/bridgebetween.iml" filepath="$PROJECT_DIR$/bridgebetween/bridgebetween.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dagger/dagger.iml" filepath="$PROJECT_DIR$/dagger/dagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/dependency-injection-example/dependency-injection-example.iml" filepath="$PROJECT_DIR$/dependency-injection-example/dependency-injection-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp3-example-code.iml" filepath="$PROJECT_DIR$/sp3-example-code.iml" />
     </modules>

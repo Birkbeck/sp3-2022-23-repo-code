@@ -1,0 +1,5 @@
+Testing actual rendering with the PHPTemplate factory:
+<div class="page">
+    <h1>Sample page</h1>
+    <article class="content">This it the body.</article>
+</div>

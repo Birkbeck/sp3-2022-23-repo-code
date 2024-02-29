@@ -1,0 +1,12 @@
+[package]
+edition = "2021"
+name = "strategy"
+version = "0.1.0"
+
+[[bin]]
+name = "strategy"
+path = "conceptual.rs"
+
+[[bin]]
+name = "strategy-func"
+path = "functional.rs"
