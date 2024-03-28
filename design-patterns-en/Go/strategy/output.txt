@@ -1,3 +1,0 @@
-Evicting by lfu strtegy
-Evicting by lru strtegy
-Evicting by fifo strtegy

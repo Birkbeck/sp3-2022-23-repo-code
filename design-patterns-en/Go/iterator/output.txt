@@ -1,2 +1,0 @@
-User is &{name:a age:30}
-User is &{name:b age:20}

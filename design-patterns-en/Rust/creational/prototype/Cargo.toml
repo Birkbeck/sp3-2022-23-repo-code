@@ -1,8 +1,0 @@
-[package]
-edition = "2021"
-name = "prototype"
-version = "0.1.0"
-
-[[bin]]
-name = "prototype"
-path = "main.rs"

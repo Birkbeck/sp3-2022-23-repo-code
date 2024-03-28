@@ -1,3 +1,0 @@
-Creating single instance now.
-Single instance already created.
-Single instance already created.

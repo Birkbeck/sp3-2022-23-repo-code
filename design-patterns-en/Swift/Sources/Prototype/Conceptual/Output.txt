@@ -1,3 +1,0 @@
-Values defined in BaseClass have been cloned!
-Values defined in SubClass have been cloned!
-The original object is equal to the copied object!
