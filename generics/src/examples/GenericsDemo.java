@@ -6,12 +6,12 @@ import java.util.Collection;
 public class GenericsDemo {
 
     public static void validateTillStringType(Collection<? super B> collection) {
-        //Wild card with Lower bound
+        // Wild card with Lower bound
         // Accept collection of objects of type string or SUPER-CLASS of String
     }
 
     public static void validateStringTypes(Collection<? extends B> collection) {
-        //Wild card with Upper bound
+        // Wild card with Upper bound
         // Accept collection of objects of type string or SUB-CLASS of String
     }
 

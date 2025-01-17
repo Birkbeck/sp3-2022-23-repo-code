@@ -1,12 +1,12 @@
 public class BoxDriver {
     public static void main(String[] args) {
-        IntBox intBox = new IntBox(42);
+        Box<Integer> intBox = new Box<>(42);
         int x = intBox.getData();
 
-        StrBox strBox = new StrBox("Hello");
+        Box<String> strBox = new Box<>("Hello");
         String s = strBox.getData();
 
-        int y = (Integer) strBox.getData();
-        intBox = strBox;
+//        int y = (Integer) strBox.getData();
+//        intBox = strBox;
     }
 }

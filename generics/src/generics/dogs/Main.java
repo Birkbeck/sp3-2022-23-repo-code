@@ -16,7 +16,7 @@ public class Main {
         Dog charlie = new Chiuaua("Charlie");
         Dog dave = new GermanShepherd("Dave");
 
-        List<Dog> allDogs = new LinkedList<Dog>();
+        List<Dog> allDogs = new LinkedList<>();
         allDogs.add(alice);
         allDogs.add(bob);
         allDogs.add(charlie);
